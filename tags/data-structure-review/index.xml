@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>data structure review - Tag - Haihao Sun</title>
+        <link>http://tribbiannisun.github.io/tags/data-structure-review/</link>
+        <description>data structure review - Tag - Haihao Sun</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 12 Jan 2021 21:33:05 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/data-structure-review/" rel="self" type="application/rss+xml" /><item>
+    <title>union_find review</title>
+    <link>http://tribbiannisun.github.io/union_find/</link>
+    <pubDate>Tue, 12 Jan 2021 21:33:05 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/union_find/</guid>
+    <description><![CDATA[<p>This article reviews union find (AKA disjoint set).</p>]]></description>
+</item></channel>
+</rss>
