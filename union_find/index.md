@@ -1,7 +1,7 @@
-# union_find review
+# Union_find Review
 
 
-This article reviews union find (AKA disjoint set).
+This article reviews Union Find(Disjoint Set).
 <!--more-->
 
 # Union Find | Disjoint Set
@@ -15,44 +15,47 @@ This article reviews union find (AKA disjoint set).
 
 ### Implementation
 ```python
-class UnionFind():
+class UnionFind(object):
     def __init__(self):
+        self.num_sets = 0
         self.parents = {}
         self.sizes = {}
-        self.n_sets = 0
 
-    def contains(self, i):
-        return i in self.parents
+    def contains(self, p):
+        return p in self.parents
 
-    def insert(self, i):
-        if self.contains(i):
+
+    def insert(self, p):
+        if self.contains(p):
             return
-        
         else:
-            self.parents[i] = i
-            self.sizes[i] = 1
-            self.n_sets += 1
+            self.parents[p] = p
+            self.sizes[p] = 1
+            self.num_sets += 1
 
-    def find(self, i):
+    def find(self, p):
+        if p != self.parents[p]:
+            self.parents[p] = self.find(self.parents[p])
+            p = self.parents[p]
+        return self.parents[p]
 
-        
-        while i != self.parents[i]:
-            self.parents[i] = self.find(self.parents[i])
-            i = self.parents[i]
-        return self.parents[i]
 
     def union(self, p, q):
         root_p, root_q = self.find(p), self.find(q)
         if root_p == root_q:
-            return 
+            return
         else:
-            # we merge the small group into the large group
-            small, large = sorted([root_p, root_q], key=lambda x: self.sizes[x])
-            self.parents[small] = large
 
-            # fix the size, and decrease the n_sets since we form two groups into a larger group
-            self.sizes[big] += self.sizes[small]    
-            self.n_sets -= 1
+            if self.sizes[root_p] > self.sizes[root_q]:
+                small_root = root_q
+                large_root = root_p
+            else:
+                small_root = root_p
+                large_root = root_q
+            
+            self.parents[small_root] = large_root
+            self.sizes[large_root] += self.sizes[small_root]
+            self.num_sets -= 1
 ```
 
 

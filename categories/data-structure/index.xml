@@ -4,11 +4,11 @@
         <link>http://tribbiannisun.github.io/categories/data-structure/</link>
         <description>Data Structure - Category - Haihao Sun</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 12 Jan 2021 21:33:05 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/categories/data-structure/" rel="self" type="application/rss+xml" /><item>
-    <title>union_find review</title>
+    <title>Union_find Review</title>
     <link>http://tribbiannisun.github.io/union_find/</link>
     <pubDate>Tue, 12 Jan 2021 21:33:05 &#43;0800</pubDate>
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/union_find/</guid>
-    <description><![CDATA[<p>This article reviews union find (AKA disjoint set).</p>]]></description>
+    <description><![CDATA[<p>This article reviews Union Find(Disjoint Set).</p>]]></description>
 </item></channel>
 </rss>
