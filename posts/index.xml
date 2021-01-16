@@ -3,7 +3,14 @@
         <title>All Posts - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/posts/</link>
         <description>All Posts | Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 15 Jan 2021 20:17:16 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 17 Jan 2021 00:09:37 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode_947 Most Stones Removed with Same Row or Column</title>
+    <link>http://tribbiannisun.github.io/leetcode_947/</link>
+    <pubDate>Sun, 17 Jan 2021 00:09:37 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_947/</guid>
+    <description><![CDATA[<p>Use <strong>Union Find</strong> to solve Leetcode 947 - Most Stones Removed with Same Row or Column.</p>]]></description>
+</item><item>
     <title>Leetcode_827 Making A Large Island</title>
     <link>http://tribbiannisun.github.io/leetcode_827/</link>
     <pubDate>Fri, 15 Jan 2021 20:17:16 &#43;0800</pubDate>
