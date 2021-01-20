@@ -2,12 +2,16 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>http://tribbiannisun.github.io/categories/</loc><lastmod>2021-01-17T00:09:37&#43;08:00</lastmod></url><url>
-            <loc>http://tribbiannisun.github.io/</loc><lastmod>2021-01-17T00:09:37&#43;08:00</lastmod></url><url>
+            <loc>http://tribbiannisun.github.io/categories/</loc><lastmod>2021-01-20T19:28:01&#43;08:00</lastmod></url><url>
+            <loc>http://tribbiannisun.github.io/categories/data-structure/</loc><lastmod>2021-01-20T19:28:01&#43;08:00</lastmod></url><url>
+            <loc>http://tribbiannisun.github.io/</loc><lastmod>2021-01-20T19:28:01&#43;08:00</lastmod></url><url>
+            <loc>http://tribbiannisun.github.io/posts/</loc><lastmod>2021-01-20T19:28:01&#43;08:00</lastmod></url><url>
+            <loc>http://tribbiannisun.github.io/tags/segment-tree/</loc><lastmod>2021-01-20T19:28:01&#43;08:00</lastmod></url><url>
+            <loc>http://tribbiannisun.github.io/segment_tree/</loc><lastmod>2021-01-20T19:28:01&#43;08:00</lastmod></url><url>
+            <loc>http://tribbiannisun.github.io/tags/</loc><lastmod>2021-01-20T19:28:01&#43;08:00</lastmod></url><url>
+            <loc>http://tribbiannisun.github.io/tags/wi21-week3/</loc><lastmod>2021-01-20T19:28:01&#43;08:00</lastmod></url><url>
             <loc>http://tribbiannisun.github.io/categories/leetcode-problem/</loc><lastmod>2021-01-17T00:09:37&#43;08:00</lastmod></url><url>
             <loc>http://tribbiannisun.github.io/leetcode_947/</loc><lastmod>2021-01-17T00:09:37&#43;08:00</lastmod></url><url>
-            <loc>http://tribbiannisun.github.io/posts/</loc><lastmod>2021-01-17T00:09:37&#43;08:00</lastmod></url><url>
-            <loc>http://tribbiannisun.github.io/tags/</loc><lastmod>2021-01-17T00:09:37&#43;08:00</lastmod></url><url>
             <loc>http://tribbiannisun.github.io/tags/union-find/</loc><lastmod>2021-01-17T00:09:37&#43;08:00</lastmod></url><url>
             <loc>http://tribbiannisun.github.io/tags/wi21-week2/</loc><lastmod>2021-01-17T00:09:37&#43;08:00</lastmod></url><url>
             <loc>http://tribbiannisun.github.io/leetcode_827/</loc><lastmod>2021-01-15T20:17:16&#43;08:00</lastmod></url><url>
@@ -17,7 +21,6 @@
             <loc>http://tribbiannisun.github.io/tags/movie-review/</loc><lastmod>2021-01-13T21:35:40&#43;08:00</lastmod></url><url>
             <loc>http://tribbiannisun.github.io/%E5%BD%B1%E8%AF%841/</loc><lastmod>2021-01-13T21:35:40&#43;08:00</lastmod></url><url>
             <loc>http://tribbiannisun.github.io/leetcode_547/</loc><lastmod>2021-01-13T13:58:27&#43;08:00</lastmod></url><url>
-            <loc>http://tribbiannisun.github.io/categories/data-structure/</loc><lastmod>2021-01-12T21:33:05&#43;08:00</lastmod></url><url>
             <loc>http://tribbiannisun.github.io/union_find/</loc><lastmod>2021-01-12T21:33:05&#43;08:00</lastmod></url><url>
             <loc>http://tribbiannisun.github.io/new_post/</loc><lastmod>2021-01-01T19:59:22&#43;00:00</lastmod></url><url>
             <loc>http://tribbiannisun.github.io/about/</loc><lastmod>2019-08-02T11:04:49&#43;08:00</lastmod></url></urlset>

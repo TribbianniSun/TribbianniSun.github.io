@@ -1,4 +1,4 @@
-# Union_find Review
+# Union Find Review
 
 
 This article reviews Union Find(Disjoint Set).

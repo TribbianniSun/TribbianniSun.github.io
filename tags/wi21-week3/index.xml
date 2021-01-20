@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>wi21-week3 - Tag - Haihao Sun</title>
+        <link>http://tribbiannisun.github.io/tags/wi21-week3/</link>
+        <description>wi21-week3 - Tag - Haihao Sun</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 20 Jan 2021 19:28:01 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/wi21-week3/" rel="self" type="application/rss+xml" /><item>
+    <title>Segment Tree review</title>
+    <link>http://tribbiannisun.github.io/segment_tree/</link>
+    <pubDate>Wed, 20 Jan 2021 19:28:01 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/segment_tree/</guid>
+    <description><![CDATA[<p>This article reviews Segment Tree.</p>]]></description>
+</item></channel>
+</rss>
