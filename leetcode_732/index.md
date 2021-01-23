@@ -5,7 +5,6 @@ Use **Segment Tree** to solve Leetcode 732 - My Calendar III.
 <!--more-->
 
 ## Problem Description [Leetcode 732](https://leetcode.com/problems/my-calendar-iii/)
-
 <p>
 
 A k-booking happens when k events have some non-empty intersection (i.e., there is some time that is common to all k events.)
