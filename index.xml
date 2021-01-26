@@ -3,9 +3,16 @@
         <title>Haihao Sun</title>
         <link>http://tribbiannisun.github.io/</link>
         <description>Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 23 Jan 2021 22:53:05 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 26 Jan 2021 23:05:49 &#43;0800</lastBuildDate>
             <atom:link href="http://tribbiannisun.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>OJ Practice 1</title>
+    <link>http://tribbiannisun.github.io/coding_practice_1/</link>
+    <pubDate>Tue, 26 Jan 2021 23:05:49 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/coding_practice_1/</guid>
+    <description><![CDATA[<p>OJ Practice 1, share my solution for these three OJ problems.</p>]]></description>
+</item><item>
     <title>Leetcode_315</title>
     <link>http://tribbiannisun.github.io/leetcode_315/</link>
     <pubDate>Sat, 23 Jan 2021 22:53:05 &#43;0800</pubDate>
@@ -70,12 +77,5 @@ Signal Left, Turn Right 1995</p>]]></description>
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/union_find/</guid>
     <description><![CDATA[<p>This article reviews Union Find(Disjoint Set).</p>]]></description>
-</item><item>
-    <title>Happy New Year!</title>
-    <link>http://tribbiannisun.github.io/new_post/</link>
-    <pubDate>Fri, 01 Jan 2021 19:59:22 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/new_post/</guid>
-    <description><![CDATA[]]></description>
 </item></channel>
 </rss>
