@@ -3,7 +3,15 @@
         <title>wi21-week4 - Tag - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/tags/wi21-week4/</link>
         <description>wi21-week4 - Tag - Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 27 Jan 2021 23:18:42 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/wi21-week4/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 28 Jan 2021 22:25:30 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/wi21-week4/" rel="self" type="application/rss+xml" /><item>
+    <title>OJ Practice 3</title>
+    <link>http://tribbiannisun.github.io/coding_practice_3/</link>
+    <pubDate>Thu, 28 Jan 2021 22:25:30 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/coding_practice_3/</guid>
+    <description><![CDATA[NCPC 2011 Problem B: Mega Inversion
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100  using namespace std; #define ll long long #define setval(a, val) memset(a, val, sizeof(a)) #define fastIO \ ios_base::sync_with_stdio(false); \ cin.]]></description>
+</item><item>
     <title>OJ Practice 2</title>
     <link>http://tribbiannisun.github.io/coding_practice_2/</link>
     <pubDate>Wed, 27 Jan 2021 23:18:42 &#43;0800</pubDate>

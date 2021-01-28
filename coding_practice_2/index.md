@@ -10,52 +10,8 @@ OJ Practice 2, share my solution for these three OJ problems.
 [Robots on a grid](https://www.e-olymp.com/en/problems/6020)
 
 ```cpp
-#include <cstdio>
-#include <algorithm>
-#include <cstring>
-#include <cassert>
-#include <sstream>
-#include <numeric>
-#include <climits>
-#include <cctype>
-#include <ctime>
-#include <cmath>
-#include <vector>
-#include <string>
-#include <queue>
-#include <list>
-#include <map>
-#include <set>
-#include <unordered_map>
-#include <unordered_set>
-#include <iostream>
-#include <fstream>
 using namespace std;
 #define ll long long
-#define pb push_back
-#define pf push_front
-#define mp make_pair
-#define F first
-#define S second
-#define mod 1000000007
-#define vl vector<ll>
-#define vi vector<int>
-#define pli pair<ll, int>
-#define pil pair<int, ll>
-#define vpil vector<pil>
-#define vpli vector<pli>
-#define ml map<ll, ll>
-#define mi map<int, int>
-#define m(a, b) map<a, b>
-#define YesNo(f)               \
-    if (f)                     \
-    {                          \
-        cout << "YES" << endl; \
-    }                          \
-    else                       \
-    {                          \
-        cout << "NO" << endl;  \
-    }
 #define setval(a, val) memset(a, val, sizeof(a))
 #define fastIO                        \
     ios_base::sync_with_stdio(false); \
@@ -154,52 +110,8 @@ int main()
 [SERGRID - Grid](https://www.spoj.com/problems/SERGRID/)
 
 ```cpp
-#include <cstdio>
-#include <algorithm>
-#include <cstring>
-#include <cassert>
-#include <sstream>
-#include <numeric>
-#include <climits>
-#include <cctype>
-#include <ctime>
-#include <cmath>
-#include <vector>
-#include <string>
-#include <queue>
-#include <list>
-#include <map>
-#include <set>
-#include <unordered_map>
-#include <unordered_set>
-#include <iostream>
-#include <fstream>
 using namespace std;
 #define ll long long
-#define pb push_back
-#define pf push_front
-#define mp make_pair
-#define F first
-#define S second
-#define mod 1000000007
-#define vl vector<ll>
-#define vi vector<int>
-#define pli pair<ll, int>
-#define pil pair<int, ll>
-#define vpil vector<pil>
-#define vpli vector<pli>
-#define ml map<ll, ll>
-#define mi map<int, int>
-#define m(a, b) map<a, b>
-#define YesNo(f)               \
-    if (f)                     \
-    {                          \
-        cout << "YES" << endl; \
-    }                          \
-    else                       \
-    {                          \
-        cout << "NO" << endl;  \
-    }
 #define setval(a, val) memset(a, val, sizeof(a))
 #define fastIO                        \
     ios_base::sync_with_stdio(false); \
