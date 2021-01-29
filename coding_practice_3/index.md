@@ -1,6 +1,8 @@
 # OJ Practice 3
 
 
+OJ Practice 3, share my solution for these three OJ problems.
+<!--more-->
 
 [NCPC 2011 Problem B: Mega Inversion](https://nordic.icpc.io/ncpc2011/ncpc2011problems.pdf)
 
