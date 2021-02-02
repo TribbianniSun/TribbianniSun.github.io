@@ -1,9 +1,9 @@
 # OJ Practice 4
 
 
-OJ Practice 4, share my solution for these three OJ problems.
+OJ Practice 4, share my solutions for these three OJ problems.
 <!--more-->
-[[NCPC 2011 Problem A: Car Trouble]](https://www.e-olymp.com/en/contests/3556/problems/28964)
+## [[NCPC 2011 Problem A: Car Trouble]](https://www.e-olymp.com/en/contests/3556/problems/28964)
 
 ```cpp
 #include <cstdio>
@@ -177,7 +177,7 @@ int main()
 
 
 
-[NCPC 2015​ Goblin Garden Guards](https://nanti.jisuanke.com/t/A1804)
+## [NCPC 2015​ Goblin Garden Guards](https://nanti.jisuanke.com/t/A1804)
 
 ```cpp
 #include <cstdio>

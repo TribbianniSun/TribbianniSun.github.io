@@ -7,7 +7,7 @@ OJ Practice 2, share my solution for these three OJ problems.
 <!--more-->
 
 
-[Robots on a grid](https://www.e-olymp.com/en/problems/6020)
+## [Robots on a grid](https://www.e-olymp.com/en/problems/6020)
 
 ```cpp
 using namespace std;
@@ -107,7 +107,7 @@ int main()
 ```
 
 
-[SERGRID - Grid](https://www.spoj.com/problems/SERGRID/)
+## [SERGRID - Grid](https://www.spoj.com/problems/SERGRID/)
 
 ```cpp
 using namespace std;

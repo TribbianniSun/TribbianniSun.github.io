@@ -4,7 +4,7 @@
 OJ Practice 1, share my solution for these three OJ problems.
 <!--more-->
 
-[NCPC 2013 Problem E: Timebomb](https://www.e-olymp.com/en/problems/6254)
+## [NCPC 2013 Problem E: Timebomb](https://www.e-olymp.com/en/problems/6254)
 
 ```cpp
 #include <cstdio>
@@ -136,7 +136,7 @@ int main()
 ```
 
 
-[NCPC 2015 Problem C: Cryptographer’s Conundrum](https://compprog.win.tue.nl:444/public/problems/186/text)
+## [NCPC 2015 Problem C: Cryptographer’s Conundrum](https://compprog.win.tue.nl:444/public/problems/186/text)
 
 
 ```cpp
@@ -234,7 +234,7 @@ int main()
 
 
 
-[NCPC 2011 Problem E: ls](http://neerc.secna.ru/BOBROVKA_2012/day01/01.pdf)
+## [NCPC 2011 Problem E: ls](http://neerc.secna.ru/BOBROVKA_2012/day01/01.pdf)
 
 ```cpp
 #include <cstdio>
