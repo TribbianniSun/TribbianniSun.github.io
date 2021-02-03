@@ -1,8 +1,8 @@
-# codeforce 1
+# codeforce 1475D
 
 
 
-codeforce Practice 1, share my solution for these this codeforce problem.
+codeforce 1475D, share my solution for these this codeforce problem.
 <!--more-->
 
 ## Problem Description [D. Cleaning the Phone](https://codeforces.com/problemset/problem/1475/D)
@@ -107,32 +107,21 @@ In the fifth test case, it is optimal to remove applications with numbers 1 and 
 ```cpp
 #include <cstdio>
 #include <algorithm>
-#define fastIO                        \
-    ios_base::sync_with_stdio(false); \
-    cin.tie(0);                       \
-    cout.tie(0)
-#define INF 1e12
+#include <climits>
+#include <cctype>
+#include <cmath>
+#include <vector>
+#include <string>
+#include <queue>
+#include <list>
+#include <map>
+#include <set>
+#include <unordered_map>
+#include <unordered_set>
+#include <iostream>
+#include <fstream>
 using namespace std;
-
-
-/*
-5
-5 7
-5 3 2 1 4
-2 1 1 2 1
-1 3
-2
-1
-5 10
-2 3 2 3 2
-1 2 1 2 1
-4 10
-5 1 3 4
-1 2 1 2
-4 5
-3 2 1 2
-2 1 2 1
-*/
+#define ll long long
 
 
 int main()
@@ -164,15 +153,15 @@ int main()
         }
         
         if(sum<needed) {
-            ret.pb(-1);
+            ret.push_back(-1);
             continue;
         }
         
         sort(_1.rbegin(), _1.rend());
         sort(_2.rbegin(), _2.rend());
-
+        
         vector<ll> _pre2;
-		_pre2.pb(0);
+		_pre2.push_back(0);
 
         for(int i = 0; i < _2.size(); i++){
             _pre2.push_back(_pre2[i] + _2[i]);

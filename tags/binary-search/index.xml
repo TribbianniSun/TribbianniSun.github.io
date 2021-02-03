@@ -3,12 +3,19 @@
         <title>binary search - Tag - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/tags/binary-search/</link>
         <description>binary search - Tag - Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 03 Feb 2021 10:56:37 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/binary-search/" rel="self" type="application/rss+xml" /><item>
-    <title>codeforce 1</title>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 03 Feb 2021 11:10:08 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/binary-search/" rel="self" type="application/rss+xml" /><item>
+    <title>cpp cheatsheet - upper_bound and lower_bound</title>
+    <link>http://tribbiannisun.github.io/cpp_handy_1/</link>
+    <pubDate>Wed, 03 Feb 2021 11:10:08 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/cpp_handy_1/</guid>
+    <description><![CDATA[<p>cpp cheatsheet 1.</p>]]></description>
+</item><item>
+    <title>codeforce 1475D</title>
     <link>http://tribbiannisun.github.io/codeforce_1/</link>
     <pubDate>Wed, 03 Feb 2021 10:56:37 &#43;0800</pubDate>
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/codeforce_1/</guid>
-    <description><![CDATA[<p>codeforce Practice 1, share my solution for these this codeforce problem.</p>]]></description>
+    <description><![CDATA[<p>codeforce 1475D, share my solution for these this codeforce problem.</p>]]></description>
 </item></channel>
 </rss>
