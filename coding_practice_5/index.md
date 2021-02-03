@@ -1,4 +1,4 @@
-# Coding_practice_5
+# OJ Practice 5
 
 
 OJ Practice 5, share my solutions for these three OJ problems during the UCSD ICPC Selection Contest.
