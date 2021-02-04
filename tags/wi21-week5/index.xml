@@ -3,7 +3,14 @@
         <title>wi21-week5 - Tag - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/tags/wi21-week5/</link>
         <description>wi21-week5 - Tag - Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 03 Feb 2021 11:10:08 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/wi21-week5/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 04 Feb 2021 20:03:28 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/wi21-week5/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode_638 Shopping Offers</title>
+    <link>http://tribbiannisun.github.io/leetcode_638/</link>
+    <pubDate>Thu, 04 Feb 2021 20:03:28 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_638/</guid>
+    <description><![CDATA[<p>Use <strong>Dynamic Programming</strong> to solve Leetcode 638 - Shopping Offers.</p>]]></description>
+</item><item>
     <title>cpp cheatsheet - upper_bound and lower_bound</title>
     <link>http://tribbiannisun.github.io/cpp_handy_1/</link>
     <pubDate>Wed, 03 Feb 2021 11:10:08 &#43;0800</pubDate>

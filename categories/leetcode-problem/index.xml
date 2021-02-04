@@ -3,7 +3,14 @@
         <title>Leetcode Problem - Category - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/categories/leetcode-problem/</link>
         <description>Leetcode Problem - Category - Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 23 Jan 2021 22:53:05 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/categories/leetcode-problem/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 04 Feb 2021 20:03:28 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/categories/leetcode-problem/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode_638 Shopping Offers</title>
+    <link>http://tribbiannisun.github.io/leetcode_638/</link>
+    <pubDate>Thu, 04 Feb 2021 20:03:28 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_638/</guid>
+    <description><![CDATA[<p>Use <strong>Dynamic Programming</strong> to solve Leetcode 638 - Shopping Offers.</p>]]></description>
+</item><item>
     <title>Leetcode_315</title>
     <link>http://tribbiannisun.github.io/leetcode_315/</link>
     <pubDate>Sat, 23 Jan 2021 22:53:05 &#43;0800</pubDate>
