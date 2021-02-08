@@ -3,7 +3,14 @@
         <title>All Posts - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/posts/</link>
         <description>All Posts | Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 04 Feb 2021 20:03:28 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 08 Feb 2021 22:51:33 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode 284 - Peeking Iterator</title>
+    <link>http://tribbiannisun.github.io/leetcode_284/</link>
+    <pubDate>Mon, 08 Feb 2021 22:51:33 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_284/</guid>
+    <description><![CDATA[<p>New <strong>Idea</strong> to solve Leetcode 284 - Peeking Iterator.</p>]]></description>
+</item><item>
     <title>Leetcode_638 Shopping Offers</title>
     <link>http://tribbiannisun.github.io/leetcode_638/</link>
     <pubDate>Thu, 04 Feb 2021 20:03:28 &#43;0800</pubDate>
@@ -66,12 +73,5 @@
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_315/</guid>
     <description><![CDATA[<p>Use <strong>Segment Tree</strong> to solve Leetcode 315 - Count of Smaller Numbers After Self.</p>]]></description>
-</item><item>
-    <title>Leetcode_732 My Calendar III</title>
-    <link>http://tribbiannisun.github.io/leetcode_732/</link>
-    <pubDate>Thu, 21 Jan 2021 21:57:30 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_732/</guid>
-    <description><![CDATA[<p>Use <strong>Segment Tree</strong> to solve Leetcode 732 - My Calendar III.</p>]]></description>
 </item></channel>
 </rss>
