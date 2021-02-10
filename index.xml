@@ -3,9 +3,16 @@
         <title>Haihao Sun</title>
         <link>http://tribbiannisun.github.io/</link>
         <description>Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 08 Feb 2021 22:51:33 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 10 Feb 2021 23:44:36 &#43;0800</lastBuildDate>
             <atom:link href="http://tribbiannisun.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Leetcode 1091 - Shortest Path in Binary Matrix</title>
+    <link>http://tribbiannisun.github.io/leetcode_1091/</link>
+    <pubDate>Wed, 10 Feb 2021 23:44:36 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1091/</guid>
+    <description><![CDATA[<p>New <strong>BFS</strong> to solve Leetcode 1091 - Shortest Path in Binary Matrix.</p>]]></description>
+</item><item>
     <title>Leetcode 284 - Peeking Iterator</title>
     <link>http://tribbiannisun.github.io/leetcode_284/</link>
     <pubDate>Mon, 08 Feb 2021 22:51:33 &#43;0800</pubDate>
@@ -68,12 +75,5 @@
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/coding_practice_1/</guid>
     <description><![CDATA[<p>OJ Practice 1, share my solution for these three OJ problems.</p>]]></description>
-</item><item>
-    <title>Leetcode_315</title>
-    <link>http://tribbiannisun.github.io/leetcode_315/</link>
-    <pubDate>Sat, 23 Jan 2021 22:53:05 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_315/</guid>
-    <description><![CDATA[<p>Use <strong>Segment Tree</strong> to solve Leetcode 315 - Count of Smaller Numbers After Self.</p>]]></description>
 </item></channel>
 </rss>
