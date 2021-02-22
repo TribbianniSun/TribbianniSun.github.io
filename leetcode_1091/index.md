@@ -54,8 +54,8 @@ public:
         seen.insert(0);
         q.push_back(0);
         while(q.size()){
-            int depth = q.size();
-            for(int i = 0; i < depth; ++i){
+            int width = q.size();
+            for(int i = 0; i < width; ++i){
                 int p = q.front();
                 q.pop_front();
                 int r = p / n, c = p % n;

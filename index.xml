@@ -3,9 +3,16 @@
         <title>Haihao Sun</title>
         <link>http://tribbiannisun.github.io/</link>
         <description>Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 10 Feb 2021 23:44:36 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 22 Feb 2021 22:40:18 &#43;0800</lastBuildDate>
             <atom:link href="http://tribbiannisun.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Leetcode 786 - K-th Smallest Prime Fraction</title>
+    <link>http://tribbiannisun.github.io/leetcode_786/</link>
+    <pubDate>Mon, 22 Feb 2021 22:40:18 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_786/</guid>
+    <description><![CDATA[<p>New <strong>BFS</strong> to solve Leetcode 786 - K-th Smallest Prime Fraction</p>]]></description>
+</item><item>
     <title>Leetcode 1091 - Shortest Path in Binary Matrix</title>
     <link>http://tribbiannisun.github.io/leetcode_1091/</link>
     <pubDate>Wed, 10 Feb 2021 23:44:36 &#43;0800</pubDate>
@@ -68,12 +75,5 @@
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/coding_practice_2/</guid>
     <description><![CDATA[<p>OJ Practice 2, share my solution for these three OJ problems.</p>]]></description>
-</item><item>
-    <title>OJ Practice 1</title>
-    <link>http://tribbiannisun.github.io/coding_practice_1/</link>
-    <pubDate>Tue, 26 Jan 2021 23:05:49 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/coding_practice_1/</guid>
-    <description><![CDATA[<p>OJ Practice 1, share my solution for these three OJ problems.</p>]]></description>
 </item></channel>
 </rss>

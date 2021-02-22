@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>wi21-week8 - Tag - Haihao Sun</title>
+        <link>http://tribbiannisun.github.io/tags/wi21-week8/</link>
+        <description>wi21-week8 - Tag - Haihao Sun</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 22 Feb 2021 22:40:18 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/wi21-week8/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode 786 - K-th Smallest Prime Fraction</title>
+    <link>http://tribbiannisun.github.io/leetcode_786/</link>
+    <pubDate>Mon, 22 Feb 2021 22:40:18 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_786/</guid>
+    <description><![CDATA[<p>New <strong>BFS</strong> to solve Leetcode 786 - K-th Smallest Prime Fraction</p>]]></description>
+</item></channel>
+</rss>
