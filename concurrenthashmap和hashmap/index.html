@@ -19,7 +19,7 @@
 <meta name="application-name" content="Haihao Sun">
 <meta name="apple-mobile-web-app-title" content="Haihao Sun"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://tribbiannisun.github.io/concurrenthashmap%E5%92%8Chashmap/" /><link rel="prev" href="http://tribbiannisun.github.io/eight_legged_essay/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://tribbiannisun.github.io/concurrenthashmap%E5%92%8Chashmap/" /><link rel="prev" href="http://tribbiannisun.github.io/eight_legged_essay/" /><link rel="next" href="http://tribbiannisun.github.io/volatile%E7%9A%84%E4%BD%BF%E7%94%A8%E5%8F%8A%E5%85%B6%E5%8E%9F%E7%90%86/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -28,7 +28,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "http:\/\/tribbiannisun.github.io\/concurrenthashmap%E5%92%8Chashmap\/"
-        },"genre": "posts","keywords": "wi21-week9, interview prep","wordCount":  147 ,
+        },"genre": "posts","keywords": "wi21-week9, interview prep","wordCount":  148 ,
         "url": "http:\/\/tribbiannisun.github.io\/concurrenthashmap%E5%92%8Chashmap\/","datePublished": "2021-03-04T09:34:08+08:00","dateModified": "2021-03-04T09:34:08+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "http:\/\/tribbiannisun.github.io\/images\/avatar.png"},"author": {
@@ -127,7 +127,7 @@
                     <h1 class="single-title animated flipInX">ConcurrentHashMap是如何保证线程安全的</h1><div class="post-meta">
                         <div class="post-meta-line"><span class="post-category">
                                 <a href="/categories/interview-cheatsheet/"><i class="far fa-folder fa-fw"></i>&nbsp;interview cheatsheet</a>
-                            </span>&nbsp;&nbsp;&nbsp;&nbsp;<i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time class="timeago" datetime="2021-03-04">2021-03-04</time>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;147 words
+                            </span>&nbsp;&nbsp;&nbsp;&nbsp;<i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time class="timeago" datetime="2021-03-04">2021-03-04</time>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;148 words
                             &nbsp;&nbsp;&nbsp;&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;One minute</div>
                     </div>
                 </div><div class="post"><div class="details toc" id="toc-static"  data-kept="">
@@ -162,7 +162,8 @@
     </li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content" style="padding-top: 20px"><h3 id="参考-concurrenthashmap是如何保证线程安全的httpswwwcnblogscomjing99p11330341html">参考 <a href="https://www.cnblogs.com/jing99/p/11330341.html" target="_blank" rel="noopener noreffer">ConcurrentHashMap是如何保证线程安全的</a></h3>
+            </div><div class="content" id="content" style="padding-top: 20px"><p><a href="https://www.cnblogs.com/jing99/p/11330341.html" target="_blank" rel="noopener noreffer">ConcurrentHashMap是如何保证线程安全的</a></p>
+<h3 id="参考-concurrenthashmap是如何保证线程安全的httpswwwcnblogscomjing99p11330341html">参考 <a href="https://www.cnblogs.com/jing99/p/11330341.html" target="_blank" rel="noopener noreffer">ConcurrentHashMap是如何保证线程安全的</a></h3>
 <h4 id="hashmap和hashtable的区别httpscrossoverjietop20180723java-seniorconcurrenthashmap"><a href="https://crossoverjie.top/2018/07/23/java-senior/ConcurrentHashMap/" target="_blank" rel="noopener noreffer">HashMap和HashTable的区别</a></h4>
 <ul>
 <li>HashTable 是非常高效率的数据结构，但HashMap和HashTable在线程的环境下使用并不合理</li>
@@ -257,11 +258,13 @@ ConcurrentHashMap中维护着一个Segment数组，每个Segment可以看做是�
 <li>不安全会导致哪些问题？</li>
 <li>如何解决？有没有线程安全的并发容器？</li>
 <li>ConcurrentHashMap 是如何实现的？ 1.7、1.8 实现有何不同？为什么这么做？</li>
-</ol>
-</div><div class="post-info-share">
+</ol></div><div class="post-info-share">
     <span><a class="share-icon share-twitter" href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://tribbiannisun.github.io/concurrenthashmap%E5%92%8Chashmap/" data-title="ConcurrentHashMap是如何保证线程安全的" data-hashtags="wi21-week9,interview prep"><i class="fab fa-twitter fa-fw"></i></a><a class="share-icon share-facebook" href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://tribbiannisun.github.io/concurrenthashmap%E5%92%8Chashmap/" data-hashtag="wi21-week9"><i class="fab fa-facebook-square fa-fw"></i></a><a class="share-icon share-line" href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://tribbiannisun.github.io/concurrenthashmap%E5%92%8Chashmap/" data-title="ConcurrentHashMap是如何保证线程安全的"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a class="share-icon share-weibo" href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://tribbiannisun.github.io/concurrenthashmap%E5%92%8Chashmap/" data-title="ConcurrentHashMap是如何保证线程安全的"><i class="fab fa-weibo fa-fw"></i></a></span>
 </div><div class="post-footer" id="post-footer"><div class="post-navigation"><div class="post-nav-box nav-box-prev">
             <a class="nav-box" href="/eight_legged_essay/"><span class="nav-icon"><svg aria-hidden="true" data-prefix="fas" data-icon="chevron-circle-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z"></path></svg></span><div style="text-align: right;padding-left: 10px"><div class="nav-text-h">Next article</div><span class="nav-text">Eight_legged_essay</span></div></a>
+        </div>
+        <div class="post-nav-box nav-box-next">
+            <a class="nav-box" href="/volatile%E7%9A%84%E4%BD%BF%E7%94%A8%E5%8F%8A%E5%85%B6%E5%8E%9F%E7%90%86/"><div style="padding-right: 10px"><div class="nav-text-h">Next article</div><span class="nav-text">Volatile的使用及其原理</span></div><span class="nav-icon"><svg aria-hidden="true" data-prefix="fas" data-icon="chevron-circle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"></path></svg></span></a>
         </div></div></div>
 </div>
 

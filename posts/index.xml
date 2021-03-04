@@ -3,17 +3,20 @@
         <title>All Posts - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/posts/</link>
         <description>All Posts | Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 04 Mar 2021 09:34:08 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 04 Mar 2021 10:42:53 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Volatile的使用及其原理</title>
+    <link>http://tribbiannisun.github.io/volatile%E7%9A%84%E4%BD%BF%E7%94%A8%E5%8F%8A%E5%85%B6%E5%8E%9F%E7%90%86/</link>
+    <pubDate>Thu, 04 Mar 2021 10:42:53 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/volatile%E7%9A%84%E4%BD%BF%E7%94%A8%E5%8F%8A%E5%85%B6%E5%8E%9F%E7%90%86/</guid>
+    <description><![CDATA[<p><a href="https://www.cnblogs.com/paddix/p/5428507.html" target="_blank" rel="noopener noreffer">Volatile的使用及其原理</a></p>]]></description>
+</item><item>
     <title>ConcurrentHashMap是如何保证线程安全的</title>
     <link>http://tribbiannisun.github.io/concurrenthashmap%E5%92%8Chashmap/</link>
     <pubDate>Thu, 04 Mar 2021 09:34:08 &#43;0800</pubDate>
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/concurrenthashmap%E5%92%8Chashmap/</guid>
-    <description><![CDATA[参考 ConcurrentHashMap是如何保证线程安全的 HashMap和HashTable的区别  HashTable 是非常高效率的数据结构，但HashMap和HashTable在线程的环境下使用并不合理 HashMap: HashMap是线程不安全的，在并发环境下，可能会形成环状链表（扩容时可能造成，具体原因自行百度google或查看源码分析），导致get操作时，cpu空转，所以，在并发环境中使用HashMap是非常危险的。 HashTable:HashTable和HashMap的实现原理几乎一样，差别无非是1.HashTable不允许key和value为null；2.HashTable是线程安全的。但是HashTable线程安全的策略实现代价却太大了，简单粗暴，get/put所有相关操作都是synchronized的，这相当于给整个哈希表加了一把大锁，多线程访问时候，只要有一个线程访问或操作该对象，那其他线程只能阻塞，相当于将所有的操作串行化，在竞争激烈的并发场景中性能就会非常差。   
-使用ConcurrentHashMap解决全段锁的问题  
- 和 HashMap 非常类似，唯一的区别就是其中的核心数据如 value ，以及链表都是 volatile 修饰的，保证了获取时的可见性。 原理上来说：ConcurrentHashMap 采用了分段锁技术，其中 Segment 继承于 ReentrantLock。不会像 HashTable 那样不管是 put 还是 get 操作都需要做同步处理，理论上 ConcurrentHashMap 支持 CurrencyLevel (Segment 数组数量)的线程并发。每当一个线程占用锁访问一个 Segment 时，不会影响到其他的 Segment。  1.7 如何实现呢？这就用到了ConcurrentHashMap中最关键的Segment。 ConcurrentHashMap中维护着一个Segment数组，每个Segment可以看做是一个HashMap。 而Segment本身继承了ReentrantLock，它本身就是一个锁。 在Segment中通过HashEntry数组来维护其内部的hash表。 每个HashEntry就代表了map中的一个K-V，用HashEntry可以组成一个链表结构，通过next字段引用到其下一个元素。
- 
-PUT的流程  将当前 Segment 中的 table 通过 key 的 hashcode 定位到 HashEntry。 遍历该 HashEntry，如果不为空则判断传入的 key 和当前遍历的 key 是否相等，相等则覆盖旧的 value。 不为空则需要新建一个 HashEntry 并加入到 Segment 中，同时会先判断是否需要扩容。 最后会解除在 1 中所获取当前 Segment 的锁。  GET的流程  只需要将 Key 通过 Hash 之后定位到具体的 Segment ，再通过一次 Hash 定位到具体的元素上。 由于 HashEntry 中的 value 属性是用 volatile 关键词修饰的，保证了内存可见性，所以每次获取时都是最新值。 ConcurrentHashMap 的 get 方法是非常高效的，因为整个过程都不需要加锁。  1.]]></description>
+    <description><![CDATA[<p><a href="https://www.cnblogs.com/jing99/p/11330341.html" target="_blank" rel="noopener noreffer">ConcurrentHashMap是如何保证线程安全的</a></p>]]></description>
 </item><item>
     <title>Eight_legged_essay</title>
     <link>http://tribbiannisun.github.io/eight_legged_essay/</link>
@@ -72,12 +75,5 @@ https://osjobs.net/topk/]]></description>
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/coding_practice_5/</guid>
     <description><![CDATA[<p>OJ Practice 5, share my solutions for these three OJ problems during the UCSD ICPC Selection Contest.</p>]]></description>
-</item><item>
-    <title>OJ Practice 4</title>
-    <link>http://tribbiannisun.github.io/coding_practice_4/</link>
-    <pubDate>Fri, 29 Jan 2021 21:32:30 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/coding_practice_4/</guid>
-    <description><![CDATA[<p>OJ Practice 4, share my solutions for these three OJ problems.</p>]]></description>
 </item></channel>
 </rss>

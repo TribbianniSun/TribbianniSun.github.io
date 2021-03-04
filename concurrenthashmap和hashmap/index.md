@@ -1,6 +1,8 @@
 # ConcurrentHashMap是如何保证线程安全的
 
 
+[ConcurrentHashMap是如何保证线程安全的](https://www.cnblogs.com/jing99/p/11330341.html) 
+<!--more-->
 
 ### 参考 [ConcurrentHashMap是如何保证线程安全的](https://www.cnblogs.com/jing99/p/11330341.html)
 
