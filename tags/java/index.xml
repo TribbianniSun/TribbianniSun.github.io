@@ -3,13 +3,46 @@
         <title>Java - Tag - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/tags/java/</link>
         <description>Java - Tag - Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 04 Mar 2021 21:17:39 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/java/" rel="self" type="application/rss+xml" /><item>
-    <title>Synchronized和lock的使用分析</title>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 04 Mar 2021 22:47:24 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/java/" rel="self" type="application/rss+xml" /><item>
+    <title>CAS的性质和应用摘抄</title>
+    <link>http://tribbiannisun.github.io/cas%E7%9A%84%E6%80%A7%E8%B4%A8%E5%92%8C%E5%BA%94%E7%94%A8/</link>
+    <pubDate>Thu, 04 Mar 2021 22:47:24 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/cas%E7%9A%84%E6%80%A7%E8%B4%A8%E5%92%8C%E5%BA%94%E7%94%A8/</guid>
+    <description><![CDATA[CAS是英文单词CompareAndSwap的缩写，中文意思是：比较并替换。CAS需要有3个操作数：内存地址V，旧的预期值A，即将要更新的目标值B。
+CAS指令执行时，当且仅当内存地址V的值与预期值A相等时，将内存地址V的值修改为B，否则就什么都不做。整个比较并替换的操作是一个原子操作。
+CAS的缺点： CAS虽然很高效的解决了原子操作问题，但是CAS仍然存在三大问题。
+ 循环时间长开销很大。 只能保证一个共享变量的原子操作。 ABA问题。  **循环时间长开销很大：**我们可以看到getAndAddInt方法执行时，如果CAS失败，会一直进行尝试。如果CAS长时间一直不成功，可能会给CPU带来很大的开销。
+**只能保证一个共享变量的原子操作：**当对一个共享变量执行操作时，我们可以使用循环CAS的方式来保证原子操作，但是对多个共享变量操作时，循环CAS就无法保证操作的原子性，这个时候就可以用锁来保证原子性。
+什么是ABA问题？ABA问题怎么解决？
+CAS 的使用流程通常如下：1）首先从地址 V 读取值 A；2）根据 A 计算目标值 B；3）通过 CAS 以原子的方式将地址 V 中的值从 A 修改为 B。
+但是在第1步中读取的值是A，并且在第3步修改成功了，我们就能说它的值在第1步和第3步之间没有被其他线程改变过了吗？
+如果在这段期间它的值曾经被改成了B，后来又被改回为A，那CAS操作就会误认为它从来没有被改变过。这个漏洞称为CAS操作的“ABA”问题。Java并发包为了解决这个问题，提供了一个带有标记的原子引用类“AtomicStampedReference”，它可以通过控制变量值的版本来保证CAS的正确性。因此，在使用CAS前要考虑清楚“ABA”问题是否会影响程序并发的正确性，如果需要解决ABA问题，改用传统的互斥同步可能会比原子类更高效。]]></description>
+</item><item>
+    <title>Java中锁的种类摘抄</title>
+    <link>http://tribbiannisun.github.io/java%E4%B8%AD%E9%94%81%E7%9A%84%E7%A7%8D%E7%B1%BB/</link>
+    <pubDate>Thu, 04 Mar 2021 22:40:43 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/java%E4%B8%AD%E9%94%81%E7%9A%84%E7%A7%8D%E7%B1%BB/</guid>
+    <description><![CDATA[<p><a href="https://blog.csdn.net/u012988901/article/details/100117719" target="_blank" rel="noopener noreffer">Java中锁的种类摘抄</a></p>]]></description>
+</item><item>
+    <title>Equals和==的区别</title>
+    <link>http://tribbiannisun.github.io/equals%E5%92%8C%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+    <pubDate>Thu, 04 Mar 2021 21:27:34 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/equals%E5%92%8C%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+    <description><![CDATA[Equals和==的区别
+常常会用equals和==判断两个对象是否相等，那么两者有什么不同呢？主要有以下几点区别
+ 首先区别的是 equals 是方法，但是 == 是操作符 对于基本类型的变量(int, short, long, float, double), 只能用==去比较，一般比较的就是他们的value 对于引用类型的变量来说，例如String类型，就是String继承了Object类， equals是Object类的通用方法，对于该类型对象的比较，默认情况下，也就是没有复写 Object 类的 equals 方法，使用 == 和 equals 比较是一样效果的，都是比较的是它们在内存中的存放地址。 但是对于某些类来说，为了满足自身业务需求，可能存在 equals 方法被复写的情况，这时使用 equals 方法比较需要看具体的情况，例如 String 类，使用 equals 方法会比较它们的值；|| 区别就看有没有重写这个equals method  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  String a = &#34;Hello World&#34;; String b = new String(&#34;Hello World&#34;); String c = b; //引用传递  System.]]></description>
+</item><item>
+    <title>Synchronized和lock的使用分析摘抄</title>
     <link>http://tribbiannisun.github.io/synchronized%E5%92%8Clock%E7%9A%84%E4%BD%BF%E7%94%A8%E5%88%86%E6%9E%90/</link>
     <pubDate>Thu, 04 Mar 2021 21:17:39 &#43;0800</pubDate>
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/synchronized%E5%92%8Clock%E7%9A%84%E4%BD%BF%E7%94%A8%E5%88%86%E6%9E%90/</guid>
-    <description><![CDATA[<p><a href="https://blog.csdn.net/qq_38704184/article/details/84189446" target="_blank" rel="noopener noreffer">Synchronized和lock的使用分析</a></p>]]></description>
+    <description><![CDATA[<!-- https://github.com/Snailclimb/JavaGuide/blob/master/docs/database/%E4%B8%80%E6%9D%A1sql%E8%AF%AD%E5%8F%A5%E5%9C%A8mysql%E4%B8%AD%E5%A6%82%E4%BD%95%E6%89%A7%E8%A1%8C%E7%9A%84.md -->
+<!-- https://www.notion.so/49857a7f13684cedb669584791e18357?v=a711b9d86f964fe398d3ba842284d99d 面试八股文 -->
+<p><a href="https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/multi-thread/2020%E6%9C%80%E6%96%B0Java%E5%B9%B6%E5%8F%91%E8%BF%9B%E9%98%B6%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93.md" target="_blank" rel="noopener noreffer">Synchronized和lock的使用分析摘抄</a></p>]]></description>
 </item><item>
     <title>String能否被继承</title>
     <link>http://tribbiannisun.github.io/string%E8%83%BD%E5%90%A6%E8%A2%AB%E7%BB%A7%E6%89%BF/</link>

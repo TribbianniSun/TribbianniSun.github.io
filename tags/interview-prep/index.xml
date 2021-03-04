@@ -3,13 +3,76 @@
         <title>interview prep - Tag - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/tags/interview-prep/</link>
         <description>interview prep - Tag - Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 04 Mar 2021 21:17:39 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/interview-prep/" rel="self" type="application/rss+xml" /><item>
-    <title>Synchronized和lock的使用分析</title>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 04 Mar 2021 22:50:24 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/interview-prep/" rel="self" type="application/rss+xml" /><item>
+    <title>ACID_SQL日常概念摘抄</title>
+    <link>http://tribbiannisun.github.io/acid_sql%E6%97%A5%E5%B8%B8%E6%A6%82%E5%BF%B5/</link>
+    <pubDate>Thu, 04 Mar 2021 22:50:24 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/acid_sql%E6%97%A5%E5%B8%B8%E6%A6%82%E5%BF%B5/</guid>
+    <description><![CDATA[事务的 ACID 事务具有四个特征：
+原子性（ Atomicity ）- via Undo/Redo log
+一致性（ Consistency ）
+隔离性（ Isolation ）
+持续性（ Durability ）
+Mysql的四种隔离级别 SQL标准定义了4类隔离级别，包括了一些具体规则，用来限定事务内外的哪些改变是可见的，哪些是不可见的。低级别的隔离级一般支持更高的并发处理，并拥有更低的系统开销。
+Read Uncommitted（读取未提交内容）
+在该隔离级别，所有事务都可以看到其他未提交事务的执行结果。本隔离级别很少用于实际应用，因为它的性能也不比其他级别好多少。读取未提交的数据，也被称之为脏读（Dirty Read）。
+Read Committed（读取提交内容）
+这是大多数数据库系统的默认隔离级别（但不是MySQL默认的）。它满足了隔离的简单定义：一个事务只能看见已经提交事务所做的改变。这种隔离级别 也支持所谓的不可重复读（Nonrepeatable Read），因为同一事务的其他实例在该实例处理其间可能会有新的commit，所以同一select可能返回不同结果。
+Repeatable Read（可重读）
+这是MySQL的默认事务隔离级别，它确保同一事务的多个实例在并发读取数据时，会看到同样的数据行。不过理论上，这会导致另一个棘手的问题：幻读 （Phantom Read）。简单的说，幻读指当用户读取某一范围的数据行时，另一个事务又在该范围内插入了新行，当用户再读取该范围的数据行时，会发现有新的“幻影” 行。InnoDB和Falcon存储引擎通过多版本并发控制（MVCC，Multiversion Concurrency Control）机制解决了该问题。
+Serializable（可串行化）
+这是最高的隔离级别，它通过强制事务排序，使之不可能相互冲突，从而解决幻读问题。简言之，它是在每个读的数据行上加上共享锁。在这个级别，可能导致大量的超时现象和锁竞争。
+这四种隔离级别采取不同的锁类型来实现，若读取的是同一个数据的话，就容易发生问题。例如：
+ 脏读(Drity Read)：某个事务已更新一份数据，另一个事务在此时读取了同一份数据，由于某些原因，前一个RollBack了操作，则后一个事务所读取的数据就会是不正确的。 不可重复读(Non-repeatable read):在一个事务的两次查询之中数据不一致，这可能是两次查询过程中间插入了一个事务更新的原有的数据。 幻读(Phantom Read):在一个事务的两次查询中数据笔数不一致，例如有一个事务查询了几列(Row)数据，而另一个事务却在此时插入了新的几列数据，先前的事务在接下来的查询中，就有几列数据是未查询出来的，如果此时插入和另外一个事务插入的数据，就会报错。  在MySQL中，实现了这四种隔离级别，分别有可能产生问题如下所示：
+ 
+MySQL中的锁 「面试官：」 哦？性能越来越差？为什么会性能越来越差？你能说一说原因吗？
+「我：」 这个得从Mysq的锁说起，在Mysql中的锁可以分为分**「享锁/读锁（Shared Locks）」**、**「排他锁/写锁（Exclusive Locks）」** 、**「间隙锁」**、**「行锁（Record Locks）」**、**「表锁」**。
+可重复读的实现——MultiVersionConcurrencyControl  
+如图中所示，假如三个事务更新了同一行数据，那么就会有对应的三个数据版本。
+实际上版本1、版本2并非实际物理存在的，而图中的U1和U2实际就是undo log，这v1和v2版本是根据当前v3和undo log计算出来的。
+SQL会在语句启动时加snapshot
+写数据时候的锁问题  假如两个事务执行写操作，又怎么保证并发呢？]]></description>
+</item><item>
+    <title>CAS的性质和应用摘抄</title>
+    <link>http://tribbiannisun.github.io/cas%E7%9A%84%E6%80%A7%E8%B4%A8%E5%92%8C%E5%BA%94%E7%94%A8/</link>
+    <pubDate>Thu, 04 Mar 2021 22:47:24 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/cas%E7%9A%84%E6%80%A7%E8%B4%A8%E5%92%8C%E5%BA%94%E7%94%A8/</guid>
+    <description><![CDATA[CAS是英文单词CompareAndSwap的缩写，中文意思是：比较并替换。CAS需要有3个操作数：内存地址V，旧的预期值A，即将要更新的目标值B。
+CAS指令执行时，当且仅当内存地址V的值与预期值A相等时，将内存地址V的值修改为B，否则就什么都不做。整个比较并替换的操作是一个原子操作。
+CAS的缺点： CAS虽然很高效的解决了原子操作问题，但是CAS仍然存在三大问题。
+ 循环时间长开销很大。 只能保证一个共享变量的原子操作。 ABA问题。  **循环时间长开销很大：**我们可以看到getAndAddInt方法执行时，如果CAS失败，会一直进行尝试。如果CAS长时间一直不成功，可能会给CPU带来很大的开销。
+**只能保证一个共享变量的原子操作：**当对一个共享变量执行操作时，我们可以使用循环CAS的方式来保证原子操作，但是对多个共享变量操作时，循环CAS就无法保证操作的原子性，这个时候就可以用锁来保证原子性。
+什么是ABA问题？ABA问题怎么解决？
+CAS 的使用流程通常如下：1）首先从地址 V 读取值 A；2）根据 A 计算目标值 B；3）通过 CAS 以原子的方式将地址 V 中的值从 A 修改为 B。
+但是在第1步中读取的值是A，并且在第3步修改成功了，我们就能说它的值在第1步和第3步之间没有被其他线程改变过了吗？
+如果在这段期间它的值曾经被改成了B，后来又被改回为A，那CAS操作就会误认为它从来没有被改变过。这个漏洞称为CAS操作的“ABA”问题。Java并发包为了解决这个问题，提供了一个带有标记的原子引用类“AtomicStampedReference”，它可以通过控制变量值的版本来保证CAS的正确性。因此，在使用CAS前要考虑清楚“ABA”问题是否会影响程序并发的正确性，如果需要解决ABA问题，改用传统的互斥同步可能会比原子类更高效。]]></description>
+</item><item>
+    <title>Java中锁的种类摘抄</title>
+    <link>http://tribbiannisun.github.io/java%E4%B8%AD%E9%94%81%E7%9A%84%E7%A7%8D%E7%B1%BB/</link>
+    <pubDate>Thu, 04 Mar 2021 22:40:43 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/java%E4%B8%AD%E9%94%81%E7%9A%84%E7%A7%8D%E7%B1%BB/</guid>
+    <description><![CDATA[<p><a href="https://blog.csdn.net/u012988901/article/details/100117719" target="_blank" rel="noopener noreffer">Java中锁的种类摘抄</a></p>]]></description>
+</item><item>
+    <title>Equals和==的区别</title>
+    <link>http://tribbiannisun.github.io/equals%E5%92%8C%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+    <pubDate>Thu, 04 Mar 2021 21:27:34 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/equals%E5%92%8C%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+    <description><![CDATA[Equals和==的区别
+常常会用equals和==判断两个对象是否相等，那么两者有什么不同呢？主要有以下几点区别
+ 首先区别的是 equals 是方法，但是 == 是操作符 对于基本类型的变量(int, short, long, float, double), 只能用==去比较，一般比较的就是他们的value 对于引用类型的变量来说，例如String类型，就是String继承了Object类， equals是Object类的通用方法，对于该类型对象的比较，默认情况下，也就是没有复写 Object 类的 equals 方法，使用 == 和 equals 比较是一样效果的，都是比较的是它们在内存中的存放地址。 但是对于某些类来说，为了满足自身业务需求，可能存在 equals 方法被复写的情况，这时使用 equals 方法比较需要看具体的情况，例如 String 类，使用 equals 方法会比较它们的值；|| 区别就看有没有重写这个equals method  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  String a = &#34;Hello World&#34;; String b = new String(&#34;Hello World&#34;); String c = b; //引用传递  System.]]></description>
+</item><item>
+    <title>Synchronized和lock的使用分析摘抄</title>
     <link>http://tribbiannisun.github.io/synchronized%E5%92%8Clock%E7%9A%84%E4%BD%BF%E7%94%A8%E5%88%86%E6%9E%90/</link>
     <pubDate>Thu, 04 Mar 2021 21:17:39 &#43;0800</pubDate>
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/synchronized%E5%92%8Clock%E7%9A%84%E4%BD%BF%E7%94%A8%E5%88%86%E6%9E%90/</guid>
-    <description><![CDATA[<p><a href="https://blog.csdn.net/qq_38704184/article/details/84189446" target="_blank" rel="noopener noreffer">Synchronized和lock的使用分析</a></p>]]></description>
+    <description><![CDATA[<!-- https://github.com/Snailclimb/JavaGuide/blob/master/docs/database/%E4%B8%80%E6%9D%A1sql%E8%AF%AD%E5%8F%A5%E5%9C%A8mysql%E4%B8%AD%E5%A6%82%E4%BD%95%E6%89%A7%E8%A1%8C%E7%9A%84.md -->
+<!-- https://www.notion.so/49857a7f13684cedb669584791e18357?v=a711b9d86f964fe398d3ba842284d99d 面试八股文 -->
+<p><a href="https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/multi-thread/2020%E6%9C%80%E6%96%B0Java%E5%B9%B6%E5%8F%91%E8%BF%9B%E9%98%B6%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93.md" target="_blank" rel="noopener noreffer">Synchronized和lock的使用分析摘抄</a></p>]]></description>
 </item><item>
     <title>String能否被继承</title>
     <link>http://tribbiannisun.github.io/string%E8%83%BD%E5%90%A6%E8%A2%AB%E7%BB%A7%E6%89%BF/</link>
@@ -45,14 +108,5 @@
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/concurrenthashmap%E5%92%8Chashmap/</guid>
     <description><![CDATA[<p><a href="https://www.cnblogs.com/jing99/p/11330341.html" target="_blank" rel="noopener noreffer">ConcurrentHashMap是如何保证线程安全的</a></p>]]></description>
-</item><item>
-    <title>Eight_legged_essay</title>
-    <link>http://tribbiannisun.github.io/eight_legged_essay/</link>
-    <pubDate>Wed, 03 Mar 2021 21:25:00 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/eight_legged_essay/</guid>
-    <description><![CDATA[文章链接总结 https://blog.csdn.net/huangqili1314/article/details/79448187
-https://github.com/Moosphan/Android-Daily-Interview
-https://osjobs.net/topk/]]></description>
 </item></channel>
 </rss>
