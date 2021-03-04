@@ -10,7 +10,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://tribbiannisun.github.io/" />
 <meta property="og:image" content="http://tribbiannisun.github.io/logo.png"/>
-<meta property="og:updated_time" content="2021-03-03T21:25:00+08:00" />
+<meta property="og:updated_time" content="2021-03-04T09:34:08+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="http://tribbiannisun.github.io/logo.png"/>
 
@@ -96,15 +96,26 @@
         data-sizes="auto"
         alt="/images/profile_resize.jpg"
         title="/images/profile_resize.jpg" /></div></a></div><h1 class="home-title">Haihao Sun</h1><div class="home-subtitle"><div id="id-1" class="typeit"></div></div><div class="links"><a href="https://github.com/TribbianniSun" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="https://www.instagram.com/stackoverflow_sun" title="Instagram" target="_blank" rel="noopener noreffer me"><i class="fab fa-instagram fa-fw"></i></a><a href="mailto:h3sun@ucsd.edu" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
-<article onclick="location.href='\/eight_legged_essay\/'" class="single summary summary-animation" itemscope itemtype="http://schema.org/Article" style="margin-bottom:0"><div class="article-text"><h2 class="summary-title" itemprop="name headline">
+<article onclick="location.href='\/concurrenthashmap%E5%92%8Chashmap\/'" class="single summary summary-animation" itemscope itemtype="http://schema.org/Article" style="margin-bottom:0"><div class="article-text"><h2 class="summary-title" itemprop="name headline">
+            ConcurrentHashMap是如何保证线程安全的
+        </h2><div class="post-meta summary-post-meta">&nbsp;&nbsp;&nbsp;<span class="post-publish"><i class="far fa-clock fa-fw"></i><time class="timeago" datetime="2021-03-04">2021-03-04</time></span>&nbsp;&nbsp;&nbsp;<span class="post-category">
+                <a href="/categories/interview-cheatsheet/"><i class="far fa-folder fa-fw"></i>interview cheatsheet</a>
+            </span></div><div class="content summary-content">参考 ConcurrentHashMap是如何保证线程安全的 HashMap和HashTable的区别  HashTable 是非常高效率的数据结构，但HashMap和HashTable在线程的环境下使用并不合理 HashMap: HashMap是线程不安全的，在并发环境下，可能会形成环状链表（扩容时可能造成，具体原因自行百度google或查看源码分析），导致get操作时，cpu空转，所以，在并发环境中使用HashMap是非常危险的。 HashTable:HashTable和HashMap的实现原理几乎一样，差别无非是1.HashTable不允许key和value为null；2.HashTable是线程安全的。但是HashTable线程安全的策略实现代价却太大了，简单粗暴，get/put所有相关操作都是synchronized的，这相当于给整个哈希表加了一把大锁，多线程访问时候，只要有一个线程访问或操作该对象，那其他线程只能阻塞，相当于将所有的操作串行化，在竞争激烈的并发场景中性能就会非常差。   
+使用ConcurrentHashMap解决全段锁的问题  
+ 和 HashMap 非常类似，唯一的区别就是其中的核心数据如 value ，以及链表都是 volatile 修饰的，保证了获取时的可见性。 原理上来说：ConcurrentHashMap 采用了分段锁技术，其中 Segment 继承于 ReentrantLock。不会像 HashTable 那样不管是 put 还是 get 操作都需要做同步处理，理论上 ConcurrentHashMap 支持 CurrencyLevel (Segment 数组数量)的线程并发。每当一个线程占用锁访问一个 Segment 时，不会影响到其他的 Segment。  1.7 如何实现呢？这就用到了ConcurrentHashMap中最关键的Segment。 ConcurrentHashMap中维护着一个Segment数组，每个Segment可以看做是一个HashMap。 而Segment本身继承了ReentrantLock，它本身就是一个锁。 在Segment中通过HashEntry数组来维护其内部的hash表。 每个HashEntry就代表了map中的一个K-V，用HashEntry可以组成一个链表结构，通过next字段引用到其下一个元素。
+ 
+PUT的流程  将当前 Segment 中的 table 通过 key 的 hashcode 定位到 HashEntry。 遍历该 HashEntry，如果不为空则判断传入的 key 和当前遍历的 key 是否相等，相等则覆盖旧的 value。 不为空则需要新建一个 HashEntry 并加入到 Segment 中，同时会先判断是否需要扩容。 最后会解除在 1 中所获取当前 Segment 的锁。  GET的流程  只需要将 Key 通过 Hash 之后定位到具体的 Segment ，再通过一次 Hash 定位到具体的元素上。 由于 HashEntry 中的 value 属性是用 volatile 关键词修饰的，保证了内存可见性，所以每次获取时都是最新值。 ConcurrentHashMap 的 get 方法是非常高效的，因为整个过程都不需要加锁。  1.</div></div>
+</article><div class="post-tags-summary-under-footer">
+    <div class="post-tags-summary-under-footer-display"><a class="post-tag-summary" href="/tags/wi21-week9/" style="">wi21-week9</a><a class="post-tag-summary" href="/tags/interview-prep/" style="">interview prep</a></div>
+</div><article onclick="location.href='\/eight_legged_essay\/'" class="single summary summary-animation" itemscope itemtype="http://schema.org/Article" style="margin-bottom:0"><div class="article-text"><h2 class="summary-title" itemprop="name headline">
             Eight_legged_essay
         </h2><div class="post-meta summary-post-meta">&nbsp;&nbsp;&nbsp;<span class="post-publish"><i class="far fa-clock fa-fw"></i><time class="timeago" datetime="2021-03-03">2021-03-03</time></span>&nbsp;&nbsp;&nbsp;<span class="post-category">
-                <a href="/categories/cpp-cheatsheet/"><i class="far fa-folder fa-fw"></i>cpp cheatsheet</a>
+                <a href="/categories/interview-cheatsheet/"><i class="far fa-folder fa-fw"></i>interview cheatsheet</a>
             </span></div><div class="content summary-content">文章链接总结 https://blog.csdn.net/huangqili1314/article/details/79448187
 https://github.com/Moosphan/Android-Daily-Interview
 https://osjobs.net/topk/</div></div>
 </article><div class="post-tags-summary-under-footer">
-    <div class="post-tags-summary-under-footer-display"><a class="post-tag-summary" href="/tags/wi21-week5/" style="">wi21-week5</a><a class="post-tag-summary" href="/tags/binary-search/" style="">binary search</a></div>
+    <div class="post-tags-summary-under-footer-display"><a class="post-tag-summary" href="/tags/wi21-week9/" style="">wi21-week9</a><a class="post-tag-summary" href="/tags/interview-prep/" style="">interview prep</a></div>
 </div><article onclick="location.href='\/leetcode_786\/'" class="single summary summary-animation" itemscope itemtype="http://schema.org/Article" style="margin-bottom:0"><div class="article-text"><h2 class="summary-title" itemprop="name headline">
             Leetcode 786 - K-th Smallest Prime Fraction
         </h2><div class="post-meta summary-post-meta">&nbsp;&nbsp;&nbsp;<span class="post-publish"><i class="far fa-clock fa-fw"></i><time class="timeago" datetime="2021-02-22">2021-02-22</time></span>&nbsp;&nbsp;&nbsp;<span class="post-category">
@@ -133,13 +144,6 @@ https://osjobs.net/topk/</div></div>
             </span></div><div class="content summary-content"><p>Use <strong>Dynamic Programming</strong> to solve Leetcode 638 - Shopping Offers.</p></div></div>
 </article><div class="post-tags-summary-under-footer">
     <div class="post-tags-summary-under-footer-display"><a class="post-tag-summary" href="/tags/recursion/" style="">recursion</a><a class="post-tag-summary" href="/tags/wi21-week5/" style="">wi21-week5</a></div>
-</div><article onclick="location.href='\/cpp_handy_1\/'" class="single summary summary-animation" itemscope itemtype="http://schema.org/Article" style="margin-bottom:0"><div class="article-text"><h2 class="summary-title" itemprop="name headline">
-            cpp cheatsheet - upper_bound and lower_bound
-        </h2><div class="post-meta summary-post-meta">&nbsp;&nbsp;&nbsp;<span class="post-publish"><i class="far fa-clock fa-fw"></i><time class="timeago" datetime="2021-02-03">2021-02-03</time></span>&nbsp;&nbsp;&nbsp;<span class="post-category">
-                <a href="/categories/cpp-cheatsheet/"><i class="far fa-folder fa-fw"></i>cpp cheatsheet</a>
-            </span></div><div class="content summary-content"><p>cpp cheatsheet 1.</p></div></div>
-</article><div class="post-tags-summary-under-footer">
-    <div class="post-tags-summary-under-footer-display"><a class="post-tag-summary" href="/tags/wi21-week5/" style="">wi21-week5</a><a class="post-tag-summary" href="/tags/binary-search/" style="">binary search</a></div>
 </div><ul class="pagination"><li class="page-item active">
                     <span class="page-link">
                         <a href="/">1</a>
