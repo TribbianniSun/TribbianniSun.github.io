@@ -1,8 +1,8 @@
 # ACID_SQL日常概念摘抄
 
 
-
-
+ACID - SQL 摘抄
+<!-- more -->
 
 ## **事务的 ACID**
 

@@ -3,13 +3,143 @@
         <title>interview cheatsheet - Category - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/categories/interview-cheatsheet/</link>
         <description>interview cheatsheet - Category - Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 04 Mar 2021 22:50:24 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/categories/interview-cheatsheet/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 05 Mar 2021 10:55:16 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/categories/interview-cheatsheet/" rel="self" type="application/rss+xml" /><item>
+    <title>TCP和UDP区别摘抄</title>
+    <link>http://tribbiannisun.github.io/tcp%E5%92%8Cudp%E5%8C%BA%E5%88%AB/</link>
+    <pubDate>Fri, 05 Mar 2021 10:55:16 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/tcp%E5%92%8Cudp%E5%8C%BA%E5%88%AB/</guid>
+    <description><![CDATA[TCP和UDP区别摘抄
+写在前面 首先咱们弄清楚，TCP协议和UDP协议与TCP/IP协议的联系，很多人犯糊涂了， 一直都是说TCP协议与UDP协议的区别，我觉得这是没有从本质上弄清楚网络通信！
+TCP/IP协议是一个协议簇。里面包括很多协议的，UDP只是其中的一个， 之所以命名为TCP/IP协议，因为TCP、IP协议是两个很重要的协议，就用他两命名了。
+TCP/IP协议集包括应用层,传输层，网络层，网络访问层。
+其中应用层包括:  超文本传输协议（HTTP）:万维网的基本协议； 文件传输（TFTP简单文件传输协议）； 远程登录（Telnet），提供远程访问其它主机功能, 它允许用户登录internet主机，并在这台主机上执行命令； 网络管理（SNMP简单网络管理协议），该协议提供了监控网络设备的方法， 以及配置管理,统计信息收集,性能管理及安全管理等； 域名系统（DNS），该系统用于在internet中将域名及其公共广播的网络节点转换成IP地址。  其次网络层包括:  Internet协议（IP）； Internet控制信息协议（ICMP）； 地址解析协议（ARP）； 反向地址解析协议（RARP）。  网络访问层 网络访问层又称作主机到网络层（host-to-network），网络访问层的功能包括IP地址与物理地址硬件的映射， 以及将IP封装成帧.基于不同硬件类型的网络接口，网络访问层定义了和物理介质的连接. 当然我这里说得不够完善，TCP/IP协议本来就是一门学问，每一个分支都是一个很复杂的流程， 但我相信每位学习软件开发的同学都有必要去仔细了解一番。
+下面着重讲解一下TCP协议和UDP协议的区别 TCP: TCP（Transmission Control Protocol，传输控制协议）是面向连接的协议，也就是说，在收发数据前，必须和对方建立可靠的连接。 一个TCP连接必须要经过三次“对话”才能建立起来，其中的过程非常复杂， 只简单的描述下这三次对话的简单过程：
+1）主机A向主机B发出连接请求数据包：“我想给你发数据，可以吗？”，这是第一次对话；
+2）主机B向主机A发送同意连接和要求同步 （同步就是两台主机一个在发送，一个在接收，协调工作）的数据包 ：“可以，你什么时候发？”，这是第二次对话；
+3）主机A再发出一个数据包确认主机B的要求同步：“我现在就发，你接着吧！”， 这是第三次对话。
+三次“对话”的目的是使数据包的发送和接收同步， 经过三次“对话”之后，主机A才向主机B正式发送数据。
+TCP三次握手过程   第一次握手：主机A通过向主机B 发送一个含有同步序列号的标志位的数据段给主机B，向主机B 请求建立连接，通过这个数据段， 主机A告诉主机B 两件事：我想要和你通信；你可以用哪个序列号作为起始数据段来回应我。
+  第二次握手：主机B 收到主机A的请求后，用一个带有确认应答（ACK）和同步序列号（SYN）标志位的数据段响应主机A，也告诉主机A两件事：我已经收到你的请求了，你可以传输数据了；你要用那个序列号作为起始数据段来回应我
+  第三次握手：主机A收到这个数据段后，再发送一个确认应答，确认已收到主机B 的数据段：&ldquo;我已收到回复，我现在要开始传输实际数据了，这样3次握手就完成了，主机A和主机B 就可以传输数据了。
+  三次握手的特点 没有应用层的数据 ,SYN这个标志位只有在TCP建立连接时才会被置1 ,握手完成后SYN标志位被置0。
+TCP建立连接要进行3次握手，而断开连接要进行4次 第一次： 当主机A完成数据传输后,将控制位FIN置1，提出停止TCP连接的请求 ；]]></description>
+</item><item>
+    <title>HTTP和HTTPS区别摘抄</title>
+    <link>http://tribbiannisun.github.io/http%E5%92%8Chttps%E5%8C%BA%E5%88%AB/</link>
+    <pubDate>Fri, 05 Mar 2021 10:54:02 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/http%E5%92%8Chttps%E5%8C%BA%E5%88%AB/</guid>
+    <description><![CDATA[HTTP和HTTPS区别摘抄
+http是HTTP协议运行在TCP之上。所有传输的内容都是明文，客户端和服务器端都无法验证对方的身份。
+https是HTTP运行在SSL/TLS之上，SSL/TLS运行在TCP之上。所有传输的内容都经过加密，加密采用对称加密，但对称加密的密钥用服务器方的证书进行了非对称加密。此外客户端可以验证服务器端的身份，如果配置了客户端验证，服务器方也可以验证客户端的身份。
+https加密过程  客户端请求服务器获取 证书公钥 客户端(SSL/TLS)解析证书（无效会弹出警告） 生成随机值 用 公钥加密 随机值生成密钥 客户端将 秘钥 发送给服务器 服务端用 私钥 解密 秘钥 得到随机值 将信息和随机值混合在一起 进行对称加密 将加密的内容发送给客户端  ]]></description>
+</item><item>
+    <title>PRC和REST摘抄</title>
+    <link>http://tribbiannisun.github.io/prc%E5%92%8Crest/</link>
+    <pubDate>Fri, 05 Mar 2021 10:39:23 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/prc%E5%92%8Crest/</guid>
+    <description><![CDATA[RPC 和 REST 的优缺点、区别、如何选择
+接口调用通常包含两个部分，序列化和通信协议：
+ 常见的序列化协议包括json、xml、hession、protobuf、thrift、text、bytes等； 通信协议比较流行的是http、soap、websockect。  首先解释下两种接口调用：
+ Rest：严格的说接口很规范，操作对象即为资源，对资源的四种操作（post、get、put、delete），并且参数都放在URL上。不严格的说Http+json、Http+xml，常见的http api都可以称为Rest接口。 RPC：常说的远程方法调用，就是像调用本地方法一样调用远程方法，通信协议大多采用二进制方式。RPC通常基于TCP实现，常用框架例如dubbo，netty、mina、thrift。  http vs 高性能二进制协议
+http相对更规范，更标准，更通用，无论哪种语言都支持http协议。如果是对外开放API，外部的编程语言多种多样，无法拒绝对每种语言的支持。相应的，如果采用http，无疑在实现SDK之前，支持了所有语言，所以现在开源中间件，基本最先支持的几个协议都包含RESTful。 RPC协议性能要高的多，例如Protobuf、Thrift、Kyro等，（如果算上序列化）吞吐量大概能达到http的二倍。响应时间也更为出色。千万不要小看这点性能损耗，公认微服务做的比较好的，例如，netflix、阿里，曾经都传出过为了提升性能而合并服务。如果是交付型的项目，性能更为重要，因为你卖给客户往往靠的就是性能上微弱的优势。
+无论是Google、Amazon、netflix（据说很可能转向grpc），还是阿里，实际上内部都是采用性能更高的RPC方式。而对外开放的才是RESTful。
+Rest 调用及测试都很方便，RPC就显得有点麻烦，但是RPC的效率是毋庸置疑的。所以建议在多系统之间采用RPC，对外提供服务，Rest是很适合的。 duboo在生产者和消费者两个微服务之间的通信采用的就是RPC，无疑在服务之间的调用RPC更变现的优秀。
+RPC的好处 RPC 的主要功能目标是让构建分布式计算（应用）更容易，在提供强大的远程调用能力时不损失本地调用的语义简洁性。 为实现该目标，RPC 框架需提供一种透明调用机制让使用者不必显式的区分本地调用和远程调用。 服务化的一个好处就是，不限定服务的提供方使用什么技术选型，能够实现大公司跨团队的技术解耦。 如果没有统一的服务框架&mdash;RPC框架，各个团队的服务提供方就需要各自实现一套序列化、反序列化、网络框架、连接池、收发线程、超时处理、状态机等“业务之外”的重复技术劳动，造成整体的低效。所以，统一RPC框架把上述“业务之外”的技术劳动统一处理，是服务化首要解决的问题
+几种协议  Socket使用时可以指定协议TCP、UDP等； RIM使用Jrmp协议，Jrmp又是基于TCP/IP； RPC底层使用Socket接口，定义了一套远程调用方法； HTTP是建立在TCP上，不是使用Socket接口，需要连接方主动发数据给服务器，服务器无法主动发数据给客户端。 Web Service提供的服务是基于web容器的，底层使用http协议，类似一个远程的服务提供者，比如天气预报服务，对各地客户端提供天气预报，是一种请求应答的机制，是跨系统跨平台的。就是通过一个servlet，提供服务出去。 hessian是一套用于建立web service的简单的二进制协议，用于替代基于XML的web service，是建立在rpc上的，hessian有一套自己的序列化格式将数据序列化成流，然后通过http协议发送给服务器。  ]]></description>
+</item><item>
+    <title>三次握手_四次挥手摘抄</title>
+    <link>http://tribbiannisun.github.io/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B_%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/</link>
+    <pubDate>Fri, 05 Mar 2021 09:51:54 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B_%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/</guid>
+    <description><![CDATA[三次握手_四次挥手摘抄
+什么是三次握手，四次挥手 TCP是一种面向连接的单播协议，在发送数据前，通信双方必须在彼此间建立一条连接。所谓的“连接”，其实是客户端和服务器的内存里保存的一份关于对方的信息，如ip地址、端口号等。
+TCP可以看成是一种字节流，它会处理IP层或以下的层的丢包、重复以及错误问题。在连接的建立过程中，双方需要交换一些连接的参数。这些参数可以放在TCP头部。
+TCP提供了一种可靠、面向连接、字节流、传输层的服务，采用三次握手建立一个连接。采用4次挥手来关闭一个连接。
+TCP服务模型 在了解了建立连接、关闭连接的“三次握手和四次挥手”后，我们再来看下TCP相关的东西。
+一个TCP连接由一个4元组构成，分别是两个IP地址和两个端口号。一个TCP连接通常分为三个阶段：启动、数据传输、退出（关闭）。
+当TCP接收到另一端的数据时，它会发送一个确认，但这个确认不会立即发送，一般会延迟一会儿。ACK是累积的，一个确认字节号N的ACK表示所有直到N的字节（不包括N）已经成功被接收了。这样的好处是如果一个ACK丢失，很可能后续的ACK就足以确认前面的报文段了。
+一个完整的TCP连接是双向和对称的，数据可以在两个方向上平等地流动。给上层应用程序提供一种双工服务。一旦建立了一个连接，这个连接的一个方向上的每个TCP报文段都包含了相反方向上的报文段的一个ACK。
+序列号的作用是使得一个TCP接收端可丢弃重复的报文段，记录以杂乱次序到达的报文段。因为TCP使用IP来传输报文段，而IP不提供重复消除或者保证次序正确的功能。另一方面，TCP是一个字节流协议，绝不会以杂乱的次序给上层程序发送数据。因此TCP接收端会被迫先保持大序列号的数据不交给应用程序，直到缺失的小序列号的报文段被填满。
+三次握手 换个易于理解的视角来看为什么要3次握手。
+客户端和服务端通信前要进行连接，“3次握手”的作用就是双方都能明确自己和对方的收、发能力是正常的。
+  第一次握手：客户端发送网络包，服务端收到了。这样服务端就能得出结论：客户端的发送能力、服务端的接收能力是正常的。
+  第二次握手：服务端发包，客户端收到了。这样客户端就能得出结论：服务端的接收、发送能力，客户端的接收、发送能力是正常的。 从客户端的视角来看，我接到了服务端发送过来的响应数据包，说明服务端接收到了我在第一次握手时发送的网络包，并且成功发送了响应数据包，这就说明，服务端的接收、发送能力正常。而另一方面，我收到了服务端的响应数据包，说明我第一次发送的网络包成功到达服务端，这样，我自己的发送和接收能力也是正常的。
+  第三次握手：客户端发包，服务端收到了。这样服务端就能得出结论：客户端的接收、发送能力，服务端的发送、接收能力是正常的。 第一、二次握手后，服务端并不知道客户端的接收能力以及自己的发送能力是否正常。而在第三次握手时，服务端收到了客户端对第二次握手作的回应。从服务端的角度，我在第二次握手时的响应数据发送出去了，客户端接收到了。所以，我的发送能力是正常的。而客户端的接收能力也是正常的。
+  经历了上面的三次握手过程，客户端和服务端都确认了自己的接收、发送能力是正常的。之后就可以正常通信了。
+每次都是接收到数据包的一方可以得到一些结论，发送的一方其实没有任何头绪。我虽然有发包的动作，但是我怎么知道我有没有发出去，而对方有没有接收到呢？
+而从上面的过程可以看到，最少是需要三次握手过程的。两次达不到让双方都得出自己、对方的接收、发送能力都正常的结论。其实每次收到网络包的一方至少是可以得到：对方的发送、我方的接收是正常的。而每一步都是有关联的，下一次的“响应”是由于第一次的“请求”触发，因此每次握手其实是可以得到额外的结论的。比如第三次握手时，服务端收到数据包，表明看服务端只能得到客户端的发送能力、服务端的接收能力是正常的，但是结合第二次，说明服务端在第二次发送的响应包，客户端接收到了，并且作出了响应，从而得到额外的结论：客户端的接收、服务端的发送是正常的。
+ 
+四次挥手 TCP连接是双向传输的对等的模式，就是说双方都可以同时向对方发送或接收数据。当有一方要关闭连接时，会发送指令告知对方，我要关闭连接了。这时对方会回一个ACK，此时一个方向的连接关闭。但是另一个方向仍然可以继续传输数据，等到发送完了所有的数据后，会发送一个FIN段来关闭此方向上的连接。接收方发送ACK确认关闭连接。注意，接收到FIN报文的一方只能回复一个ACK, 它是无法马上返回对方一个FIN报文段的，因为结束数据传输的“指令”是上层应用层给出的，我只是一个“搬运工”，我无法了解“上层的意志”。
+&ldquo;三次握手，四次挥手”怎么完成？ 其实3次握手的目的并不只是让通信双方都了解到一个连接正在建立，还在于利用数据包的选项来传输特殊的信息，交换初始序列号ISN。
+3次握手是指发送了3个报文段，4次挥手是指发送了4个报文段。注意，SYN和FIN段都是会利用重传进行可靠传输的。
+三次握手如何实现  客户端发送一个SYN段，并指明客户端的初始序列号，即ISN(c). 服务端发送自己的SYN段作为应答，同样指明自己的ISN(s)。为了确认客户端的SYN，将ISN(c)+1作为ACK数值。这样，每发送一个SYN，序列号就会加1. 如果有丢失的情况，则会重传。 为了确认服务器端的SYN，客户端将ISN(s)+1作为返回的ACK数值。  四次挥手如何实现  客户端发送一个FIN段，并包含一个希望接收者看到的自己当前的序列号K. 同时还包含一个ACK表示确认对方最近一次发过来的数据。 服务端将K值加1作为ACK序号值，表明收到了上一个包。这时上层的应用程序会被告知另一端发起了关闭操作，通常这将引起应用程序发起自己的关闭操作。 服务端发起自己的FIN段，ACK=K+1, Seq=L -客户端确认。ACK=L+1  为什么建立连接是三次握手，而关闭连接却是四次挥手呢？ 这是因为服务端在LISTEN状态下，收到建立连接请求的SYN报文后，把ACK和SYN放在一个报文里发送给客户端。而关闭连接时，当收到对方的FIN报文时，仅仅表示对方不再发送数据了但是还能接收数据，己方是否现在关闭发送数据通道，需要上层应用来决定，因此，己方ACK和FIN一般都会分开发送。]]></description>
+</item><item>
+    <title>调度进程的算法摘抄</title>
+    <link>http://tribbiannisun.github.io/%E8%B0%83%E5%BA%A6%E8%BF%9B%E7%A8%8B%E7%9A%84%E7%AE%97%E6%B3%95/</link>
+    <pubDate>Fri, 05 Mar 2021 09:46:36 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/%E8%B0%83%E5%BA%A6%E8%BF%9B%E7%A8%8B%E7%9A%84%E7%AE%97%E6%B3%95/</guid>
+    <description><![CDATA[调度进程的算法摘抄
+First come First served 先来先服务(FCFS)调度算法是一种最简单的调度算法，该算法既可用于作业调度，也可用于进程调度。当在作业调度中采用该算法时，每次调度都是从后备作业队列中选择一个或多个最先进入该队列的作业，将它们调入内存，为它们分配资源、创建进程，然后放入就绪队列。在进程调度中采用FCFS算法时，则每次调度是从就绪队列中选择一个最先进入该队列的进程，为之分配处理机，使之投入运行。该进程一直运行到完成或发生某事件而阻塞后才放弃处理机。算法总是把处理机分配给最先进入就绪队列的进程，一个进程一旦分得处理机，便一直执行下去，直到该进程完成或阻塞时，才释放处理机。
+ 缺点：比较有利于长作业，而不利于短作业。 有利于CPU繁忙的作业，而不利于I/O繁忙的作业。  Shortest First 最短优先调度算法是指对短作业或短进程优先调度的算法。它们可以分别用于作业调度和进程调度。短作业优先(SJF)的调度算法是从后备队列中选择一个或若干个估计运行时间最短的作业，将它们调入内存运行。而短进程优先(SPF)调度算法则是从就绪队列中选出一个估计运行时间最短的进程，将处理机分配给它，使它立即执行并一直执行到完成，或发生某事件而被阻塞放弃处理机时再重新调度。
+ 缺点：长作业的运行得不到保证。  轮转法(RoundRobin) 将系统中所有的就绪进程按照FCFS原则，排成一个队列。每次调度时将CPU分派给队首进程，让其执行一个时间片。时间片的长度从几个ms到几百ms。在一个时间片结束时，发生时钟中断。调度程序据此暂停当前进程的执行，将其送到就绪队列的末尾，并通过上下文切换执行当前的队首进程。 进程可以未使用完一个时间片，就出让CPU(如阻塞)。
+多级反馈队列算法 (Multilevel Feedback Queue Scheduling) 设置多个就绪队列，分别赋予不同的优先级，如逐级降低，队列1的优先级最高。每个队列执行时间片的长度也不同，规定优先级越低则时间片越长，如逐级加倍。2 新进程进入内存后，先投入队列1的末尾，按FCFS算法调度;若按队列1一个时间片未能执行完，则降低投入到队列2的末尾，同样按FCFS算法调度;如此下去，降低到最后的队列，则按&quot;时间片轮转&quot;算法调度直到完成。仅当较高优先级的队列为空，才调度较低优先级的队列中的进程执行。如果进程执行时有新进程进入较高优先级的队列，则抢先执行新进程，并把被抢先的进程投入原队列的末尾。
+进程调度虽然是在系统内部的低级调度，但进程调度的优劣直接影响作业调度的性能。那么，怎样评价进程调度的优劣呢？反映作业调度优劣的周转时间和平均周转时间只在某种程度上反映了进程调度的性能，例如，其执行时间部分中实际上包含有进程等待(包括就绪状态时的等待)时间，而进程等待时间的多少是要依靠进程调度策略和等待事件何时发生等来决定的。因此，进程调度性能的商量是操作系统设计的一个重要指标。我们说进程调度性能的衡量方法可分为定形和定量两种。在定形衡量方面，首先是调度的可靠住。包括一次进程调度是否可能引起数据结构的破坏等。这要求我们对调度时机的选择和保存CPU现场十分谨慎。另外，简洁性也是衡量进程调度的一个重要指标，由于调度程序的执行涉及到多个进程和必须进行上下文切换，如果调度程序过于繁琐和复杂，将会耗去较大的系统开销。这在用户进程调用系统调用较多的情况下，将会造成响应时间大幅度增加。进程调度的定量评价包括CPU的利用率评价、进程在就绪队列中的等待时间与执行时间之比等。实际上由于进程进入就绪队列的随机模型很难确定，而且进程上下文切换等也将影响进程的执行效率，LL而对进程调度进行解析是很困难的。一般情况下，大多利用模拟或测试系统响应时间的方法来评价进程调度的性能。]]></description>
+</item><item>
+    <title>进程间有哪些通信方式摘抄</title>
+    <link>http://tribbiannisun.github.io/%E8%BF%9B%E7%A8%8B%E9%97%B4%E6%9C%89%E5%93%AA%E4%BA%9B%E9%80%9A%E4%BF%A1%E6%96%B9%E5%BC%8F/</link>
+    <pubDate>Fri, 05 Mar 2021 09:38:42 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/%E8%BF%9B%E7%A8%8B%E9%97%B4%E6%9C%89%E5%93%AA%E4%BA%9B%E9%80%9A%E4%BF%A1%E6%96%B9%E5%BC%8F/</guid>
+    <description><![CDATA[进程间有哪些通信方式摘抄
+匿名管道通信 匿名管道( pipe )：管道是一种半双工的通信方式，数据只能单向流动，而且只能在具有亲缘关系的进程间使用。进程的亲缘关系通常是指父子进程关系。
+通过匿名管道实现进程间通信的步骤如下：
+ 父进程创建管道，得到两个⽂件描述符指向管道的两端 父进程fork出子进程，⼦进程也有两个⽂件描述符指向同⼀管道。 父进程关闭fd[0],子进程关闭fd[1]，即⽗进程关闭管道读端,⼦进程关闭管道写（因为管道只支持单向通信）。⽗进程可以往管道⾥写,⼦进程可以从管道⾥读,管道是⽤环形队列实现的,数据从写端流⼊从读端流出,这样就实现了进程间通信。  高级管道通信 高级管道(popen)：将另一个程序当做一个新的进程在当前程序进程中启动，则它算是当前程序的子进程，这种方式我们成为高级管道方式。
+有名管道通信 有名管道 (named pipe) ： 有名管道也是半双工的通信方式，但是它允许无亲缘关系进程间的通信。
+消息队列通信 消息队列(message queue) ： 消息队列是由消息的链表，存放在内核中并由消息队列标识符标识。消息队列克服了信号传递信息少、管道只能承载无格式字节流以及缓冲区大小受限等缺点。
+信号量通信 信号量( semophore ) ： 信号量是一个计数器，可以用来控制多个进程对共享资源的访问。它常作为一种锁机制，防止某进程正在访问共享资源时，其他进程也访问该资源。因此，主要作为进程间以及同一进程内不同线程之间的同步手段。
+信号 信号 ( sinal ) ： 信号是一种比较复杂的通信方式，用于通知接收进程某个事件已经发生。
+共享内存通信 共享内存( shared memory ) ：共享内存就是映射一段能被其他进程所访问的内存，这段共享内存由一个进程创建，但多个进程都可以访问。共享内存是最快的 IPC 方式，它是针对其他进程间通信方式运行效率低而专门设计的。它往往与其他通信机制，如信号量，配合使用，来实现进程间的同步和通信。
+套接字( socket ) ： 套接口也是一种进程间通信机制，与其他通信机制不同的是，它可用于不同机器间的进程通信。]]></description>
+</item><item>
+    <title>进程和线程之间的区别摘抄</title>
+    <link>http://tribbiannisun.github.io/%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B%E4%B9%8B%E9%97%B4%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+    <pubDate>Fri, 05 Mar 2021 09:24:29 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B%E4%B9%8B%E9%97%B4%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+    <description><![CDATA[线程和进程的区别摘抄
+1. 线程与进程的区别 1.1 概述 进程是具有一定独立功能的程序关于某个数据集合上的一次运行活动,进程是系统进行资源分配和调度的一个独立单位.
+线程是进程的一个实体,是CPU调度和分派的基本单位,它是比进程更小的能独立运行的基本单位.线程自己基本上不拥有系统资源,只拥有一点在运行中必不可少的资源(如程序计数器,一组寄存器和栈),但是它可与同属一个进程的其他的线程共享进程所拥有的全部资源.
+一个线程可以创建和撤销另一个线程;同一个进程中的多个线程之间可以并发执行.
+相对进程而言，线程是一个更加接近于执行体的概念，它可以与同进程中的其他线程共享数据，但拥有自己的栈空间，拥有独立的执行序列。
+在串行程序基础上引入线程和进程是为了提高程序的并发度，从而提高程序运行效率和响应时间。
+1.2 区别 进程和线程的主要差别在于它们是不同的操作系统资源管理方式。进程有独立的地址空间，一个进程崩溃后，在保护模式下不会对其它进程产生影响，而线程只是一个进程中的不同执行路径。线程有自己的堆栈和局部变量，但线程之间没有单独的地址空间，一个线程死掉就等于整个进程死掉，所以多进程的程序要比多线程的程序健壮，但在进程切换时，耗费资源较大，效率要差一些。但对于一些要求同时进行并且又要共享某些变量的并发操作，只能用线程，不能用进程。
+ 一个程序至少有一个进程，一个进程至少有一个线程 线程的划分尺度小于进程，使得多线程的程序并发跟高 另外线程在执行过程中有独立的内存单元，而多个线程共享内存，极大的提高了程序的运行效率 线程在执行过程中与进程还是有区别的。每个独立的线程有一个程序运行的入口、顺序执行序列和程序的出口。但是线程不能够独立执行，必须依存在应用程序中，由应用程序提供多个线程执行控制。  从逻辑角度来看，多线程的意义在于一个应用程序中，有多个执行部分可以同时执行。但操作系统并没有将多个线程看做多个独立的应用，来实现进程的调度和管理以及资源分配。这就是进程和线程的重要区别。    1.3 优缺点: 线程和进程在使用上各有优缺点：线程执行开销小，但不利于资源的管理和保护；而进程正相反。同时，线程适合于在SMP机器上运行，而进程则可以跨机器迁移。
+2.多进程，多线程 2.1 概述: 进程就是一个程序运行的时候被CPU抽象出来的，一个程序运行后被抽象为一个进程，但是线程是从一个进程里面分割出来的，由于CPU处理进程的时候是采用时间片轮转的方式，所以要把一个大个进程给分割成多个线程，例如：网际快车中文件分成100部分 10个线程 文件就被分成了10份来同时下载 1-10 占一个线程 11-20占一个线程,依次类推,线程越多,文件就被分的越多,同时下载 当然速度也就越快
+进程是程序在计算机上的一次执行活动。当你运行一个程序，你就启动了一个进程。显然，程序只是一组指令的有序集合，它本身没有任何运行的含义，只是一个静态实体。而进程则不同，它是程序在某个数据集上的执行，是一个动态实体。它因创建而产生，因调度而运行，因等待资源或事件而被处于等待状态，因完成任务而被撤消，反映了一个程序在一定的数据集上运行的全部动态过程。进程是操作系统分配资源的单位。在Windows下，进程又被细化为线程，也就是一个进程下有多个能独立运行的更小的单位。线程(Thread)是进程的一个实体，是CPU调度和分派的基本单位。线程不能够独立执行，必须依存在应用程序中，由应用程序提供多个线程执行控制。
+线程和进程的关系是：线程是属于进程的，线程运行在进程空间内，同一进程所产生的线程共享同一内存空间，当进程退出时该进程所产生的线程都会被强制退出并清除。线程可与属于同一进程的其它线程共享进程所拥有的全部资源，但是其本身基本上不拥有系统资源，只拥有一点在运行中必不可少的信息(如程序计数器、一组寄存器和栈)。
+在同一个时间里，同一个计算机系统中如果允许两个或两个以上的进程处于运行状态，这便是多任务。现代的操作系统几乎都是多任务操作系统，能够同时管理多个进程的运行。 多任务带来的好处是明显的，比如你可以边听mp3边上网，与此同时甚至可以将下载的文档打印出来，而这些任务之间丝毫不会相互干扰。那么这里就涉及到并行的问题，俗话说，一心不能二用，这对计算机也一样，原则上一个CPU只能分配给一个进程，以便运行这个进程。我们通常使用的计算机中只有一个CPU，也就是说只有一颗心，要让它一心多用，同时运行多个进程，就必须使用并发技术。实现并发技术相当复杂，最容易理解的是“时间片轮转进程调度算法”，它的思想简单介绍如下：在操作系统的管理下，所有正在运行的进程轮流使用CPU，每个进程允许占用CPU的时间非常短(比如10毫秒)，这样用户根本感觉不出来CPU是在轮流为多个进程服务，就好象所有的进程都在不间断地运行一样。但实际上在任何一个时间内有且仅有一个进程占有CPU。
+如果一台计算机有多个CPU，情况就不同了，如果进程数小于CPU数，则不同的进程可以分配给不同的CPU来运行，这样，多个进程就是真正同时运行的，这便是并行。但如果进程数大于CPU数，则仍然需要使用并发技术。
+在Windows中，进行CPU分配是以线程为单位的，一个进程可能由多个线程组成，这时情况更加复杂，但简单地说，有如下关系：
+总线程数&lt;= CPU数量：并行运行
+总线程数&gt; CPU数量：并发运行
+并行运行的效率显然高于并发运行，所以在多CPU的计算机中，多任务的效率比较高。但是，如果在多CPU计算机中只运行一个进程(线程)，就不能发挥多CPU的优势。
+多任务操作系统(如Windows)的基本原理是:操作系统将CPU的时间片分配给多个线程,每个线程在操作系统指定的时间片内完成(注意,这里的多个线程是分属于不同进程的).操作系统不断的从一个线程的执行切换到另一个线程的执行,如此往复,宏观上看来,就好像是多个线程在一起执行.由于这多个线程分属于不同的进程,因此在我们看来,就好像是多个进程在同时执行,这样就实现了多任务.
+2.2 分类 根据进程与线程的设置，操作系统大致分为如下类型：
+ 单进程、单线程，MS-DOS大致是这种操作系统； 多进程、单线程，多数UNIX(及类UNIX的LINUX)是这种操作系统； 多进程、多线程，Win32(Windows NT/2000/XP等)、Solaris 2.x和OS/2都是这种操作系统； 单进程、多线程，VxWorks是这种操作系统。  2.3 引入线程带来的主要好处： (1) 在进程内创建、终止线程比创建、终止进程要快；
+(2) 同一进程内的线程间切换比进程间的切换要快,尤其是用户级线程间的切换。]]></description>
+</item><item>
     <title>ACID_SQL日常概念摘抄</title>
     <link>http://tribbiannisun.github.io/acid_sql%E6%97%A5%E5%B8%B8%E6%A6%82%E5%BF%B5/</link>
     <pubDate>Thu, 04 Mar 2021 22:50:24 &#43;0800</pubDate>
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/acid_sql%E6%97%A5%E5%B8%B8%E6%A6%82%E5%BF%B5/</guid>
-    <description><![CDATA[事务的 ACID 事务具有四个特征：
+    <description><![CDATA[ACID - SQL 摘抄
+事务的 ACID 事务具有四个特征：
 原子性（ Atomicity ）- via Undo/Redo log
 一致性（ Consistency ）
 隔离性（ Isolation ）
@@ -30,16 +160,15 @@ MySQL中的锁 「面试官：」 哦？性能越来越差？为什么会性能
 「我：」 这个得从Mysq的锁说起，在Mysql中的锁可以分为分**「享锁/读锁（Shared Locks）」**、**「排他锁/写锁（Exclusive Locks）」** 、**「间隙锁」**、**「行锁（Record Locks）」**、**「表锁」**。
 可重复读的实现——MultiVersionConcurrencyControl  
 如图中所示，假如三个事务更新了同一行数据，那么就会有对应的三个数据版本。
-实际上版本1、版本2并非实际物理存在的，而图中的U1和U2实际就是undo log，这v1和v2版本是根据当前v3和undo log计算出来的。
-SQL会在语句启动时加snapshot
-写数据时候的锁问题  假如两个事务执行写操作，又怎么保证并发呢？]]></description>
+实际上版本1、版本2并非实际物理存在的，而图中的U1和U2实际就是undo log，这v1和v2版本是根据当前v3和undo log计算出来的。]]></description>
 </item><item>
     <title>CAS的性质和应用摘抄</title>
     <link>http://tribbiannisun.github.io/cas%E7%9A%84%E6%80%A7%E8%B4%A8%E5%92%8C%E5%BA%94%E7%94%A8/</link>
     <pubDate>Thu, 04 Mar 2021 22:47:24 &#43;0800</pubDate>
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/cas%E7%9A%84%E6%80%A7%E8%B4%A8%E5%92%8C%E5%BA%94%E7%94%A8/</guid>
-    <description><![CDATA[CAS是英文单词CompareAndSwap的缩写，中文意思是：比较并替换。CAS需要有3个操作数：内存地址V，旧的预期值A，即将要更新的目标值B。
+    <description><![CDATA[CAS 摘抄
+CAS是英文单词CompareAndSwap的缩写，中文意思是：比较并替换。CAS需要有3个操作数：内存地址V，旧的预期值A，即将要更新的目标值B。
 CAS指令执行时，当且仅当内存地址V的值与预期值A相等时，将内存地址V的值修改为B，否则就什么都不做。整个比较并替换的操作是一个原子操作。
 CAS的缺点： CAS虽然很高效的解决了原子操作问题，但是CAS仍然存在三大问题。
  循环时间长开销很大。 只能保证一个共享变量的原子操作。 ABA问题。  **循环时间长开销很大：**我们可以看到getAndAddInt方法执行时，如果CAS失败，会一直进行尝试。如果CAS长时间一直不成功，可能会给CPU带来很大的开销。
@@ -55,58 +184,5 @@ CAS 的使用流程通常如下：1）首先从地址 V 读取值 A；2）根据
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/java%E4%B8%AD%E9%94%81%E7%9A%84%E7%A7%8D%E7%B1%BB/</guid>
     <description><![CDATA[<p><a href="https://blog.csdn.net/u012988901/article/details/100117719" target="_blank" rel="noopener noreffer">Java中锁的种类摘抄</a></p>]]></description>
-</item><item>
-    <title>Equals和==的区别</title>
-    <link>http://tribbiannisun.github.io/equals%E5%92%8C%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
-    <pubDate>Thu, 04 Mar 2021 21:27:34 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/equals%E5%92%8C%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
-    <description><![CDATA[Equals和==的区别
-常常会用equals和==判断两个对象是否相等，那么两者有什么不同呢？主要有以下几点区别
- 首先区别的是 equals 是方法，但是 == 是操作符 对于基本类型的变量(int, short, long, float, double), 只能用==去比较，一般比较的就是他们的value 对于引用类型的变量来说，例如String类型，就是String继承了Object类， equals是Object类的通用方法，对于该类型对象的比较，默认情况下，也就是没有复写 Object 类的 equals 方法，使用 == 和 equals 比较是一样效果的，都是比较的是它们在内存中的存放地址。 但是对于某些类来说，为了满足自身业务需求，可能存在 equals 方法被复写的情况，这时使用 equals 方法比较需要看具体的情况，例如 String 类，使用 equals 方法会比较它们的值；|| 区别就看有没有重写这个equals method  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  String a = &#34;Hello World&#34;; String b = new String(&#34;Hello World&#34;); String c = b; //引用传递  System.]]></description>
-</item><item>
-    <title>Synchronized和lock的使用分析摘抄</title>
-    <link>http://tribbiannisun.github.io/synchronized%E5%92%8Clock%E7%9A%84%E4%BD%BF%E7%94%A8%E5%88%86%E6%9E%90/</link>
-    <pubDate>Thu, 04 Mar 2021 21:17:39 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/synchronized%E5%92%8Clock%E7%9A%84%E4%BD%BF%E7%94%A8%E5%88%86%E6%9E%90/</guid>
-    <description><![CDATA[<!-- https://github.com/Snailclimb/JavaGuide/blob/master/docs/database/%E4%B8%80%E6%9D%A1sql%E8%AF%AD%E5%8F%A5%E5%9C%A8mysql%E4%B8%AD%E5%A6%82%E4%BD%95%E6%89%A7%E8%A1%8C%E7%9A%84.md -->
-<!-- https://www.notion.so/49857a7f13684cedb669584791e18357?v=a711b9d86f964fe398d3ba842284d99d 面试八股文 -->
-<p><a href="https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/multi-thread/2020%E6%9C%80%E6%96%B0Java%E5%B9%B6%E5%8F%91%E8%BF%9B%E9%98%B6%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93.md" target="_blank" rel="noopener noreffer">Synchronized和lock的使用分析摘抄</a></p>]]></description>
-</item><item>
-    <title>String能否被继承</title>
-    <link>http://tribbiannisun.github.io/string%E8%83%BD%E5%90%A6%E8%A2%AB%E7%BB%A7%E6%89%BF/</link>
-    <pubDate>Thu, 04 Mar 2021 21:11:43 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/string%E8%83%BD%E5%90%A6%E8%A2%AB%E7%BB%A7%E6%89%BF/</guid>
-    <description><![CDATA[<p><a href="https://www.cnblogs.com/shenxiaoquan/p/5941033.html#:~:text=%E4%B8%BA%E4%BB%80%E4%B9%88%EF%BC%9F,%E5%AE%9E%E7%8E%B0%E7%BB%86%E8%8A%82%E4%B8%8D%E5%85%81%E8%AE%B8%E6%94%B9%E5%8F%98%E3%80%82" target="_blank" rel="noopener noreffer">String能否被继承</a></p>]]></description>
-</item><item>
-    <title>Java的垃圾回收机制和回收算法摘抄</title>
-    <link>http://tribbiannisun.github.io/java%E7%9A%84%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6%E5%92%8C%E5%9B%9E%E6%94%B6%E7%AE%97%E6%B3%95/</link>
-    <pubDate>Thu, 04 Mar 2021 20:51:25 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/java%E7%9A%84%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6%E5%92%8C%E5%9B%9E%E6%94%B6%E7%AE%97%E6%B3%95/</guid>
-    <description><![CDATA[<p><a href="https://blog.csdn.net/u012988901/article/details/100117719" target="_blank" rel="noopener noreffer">Java的垃圾回收机制和回收算法</a></p>]]></description>
-</item><item>
-    <title>红黑树和AVL树</title>
-    <link>http://tribbiannisun.github.io/%E7%BA%A2%E9%BB%91%E6%A0%91%E5%92%8Cavl%E6%A0%91/</link>
-    <pubDate>Thu, 04 Mar 2021 20:43:11 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/%E7%BA%A2%E9%BB%91%E6%A0%91%E5%92%8Cavl%E6%A0%91/</guid>
-    <description><![CDATA[<p><a href="https://blog.csdn.net/mmshixing/article/details/51692892" target="_blank" rel="noopener noreffer">红黑树与AVL树的区别与联系？</a></p>]]></description>
-</item><item>
-    <title>Volatile的使用及其原理</title>
-    <link>http://tribbiannisun.github.io/volatile%E7%9A%84%E4%BD%BF%E7%94%A8%E5%8F%8A%E5%85%B6%E5%8E%9F%E7%90%86/</link>
-    <pubDate>Thu, 04 Mar 2021 10:42:53 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/volatile%E7%9A%84%E4%BD%BF%E7%94%A8%E5%8F%8A%E5%85%B6%E5%8E%9F%E7%90%86/</guid>
-    <description><![CDATA[<p><a href="https://www.cnblogs.com/paddix/p/5428507.html" target="_blank" rel="noopener noreffer">Volatile的使用及其原理</a></p>]]></description>
-</item><item>
-    <title>ConcurrentHashMap是如何保证线程安全的</title>
-    <link>http://tribbiannisun.github.io/concurrenthashmap%E5%92%8Chashmap/</link>
-    <pubDate>Thu, 04 Mar 2021 09:34:08 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/concurrenthashmap%E5%92%8Chashmap/</guid>
-    <description><![CDATA[<p><a href="https://www.cnblogs.com/jing99/p/11330341.html" target="_blank" rel="noopener noreffer">ConcurrentHashMap是如何保证线程安全的</a></p>]]></description>
 </item></channel>
 </rss>

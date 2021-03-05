@@ -9,7 +9,8 @@
     <pubDate>Thu, 04 Mar 2021 22:47:24 &#43;0800</pubDate>
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/cas%E7%9A%84%E6%80%A7%E8%B4%A8%E5%92%8C%E5%BA%94%E7%94%A8/</guid>
-    <description><![CDATA[CAS是英文单词CompareAndSwap的缩写，中文意思是：比较并替换。CAS需要有3个操作数：内存地址V，旧的预期值A，即将要更新的目标值B。
+    <description><![CDATA[CAS 摘抄
+CAS是英文单词CompareAndSwap的缩写，中文意思是：比较并替换。CAS需要有3个操作数：内存地址V，旧的预期值A，即将要更新的目标值B。
 CAS指令执行时，当且仅当内存地址V的值与预期值A相等时，将内存地址V的值修改为B，否则就什么都不做。整个比较并替换的操作是一个原子操作。
 CAS的缺点： CAS虽然很高效的解决了原子操作问题，但是CAS仍然存在三大问题。
  循环时间长开销很大。 只能保证一个共享变量的原子操作。 ABA问题。  **循环时间长开销很大：**我们可以看到getAndAddInt方法执行时，如果CAS失败，会一直进行尝试。如果CAS长时间一直不成功，可能会给CPU带来很大的开销。
