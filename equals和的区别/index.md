@@ -2,7 +2,7 @@
 
 
 [Equals和==的区别](https://www.jianshu.com/p/9cbed9f33a4d)
-<!-- more -->
+<!--more-->
 
 
 常常会用equals和==判断两个对象是否相等，那么两者有什么不同呢？主要有以下几点区别

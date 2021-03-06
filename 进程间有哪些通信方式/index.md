@@ -3,7 +3,7 @@
 
 
 [进程间有哪些通信方式摘抄](https://blog.csdn.net/violet_echo_0908/article/details/51201278)
-<!-- more -->
+<!--more-->
 
 
 ### 匿名管道通信

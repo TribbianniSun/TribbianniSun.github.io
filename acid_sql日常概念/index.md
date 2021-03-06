@@ -2,7 +2,7 @@
 
 
 ACID - SQL 摘抄
-<!-- more -->
+<!--more-->
 
 ## **事务的 ACID**
 

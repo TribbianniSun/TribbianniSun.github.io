@@ -3,7 +3,7 @@
 
 
 [线程和进程的区别摘抄](https://blog.csdn.net/mxsgoden/article/details/8821936#:~:text=%E8%BF%9B%E7%A8%8B%E6%98%AF%E5%85%B7%E6%9C%89%E4%B8%80%E5%AE%9A%E7%8B%AC%E7%AB%8B,%E7%8B%AC%E7%AB%8B%E8%BF%90%E8%A1%8C%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8D%95%E4%BD%8D.)
-<!-- more -->
+<!--more-->
 
 # 1. 线程与进程的区别
 

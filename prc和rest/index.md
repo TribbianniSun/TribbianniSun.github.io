@@ -2,7 +2,7 @@
 
 
 [RPC 和 REST 的优缺点、区别、如何选择](https://www.jianshu.com/p/e3c4b2837961)
-<!-- more -->
+<!--more-->
 
 
 接口调用通常包含两个部分，序列化和通信协议：

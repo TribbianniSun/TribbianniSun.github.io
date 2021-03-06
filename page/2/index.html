@@ -10,7 +10,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://tribbiannisun.github.io/" />
 <meta property="og:image" content="http://tribbiannisun.github.io/logo.png"/>
-<meta property="og:updated_time" content="2021-03-05T10:55:16+08:00" />
+<meta property="og:updated_time" content="2021-03-06T11:35:47+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="http://tribbiannisun.github.io/logo.png"/>
 
@@ -96,76 +96,32 @@
         data-sizes="auto"
         alt="/images/profile_resize.jpg"
         title="/images/profile_resize.jpg" /></div></a></div><h1 class="home-title">Haihao Sun</h1><div class="home-subtitle"><div id="id-1" class="typeit"></div></div><div class="links"><a href="https://github.com/TribbianniSun" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="https://www.instagram.com/stackoverflow_sun" title="Instagram" target="_blank" rel="noopener noreffer me"><i class="fab fa-instagram fa-fw"></i></a><a href="mailto:h3sun@ucsd.edu" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
-<article onclick="location.href='\/%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B%E4%B9%8B%E9%97%B4%E7%9A%84%E5%8C%BA%E5%88%AB\/'" class="single summary summary-animation" itemscope itemtype="http://schema.org/Article" style="margin-bottom:0"><div class="article-text"><h2 class="summary-title" itemprop="name headline">
+<article onclick="location.href='\/%E8%BF%9B%E7%A8%8B%E9%97%B4%E6%9C%89%E5%93%AA%E4%BA%9B%E9%80%9A%E4%BF%A1%E6%96%B9%E5%BC%8F\/'" class="single summary summary-animation" itemscope itemtype="http://schema.org/Article" style="margin-bottom:0"><div class="article-text"><h2 class="summary-title" itemprop="name headline">
+            进程间有哪些通信方式摘抄
+        </h2><div class="post-meta summary-post-meta">&nbsp;&nbsp;&nbsp;<span class="post-publish"><i class="far fa-clock fa-fw"></i><time class="timeago" datetime="2021-03-05">2021-03-05</time></span>&nbsp;&nbsp;&nbsp;<span class="post-category">
+                <a href="/categories/interview-cheatsheet/"><i class="far fa-folder fa-fw"></i>interview cheatsheet</a>
+            </span></div><div class="content summary-content"><p><a href="https://blog.csdn.net/violet_echo_0908/article/details/51201278" target="_blank" rel="noopener noreffer">进程间有哪些通信方式摘抄</a></p></div></div>
+</article><div class="post-tags-summary-under-footer">
+    <div class="post-tags-summary-under-footer-display"><a class="post-tag-summary" href="/tags/wi21-week9/" style="">wi21-week9</a><a class="post-tag-summary" href="/tags/interview-prep/" style="">interview prep</a><a class="post-tag-summary" href="/tags/os/" style="">OS</a></div>
+</div><article onclick="location.href='\/%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B%E4%B9%8B%E9%97%B4%E7%9A%84%E5%8C%BA%E5%88%AB\/'" class="single summary summary-animation" itemscope itemtype="http://schema.org/Article" style="margin-bottom:0"><div class="article-text"><h2 class="summary-title" itemprop="name headline">
             进程和线程之间的区别摘抄
         </h2><div class="post-meta summary-post-meta">&nbsp;&nbsp;&nbsp;<span class="post-publish"><i class="far fa-clock fa-fw"></i><time class="timeago" datetime="2021-03-05">2021-03-05</time></span>&nbsp;&nbsp;&nbsp;<span class="post-category">
                 <a href="/categories/interview-cheatsheet/"><i class="far fa-folder fa-fw"></i>interview cheatsheet</a>
-            </span></div><div class="content summary-content">线程和进程的区别摘抄
-1. 线程与进程的区别 1.1 概述 进程是具有一定独立功能的程序关于某个数据集合上的一次运行活动,进程是系统进行资源分配和调度的一个独立单位.
-线程是进程的一个实体,是CPU调度和分派的基本单位,它是比进程更小的能独立运行的基本单位.线程自己基本上不拥有系统资源,只拥有一点在运行中必不可少的资源(如程序计数器,一组寄存器和栈),但是它可与同属一个进程的其他的线程共享进程所拥有的全部资源.
-一个线程可以创建和撤销另一个线程;同一个进程中的多个线程之间可以并发执行.
-相对进程而言，线程是一个更加接近于执行体的概念，它可以与同进程中的其他线程共享数据，但拥有自己的栈空间，拥有独立的执行序列。
-在串行程序基础上引入线程和进程是为了提高程序的并发度，从而提高程序运行效率和响应时间。
-1.2 区别 进程和线程的主要差别在于它们是不同的操作系统资源管理方式。进程有独立的地址空间，一个进程崩溃后，在保护模式下不会对其它进程产生影响，而线程只是一个进程中的不同执行路径。线程有自己的堆栈和局部变量，但线程之间没有单独的地址空间，一个线程死掉就等于整个进程死掉，所以多进程的程序要比多线程的程序健壮，但在进程切换时，耗费资源较大，效率要差一些。但对于一些要求同时进行并且又要共享某些变量的并发操作，只能用线程，不能用进程。
- 一个程序至少有一个进程，一个进程至少有一个线程 线程的划分尺度小于进程，使得多线程的程序并发跟高 另外线程在执行过程中有独立的内存单元，而多个线程共享内存，极大的提高了程序的运行效率 线程在执行过程中与进程还是有区别的。每个独立的线程有一个程序运行的入口、顺序执行序列和程序的出口。但是线程不能够独立执行，必须依存在应用程序中，由应用程序提供多个线程执行控制。  从逻辑角度来看，多线程的意义在于一个应用程序中，有多个执行部分可以同时执行。但操作系统并没有将多个线程看做多个独立的应用，来实现进程的调度和管理以及资源分配。这就是进程和线程的重要区别。    1.3 优缺点: 线程和进程在使用上各有优缺点：线程执行开销小，但不利于资源的管理和保护；而进程正相反。同时，线程适合于在SMP机器上运行，而进程则可以跨机器迁移。
-2.多进程，多线程 2.1 概述: 进程就是一个程序运行的时候被CPU抽象出来的，一个程序运行后被抽象为一个进程，但是线程是从一个进程里面分割出来的，由于CPU处理进程的时候是采用时间片轮转的方式，所以要把一个大个进程给分割成多个线程，例如：网际快车中文件分成100部分 10个线程 文件就被分成了10份来同时下载 1-10 占一个线程 11-20占一个线程,依次类推,线程越多,文件就被分的越多,同时下载 当然速度也就越快
-进程是程序在计算机上的一次执行活动。当你运行一个程序，你就启动了一个进程。显然，程序只是一组指令的有序集合，它本身没有任何运行的含义，只是一个静态实体。而进程则不同，它是程序在某个数据集上的执行，是一个动态实体。它因创建而产生，因调度而运行，因等待资源或事件而被处于等待状态，因完成任务而被撤消，反映了一个程序在一定的数据集上运行的全部动态过程。进程是操作系统分配资源的单位。在Windows下，进程又被细化为线程，也就是一个进程下有多个能独立运行的更小的单位。线程(Thread)是进程的一个实体，是CPU调度和分派的基本单位。线程不能够独立执行，必须依存在应用程序中，由应用程序提供多个线程执行控制。
-线程和进程的关系是：线程是属于进程的，线程运行在进程空间内，同一进程所产生的线程共享同一内存空间，当进程退出时该进程所产生的线程都会被强制退出并清除。线程可与属于同一进程的其它线程共享进程所拥有的全部资源，但是其本身基本上不拥有系统资源，只拥有一点在运行中必不可少的信息(如程序计数器、一组寄存器和栈)。
-在同一个时间里，同一个计算机系统中如果允许两个或两个以上的进程处于运行状态，这便是多任务。现代的操作系统几乎都是多任务操作系统，能够同时管理多个进程的运行。 多任务带来的好处是明显的，比如你可以边听mp3边上网，与此同时甚至可以将下载的文档打印出来，而这些任务之间丝毫不会相互干扰。那么这里就涉及到并行的问题，俗话说，一心不能二用，这对计算机也一样，原则上一个CPU只能分配给一个进程，以便运行这个进程。我们通常使用的计算机中只有一个CPU，也就是说只有一颗心，要让它一心多用，同时运行多个进程，就必须使用并发技术。实现并发技术相当复杂，最容易理解的是“时间片轮转进程调度算法”，它的思想简单介绍如下：在操作系统的管理下，所有正在运行的进程轮流使用CPU，每个进程允许占用CPU的时间非常短(比如10毫秒)，这样用户根本感觉不出来CPU是在轮流为多个进程服务，就好象所有的进程都在不间断地运行一样。但实际上在任何一个时间内有且仅有一个进程占有CPU。
-如果一台计算机有多个CPU，情况就不同了，如果进程数小于CPU数，则不同的进程可以分配给不同的CPU来运行，这样，多个进程就是真正同时运行的，这便是并行。但如果进程数大于CPU数，则仍然需要使用并发技术。
-在Windows中，进行CPU分配是以线程为单位的，一个进程可能由多个线程组成，这时情况更加复杂，但简单地说，有如下关系：
-总线程数&lt;= CPU数量：并行运行
-总线程数&gt; CPU数量：并发运行
-并行运行的效率显然高于并发运行，所以在多CPU的计算机中，多任务的效率比较高。但是，如果在多CPU计算机中只运行一个进程(线程)，就不能发挥多CPU的优势。
-多任务操作系统(如Windows)的基本原理是:操作系统将CPU的时间片分配给多个线程,每个线程在操作系统指定的时间片内完成(注意,这里的多个线程是分属于不同进程的).操作系统不断的从一个线程的执行切换到另一个线程的执行,如此往复,宏观上看来,就好像是多个线程在一起执行.由于这多个线程分属于不同的进程,因此在我们看来,就好像是多个进程在同时执行,这样就实现了多任务.
-2.2 分类 根据进程与线程的设置，操作系统大致分为如下类型：
- 单进程、单线程，MS-DOS大致是这种操作系统； 多进程、单线程，多数UNIX(及类UNIX的LINUX)是这种操作系统； 多进程、多线程，Win32(Windows NT/2000/XP等)、Solaris 2.x和OS/2都是这种操作系统； 单进程、多线程，VxWorks是这种操作系统。  2.3 引入线程带来的主要好处： (1) 在进程内创建、终止线程比创建、终止进程要快；
-(2) 同一进程内的线程间切换比进程间的切换要快,尤其是用户级线程间的切换。</div></div>
+            </span></div><div class="content summary-content"><p><a href="https://blog.csdn.net/mxsgoden/article/details/8821936#:~:text=%E8%BF%9B%E7%A8%8B%E6%98%AF%E5%85%B7%E6%9C%89%E4%B8%80%E5%AE%9A%E7%8B%AC%E7%AB%8B,%E7%8B%AC%E7%AB%8B%E8%BF%90%E8%A1%8C%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8D%95%E4%BD%8D." target="_blank" rel="noopener noreffer">线程和进程的区别摘抄</a></p></div></div>
 </article><div class="post-tags-summary-under-footer">
     <div class="post-tags-summary-under-footer-display"><a class="post-tag-summary" href="/tags/wi21-week9/" style="">wi21-week9</a><a class="post-tag-summary" href="/tags/interview-prep/" style="">interview prep</a><a class="post-tag-summary" href="/tags/os/" style="">OS</a></div>
 </div><article onclick="location.href='\/acid_sql%E6%97%A5%E5%B8%B8%E6%A6%82%E5%BF%B5\/'" class="single summary summary-animation" itemscope itemtype="http://schema.org/Article" style="margin-bottom:0"><div class="article-text"><h2 class="summary-title" itemprop="name headline">
             ACID_SQL日常概念摘抄
         </h2><div class="post-meta summary-post-meta">&nbsp;&nbsp;&nbsp;<span class="post-publish"><i class="far fa-clock fa-fw"></i><time class="timeago" datetime="2021-03-04">2021-03-04</time></span>&nbsp;&nbsp;&nbsp;<span class="post-category">
                 <a href="/categories/interview-cheatsheet/"><i class="far fa-folder fa-fw"></i>interview cheatsheet</a>
-            </span></div><div class="content summary-content">ACID - SQL 摘抄
-事务的 ACID 事务具有四个特征：
-原子性（ Atomicity ）- via Undo/Redo log
-一致性（ Consistency ）
-隔离性（ Isolation ）
-持续性（ Durability ）
-Mysql的四种隔离级别 SQL标准定义了4类隔离级别，包括了一些具体规则，用来限定事务内外的哪些改变是可见的，哪些是不可见的。低级别的隔离级一般支持更高的并发处理，并拥有更低的系统开销。
-Read Uncommitted（读取未提交内容）
-在该隔离级别，所有事务都可以看到其他未提交事务的执行结果。本隔离级别很少用于实际应用，因为它的性能也不比其他级别好多少。读取未提交的数据，也被称之为脏读（Dirty Read）。
-Read Committed（读取提交内容）
-这是大多数数据库系统的默认隔离级别（但不是MySQL默认的）。它满足了隔离的简单定义：一个事务只能看见已经提交事务所做的改变。这种隔离级别 也支持所谓的不可重复读（Nonrepeatable Read），因为同一事务的其他实例在该实例处理其间可能会有新的commit，所以同一select可能返回不同结果。
-Repeatable Read（可重读）
-这是MySQL的默认事务隔离级别，它确保同一事务的多个实例在并发读取数据时，会看到同样的数据行。不过理论上，这会导致另一个棘手的问题：幻读 （Phantom Read）。简单的说，幻读指当用户读取某一范围的数据行时，另一个事务又在该范围内插入了新行，当用户再读取该范围的数据行时，会发现有新的“幻影” 行。InnoDB和Falcon存储引擎通过多版本并发控制（MVCC，Multiversion Concurrency Control）机制解决了该问题。
-Serializable（可串行化）
-这是最高的隔离级别，它通过强制事务排序，使之不可能相互冲突，从而解决幻读问题。简言之，它是在每个读的数据行上加上共享锁。在这个级别，可能导致大量的超时现象和锁竞争。
-这四种隔离级别采取不同的锁类型来实现，若读取的是同一个数据的话，就容易发生问题。例如：
- 脏读(Drity Read)：某个事务已更新一份数据，另一个事务在此时读取了同一份数据，由于某些原因，前一个RollBack了操作，则后一个事务所读取的数据就会是不正确的。 不可重复读(Non-repeatable read):在一个事务的两次查询之中数据不一致，这可能是两次查询过程中间插入了一个事务更新的原有的数据。 幻读(Phantom Read):在一个事务的两次查询中数据笔数不一致，例如有一个事务查询了几列(Row)数据，而另一个事务却在此时插入了新的几列数据，先前的事务在接下来的查询中，就有几列数据是未查询出来的，如果此时插入和另外一个事务插入的数据，就会报错。  在MySQL中，实现了这四种隔离级别，分别有可能产生问题如下所示：
- 
-MySQL中的锁 「面试官：」 哦？性能越来越差？为什么会性能越来越差？你能说一说原因吗？
-「我：」 这个得从Mysq的锁说起，在Mysql中的锁可以分为分**「享锁/读锁（Shared Locks）」**、**「排他锁/写锁（Exclusive Locks）」** 、**「间隙锁」**、**「行锁（Record Locks）」**、**「表锁」**。
-可重复读的实现——MultiVersionConcurrencyControl  
-如图中所示，假如三个事务更新了同一行数据，那么就会有对应的三个数据版本。
-实际上版本1、版本2并非实际物理存在的，而图中的U1和U2实际就是undo log，这v1和v2版本是根据当前v3和undo log计算出来的。</div></div>
+            </span></div><div class="content summary-content"><p>ACID - SQL 摘抄</p></div></div>
 </article><div class="post-tags-summary-under-footer">
     <div class="post-tags-summary-under-footer-display"><a class="post-tag-summary" href="/tags/wi21-week9/" style="">wi21-week9</a><a class="post-tag-summary" href="/tags/interview-prep/" style="">interview prep</a><a class="post-tag-summary" href="/tags/database/" style="">Database</a></div>
 </div><article onclick="location.href='\/cas%E7%9A%84%E6%80%A7%E8%B4%A8%E5%92%8C%E5%BA%94%E7%94%A8\/'" class="single summary summary-animation" itemscope itemtype="http://schema.org/Article" style="margin-bottom:0"><div class="article-text"><h2 class="summary-title" itemprop="name headline">
             CAS的性质和应用摘抄
         </h2><div class="post-meta summary-post-meta">&nbsp;&nbsp;&nbsp;<span class="post-publish"><i class="far fa-clock fa-fw"></i><time class="timeago" datetime="2021-03-04">2021-03-04</time></span>&nbsp;&nbsp;&nbsp;<span class="post-category">
                 <a href="/categories/interview-cheatsheet/"><i class="far fa-folder fa-fw"></i>interview cheatsheet</a>
-            </span></div><div class="content summary-content">CAS 摘抄
-CAS是英文单词CompareAndSwap的缩写，中文意思是：比较并替换。CAS需要有3个操作数：内存地址V，旧的预期值A，即将要更新的目标值B。
-CAS指令执行时，当且仅当内存地址V的值与预期值A相等时，将内存地址V的值修改为B，否则就什么都不做。整个比较并替换的操作是一个原子操作。
-CAS的缺点： CAS虽然很高效的解决了原子操作问题，但是CAS仍然存在三大问题。
- 循环时间长开销很大。 只能保证一个共享变量的原子操作。 ABA问题。  **循环时间长开销很大：**我们可以看到getAndAddInt方法执行时，如果CAS失败，会一直进行尝试。如果CAS长时间一直不成功，可能会给CPU带来很大的开销。
-**只能保证一个共享变量的原子操作：**当对一个共享变量执行操作时，我们可以使用循环CAS的方式来保证原子操作，但是对多个共享变量操作时，循环CAS就无法保证操作的原子性，这个时候就可以用锁来保证原子性。
-什么是ABA问题？ABA问题怎么解决？
-CAS 的使用流程通常如下：1）首先从地址 V 读取值 A；2）根据 A 计算目标值 B；3）通过 CAS 以原子的方式将地址 V 中的值从 A 修改为 B。
-但是在第1步中读取的值是A，并且在第3步修改成功了，我们就能说它的值在第1步和第3步之间没有被其他线程改变过了吗？
-如果在这段期间它的值曾经被改成了B，后来又被改回为A，那CAS操作就会误认为它从来没有被改变过。这个漏洞称为CAS操作的“ABA”问题。Java并发包为了解决这个问题，提供了一个带有标记的原子引用类“AtomicStampedReference”，它可以通过控制变量值的版本来保证CAS的正确性。因此，在使用CAS前要考虑清楚“ABA”问题是否会影响程序并发的正确性，如果需要解决ABA问题，改用传统的互斥同步可能会比原子类更高效。</div></div>
+            </span></div><div class="content summary-content"><p>CAS 摘抄</p></div></div>
 </article><div class="post-tags-summary-under-footer">
     <div class="post-tags-summary-under-footer-display"><a class="post-tag-summary" href="/tags/wi21-week9/" style="">wi21-week9</a><a class="post-tag-summary" href="/tags/interview-prep/" style="">interview prep</a><a class="post-tag-summary" href="/tags/java/" style="">Java</a></div>
 </div><article onclick="location.href='\/java%E4%B8%AD%E9%94%81%E7%9A%84%E7%A7%8D%E7%B1%BB\/'" class="single summary summary-animation" itemscope itemtype="http://schema.org/Article" style="margin-bottom:0"><div class="article-text"><h2 class="summary-title" itemprop="name headline">
@@ -179,18 +135,7 @@ CAS 的使用流程通常如下：1）首先从地址 V 读取值 A；2）根据
             Equals和==的区别
         </h2><div class="post-meta summary-post-meta">&nbsp;&nbsp;&nbsp;<span class="post-publish"><i class="far fa-clock fa-fw"></i><time class="timeago" datetime="2021-03-04">2021-03-04</time></span>&nbsp;&nbsp;&nbsp;<span class="post-category">
                 <a href="/categories/interview-cheatsheet/"><i class="far fa-folder fa-fw"></i>interview cheatsheet</a>
-            </span></div><div class="content summary-content">Equals和==的区别
-常常会用equals和==判断两个对象是否相等，那么两者有什么不同呢？主要有以下几点区别
- 首先区别的是 equals 是方法，但是 == 是操作符 对于基本类型的变量(int, short, long, float, double), 只能用==去比较，一般比较的就是他们的value 对于引用类型的变量来说，例如String类型，就是String继承了Object类， equals是Object类的通用方法，对于该类型对象的比较，默认情况下，也就是没有复写 Object 类的 equals 方法，使用 == 和 equals 比较是一样效果的，都是比较的是它们在内存中的存放地址。 但是对于某些类来说，为了满足自身业务需求，可能存在 equals 方法被复写的情况，这时使用 equals 方法比较需要看具体的情况，例如 String 类，使用 equals 方法会比较它们的值；|| 区别就看有没有重写这个equals method  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  String a = &#34;Hello World&#34;; String b = new String(&#34;Hello World&#34;); String c = b; //引用传递  System.</div></div>
-</article><div class="post-tags-summary-under-footer">
-    <div class="post-tags-summary-under-footer-display"><a class="post-tag-summary" href="/tags/wi21-week9/" style="">wi21-week9</a><a class="post-tag-summary" href="/tags/interview-prep/" style="">interview prep</a><a class="post-tag-summary" href="/tags/java/" style="">Java</a></div>
-</div><article onclick="location.href='\/synchronized%E5%92%8Clock%E7%9A%84%E4%BD%BF%E7%94%A8%E5%88%86%E6%9E%90\/'" class="single summary summary-animation" itemscope itemtype="http://schema.org/Article" style="margin-bottom:0"><div class="article-text"><h2 class="summary-title" itemprop="name headline">
-            Synchronized和lock的使用分析摘抄
-        </h2><div class="post-meta summary-post-meta">&nbsp;&nbsp;&nbsp;<span class="post-publish"><i class="far fa-clock fa-fw"></i><time class="timeago" datetime="2021-03-04">2021-03-04</time></span>&nbsp;&nbsp;&nbsp;<span class="post-category">
-                <a href="/categories/interview-cheatsheet/"><i class="far fa-folder fa-fw"></i>interview cheatsheet</a>
-            </span></div><div class="content summary-content"><!-- https://github.com/Snailclimb/JavaGuide/blob/master/docs/database/%E4%B8%80%E6%9D%A1sql%E8%AF%AD%E5%8F%A5%E5%9C%A8mysql%E4%B8%AD%E5%A6%82%E4%BD%95%E6%89%A7%E8%A1%8C%E7%9A%84.md -->
-<!-- https://www.notion.so/49857a7f13684cedb669584791e18357?v=a711b9d86f964fe398d3ba842284d99d 面试八股文 -->
-<p><a href="https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/multi-thread/2020%E6%9C%80%E6%96%B0Java%E5%B9%B6%E5%8F%91%E8%BF%9B%E9%98%B6%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93.md" target="_blank" rel="noopener noreffer">Synchronized和lock的使用分析摘抄</a></p></div></div>
+            </span></div><div class="content summary-content"><p><a href="https://www.jianshu.com/p/9cbed9f33a4d" target="_blank" rel="noopener noreffer">Equals和==的区别</a></p></div></div>
 </article><div class="post-tags-summary-under-footer">
     <div class="post-tags-summary-under-footer-display"><a class="post-tag-summary" href="/tags/wi21-week9/" style="">wi21-week9</a><a class="post-tag-summary" href="/tags/interview-prep/" style="">interview prep</a><a class="post-tag-summary" href="/tags/java/" style="">Java</a></div>
 </div><ul class="pagination"><li class="page-item ">

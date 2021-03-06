@@ -4,37 +4,37 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>CAS的性质和应用摘抄 | </title><meta name="Description" content="CAS的性质和应用摘抄"><meta property="og:title" content="CAS的性质和应用摘抄" />
-<meta property="og:description" content="CAS的性质和应用摘抄" />
+        <title>简述JVM的内存模型摘抄 | </title><meta name="Description" content="简述JVM的内存模型摘抄"><meta property="og:title" content="简述JVM的内存模型摘抄" />
+<meta property="og:description" content="简述JVM的内存模型摘抄" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://tribbiannisun.github.io/cas%E7%9A%84%E6%80%A7%E8%B4%A8%E5%92%8C%E5%BA%94%E7%94%A8/" />
+<meta property="og:url" content="http://tribbiannisun.github.io/%E7%AE%80%E8%BF%B0jvm%E7%9A%84%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B/" />
 <meta property="og:image" content="http://tribbiannisun.github.io/logo.png"/>
-<meta property="article:published_time" content="2021-03-04T22:47:24+08:00" />
-<meta property="article:modified_time" content="2021-03-04T22:47:24+08:00" />
+<meta property="article:published_time" content="2021-03-06T11:35:47+08:00" />
+<meta property="article:modified_time" content="2021-03-06T11:35:47+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="http://tribbiannisun.github.io/logo.png"/>
 
-<meta name="twitter:title" content="CAS的性质和应用摘抄"/>
-<meta name="twitter:description" content="CAS的性质和应用摘抄"/>
+<meta name="twitter:title" content="简述JVM的内存模型摘抄"/>
+<meta name="twitter:description" content="简述JVM的内存模型摘抄"/>
 <meta name="application-name" content="Haihao Sun">
 <meta name="apple-mobile-web-app-title" content="Haihao Sun"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://tribbiannisun.github.io/cas%E7%9A%84%E6%80%A7%E8%B4%A8%E5%92%8C%E5%BA%94%E7%94%A8/" /><link rel="prev" href="http://tribbiannisun.github.io/java%E4%B8%AD%E9%94%81%E7%9A%84%E7%A7%8D%E7%B1%BB/" /><link rel="next" href="http://tribbiannisun.github.io/acid_sql%E6%97%A5%E5%B8%B8%E6%A6%82%E5%BF%B5/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://tribbiannisun.github.io/%E7%AE%80%E8%BF%B0jvm%E7%9A%84%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B/" /><link rel="prev" href="http://tribbiannisun.github.io/tcp%E5%92%8Cudp%E5%8C%BA%E5%88%AB/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "CAS的性质和应用摘抄",
+        "headline": "简述JVM的内存模型摘抄",
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "http:\/\/tribbiannisun.github.io\/cas%E7%9A%84%E6%80%A7%E8%B4%A8%E5%92%8C%E5%BA%94%E7%94%A8\/"
-        },"genre": "posts","keywords": "wi21-week9, interview prep, Java","wordCount":  29 ,
-        "url": "http:\/\/tribbiannisun.github.io\/cas%E7%9A%84%E6%80%A7%E8%B4%A8%E5%92%8C%E5%BA%94%E7%94%A8\/","datePublished": "2021-03-04T22:47:24+08:00","dateModified": "2021-03-04T22:47:24+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@id": "http:\/\/tribbiannisun.github.io\/%E7%AE%80%E8%BF%B0jvm%E7%9A%84%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B\/"
+        },"genre": "posts","keywords": "wi21-week9, interview prep, Java","wordCount":  43 ,
+        "url": "http:\/\/tribbiannisun.github.io\/%E7%AE%80%E8%BF%B0jvm%E7%9A%84%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B\/","datePublished": "2021-03-06T11:35:47+08:00","dateModified": "2021-03-06T11:35:47+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "http:\/\/tribbiannisun.github.io\/images\/avatar.png"},"author": {
                 "@type": "Person",
                 "name": "Author"
-            },"description": "CAS的性质和应用摘抄"
+            },"description": "简述JVM的内存模型摘抄"
     }
     </script><script type="application/ld+json">
     {
@@ -53,7 +53,7 @@
         },{
                 "@type": "ListItem",
                 "position": 3,
-                "name": "CAS的性质和应用摘抄"
+                "name": "简述JVM的内存模型摘抄"
             }]
     }
 </script></head>
@@ -122,12 +122,12 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single page-toc theme-classic"><div class="post-all-meta  padding-article ">
                 <div class="breadcrumbs">
-    <a href="/">Home </a>/ <a href="/categories/interview-cheatsheet/">interview cheatsheet </a>/ <a href="/"> CAS的性质和应用摘抄 </a>
+    <a href="/">Home </a>/ <a href="/categories/interview-cheatsheet/">interview cheatsheet </a>/ <a href="/"> 简述JVM的内存模型摘抄 </a>
 </div>
-                    <h1 class="single-title animated flipInX">CAS的性质和应用摘抄</h1><div class="post-meta">
+                    <h1 class="single-title animated flipInX">简述JVM的内存模型摘抄</h1><div class="post-meta">
                         <div class="post-meta-line"><span class="post-category">
                                 <a href="/categories/interview-cheatsheet/"><i class="far fa-folder fa-fw"></i>&nbsp;interview cheatsheet</a>
-                            </span>&nbsp;&nbsp;&nbsp;&nbsp;<i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time class="timeago" datetime="2021-03-04">2021-03-04</time>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;29 words
+                            </span>&nbsp;&nbsp;&nbsp;&nbsp;<i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time class="timeago" datetime="2021-03-06">2021-03-06</time>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;43 words
                             &nbsp;&nbsp;&nbsp;&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;One minute</div>
                     </div>
                 </div><div class="post"><div class="details toc" id="toc-static"  data-kept="">
@@ -137,31 +137,42 @@
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#cas的缺点"><strong>CAS的缺点：</strong></a></li>
+    <li><a href="#程序计数器-program-counter-register">程序计数器 (Program Counter Register)</a></li>
+    <li><a href="#虚拟机栈vm-stack">虚拟机栈(VM Stack)</a></li>
+    <li><a href="#本地方法栈native-method-stack">本地方法栈(Native Method Stack)</a></li>
+    <li><a href="#堆heap">堆(Heap)</a></li>
+    <li><a href="#方法区method-area">方法区(Method Area)</a></li>
+    <li><a href="#直接内存direct-memory">直接内存(Direct Memory)</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content" style="padding-top: 20px"><p>CAS 摘抄</p>
-<p>CAS是英文单词<strong>CompareAndSwap</strong>的缩写，中文意思是：比较并替换。CAS需要有3个操作数：内存地址V，旧的预期值A，即将要更新的目标值B。</p>
-<p>CAS指令执行时，当且仅当内存地址V的值与预期值A相等时，将内存地址V的值修改为B，否则就什么都不做。整个比较并替换的操作是一个原子操作。</p>
-<h2 id="cas的缺点"><strong>CAS的缺点：</strong></h2>
-<p>CAS虽然很高效的解决了原子操作问题，但是CAS仍然存在三大问题。</p>
-<ol>
-<li>循环时间长开销很大。</li>
-<li>只能保证一个共享变量的原子操作。</li>
-<li>ABA问题。</li>
-</ol>
-<p>**循环时间长开销很大：**我们可以看到getAndAddInt方法执行时，如果CAS失败，会一直进行尝试。如果CAS长时间一直不成功，可能会给CPU带来很大的开销。</p>
-<p>**只能保证一个共享变量的原子操作：**当对一个共享变量执行操作时，我们可以使用循环CAS的方式来保证原子操作，但是对多个共享变量操作时，循环CAS就无法保证操作的原子性，这个时候就可以用锁来保证原子性。</p>
-<p><strong>什么是ABA问题？ABA问题怎么解决？</strong></p>
-<p>CAS 的使用流程通常如下：1）首先从地址 V 读取值 A；2）根据 A 计算目标值 B；3）通过 CAS 以原子的方式将地址 V 中的值从 A 修改为 B。</p>
-<p>但是在第1步中读取的值是A，并且在第3步修改成功了，我们就能说它的值在第1步和第3步之间没有被其他线程改变过了吗？</p>
-<p>如果在这段期间它的值曾经被改成了B，后来又被改回为A，那CAS操作就会误认为它从来没有被改变过。这个漏洞称为CAS操作的“ABA”问题。Java并发包为了解决这个问题，提供了一个带有标记的原子引用类“AtomicStampedReference”，它可以通过控制变量值的版本来保证CAS的正确性。因此，在使用CAS前要考虑清楚“ABA”问题是否会影响程序并发的正确性，如果需要解决ABA问题，改用传统的互斥同步可能会比原子类更高效。</p></div><div class="post-info-share">
-    <span><a class="share-icon share-twitter" href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://tribbiannisun.github.io/cas%E7%9A%84%E6%80%A7%E8%B4%A8%E5%92%8C%E5%BA%94%E7%94%A8/" data-title="CAS的性质和应用摘抄" data-hashtags="wi21-week9,interview prep,Java"><i class="fab fa-twitter fa-fw"></i></a><a class="share-icon share-facebook" href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://tribbiannisun.github.io/cas%E7%9A%84%E6%80%A7%E8%B4%A8%E5%92%8C%E5%BA%94%E7%94%A8/" data-hashtag="wi21-week9"><i class="fab fa-facebook-square fa-fw"></i></a><a class="share-icon share-line" href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://tribbiannisun.github.io/cas%E7%9A%84%E6%80%A7%E8%B4%A8%E5%92%8C%E5%BA%94%E7%94%A8/" data-title="CAS的性质和应用摘抄"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a class="share-icon share-weibo" href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://tribbiannisun.github.io/cas%E7%9A%84%E6%80%A7%E8%B4%A8%E5%92%8C%E5%BA%94%E7%94%A8/" data-title="CAS的性质和应用摘抄"><i class="fab fa-weibo fa-fw"></i></a></span>
+            </div><div class="content" id="content" style="padding-top: 20px"><p><a href="https://blog.csdn.net/qq_29229567/article/details/103227854" target="_blank" rel="noopener noreffer">JVM：简述对JVM内存数据区域的认识摘抄</a></p>
+<h2 id="程序计数器-program-counter-register">程序计数器 (Program Counter Register)</h2>
+<p>行号指示器，字节码指令的分支、循环、跳转、异常处理、线程恢复(CPU切换)，每条线程都需要一个独立的计数器，线程私有内存互不影响，该区域不会发生内存溢出异常。</p>
+<h2 id="虚拟机栈vm-stack">虚拟机栈(VM Stack)</h2>
+<p>虚拟机栈(VM Stack)是<strong>线程私有</strong>的，声明周期与线程相同，虚拟机栈是Java方法执行的内存模型，每个方法被执行时都会创建一个栈帧，即方法运行期间的基础数据结构。</p>
+<p>栈帧用于存储：局部变量表、操作数栈、动态链接、方法出口等，每个方法执行中都对应虚拟机栈帧从入栈到处栈的过程。是一种数据结构，是虚拟机中的局部变量表，对应物理层之上的程序数据模型。</p>
+<p>局部变量表，是一种程序运行数据模型，存放了编译期可知的各种数据类型例如：
+Boolean、byte、char、short、int、float、long、double、对象引用类型(对象内存地址变量，指针或句柄)。程序运行时，根据局部变量表分配栈帧空间大小。在运行中，大小是不变的异常类型：stackOverFlowError 线程请求栈深度大于虚拟机允许深度 OutOfMemory 内存空间耗尽无法进行扩展。</p>
+<h2 id="本地方法栈native-method-stack">本地方法栈(Native Method Stack)</h2>
+<p>与虚拟机栈类似，虚拟机栈为Java程序服务，本地方法栈支持虚拟机的运行服务，具体实现由虚拟机厂商决定，也会抛出 stackOverFlowError、OutOfMemory异常。</p>
+<h2 id="堆heap">堆(Heap)</h2>
+<p>堆(Heap)是虚拟机管理内存中最大的一部分，被所有线程共享，用于存放对象实例(对象、数组)，物理上不连续的内存空间，由于GC收集器，分代收集，所以划分为：</p>
+<ul>
+<li>新生代 Eden、</li>
+<li>From SurVivor空间、</li>
+<li>To SurVivor空间，</li>
+<li>allot buffer(分配空间)，</li>
+</ul>
+<p>可能会划分出多个线程私有的缓冲区，老年代。</p>
+<h2 id="方法区method-area">方法区(Method Area)</h2>
+<p>方法区(Method Area)与堆区一样属于<strong>线程共享</strong>的内存区域，用于存储虚拟机加载的类信息、常量、静态变量、即时编译器编译后的代码（动态加载OSGI）等数据。理论上属于java虚拟机的一部分，为了区分开来叫做 Non-Heap非堆。</p>
+<p>这个区域可以选择不进行垃圾回收，该区域回收目的主要是常量池的回收，及类型的卸载class,内存区不足时会抛出OutOfMemory异常</p>
+<p>运行时常量池：方法区的一部分，Class的版本、字段、接口、方法等，及编译期生成的各种字面量、符号引用，编译类加载后存放在该区域。会抛出OutOfMemory异常。</p>
+<h2 id="直接内存direct-memory">直接内存(Direct Memory)</h2>
+<p>直接内存(Direct Memory)不属于虚拟内存区域，是一种基于通道与缓冲区的IO方式，可以使用本地函数直接分配堆外内存，在堆中存储引用的外部内存地址，通过引用完成对直接引用内存的操作，1.4之后提供的NIO显著提高效率，避免了堆内存与Native内存的来回复制操作，不受虚拟机内存控制，会抛出OUTOfMemory异常。</p></div><div class="post-info-share">
+    <span><a class="share-icon share-twitter" href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://tribbiannisun.github.io/%E7%AE%80%E8%BF%B0jvm%E7%9A%84%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B/" data-title="简述JVM的内存模型摘抄" data-hashtags="wi21-week9,interview prep,Java"><i class="fab fa-twitter fa-fw"></i></a><a class="share-icon share-facebook" href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://tribbiannisun.github.io/%E7%AE%80%E8%BF%B0jvm%E7%9A%84%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B/" data-hashtag="wi21-week9"><i class="fab fa-facebook-square fa-fw"></i></a><a class="share-icon share-line" href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://tribbiannisun.github.io/%E7%AE%80%E8%BF%B0jvm%E7%9A%84%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B/" data-title="简述JVM的内存模型摘抄"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a class="share-icon share-weibo" href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://tribbiannisun.github.io/%E7%AE%80%E8%BF%B0jvm%E7%9A%84%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B/" data-title="简述JVM的内存模型摘抄"><i class="fab fa-weibo fa-fw"></i></a></span>
 </div><div class="post-footer" id="post-footer"><div class="post-navigation"><div class="post-nav-box nav-box-prev">
-            <a class="nav-box" href="/java%E4%B8%AD%E9%94%81%E7%9A%84%E7%A7%8D%E7%B1%BB/"><span class="nav-icon"><svg aria-hidden="true" data-prefix="fas" data-icon="chevron-circle-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z"></path></svg></span><div style="text-align: right;padding-left: 10px"><div class="nav-text-h">Next article</div><span class="nav-text">Java中锁的种类摘抄</span></div></a>
-        </div>
-        <div class="post-nav-box nav-box-next">
-            <a class="nav-box" href="/acid_sql%E6%97%A5%E5%B8%B8%E6%A6%82%E5%BF%B5/"><div style="padding-right: 10px"><div class="nav-text-h">Next article</div><span class="nav-text">ACID_SQL日常概念摘抄</span></div><span class="nav-icon"><svg aria-hidden="true" data-prefix="fas" data-icon="chevron-circle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"></path></svg></span></a>
+            <a class="nav-box" href="/tcp%E5%92%8Cudp%E5%8C%BA%E5%88%AB/"><span class="nav-icon"><svg aria-hidden="true" data-prefix="fas" data-icon="chevron-circle-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z"></path></svg></span><div style="text-align: right;padding-left: 10px"><div class="nav-text-h">Next article</div><span class="nav-text">TCP和UDP区别摘抄</span></div></a>
         </div></div></div>
 </div>
 

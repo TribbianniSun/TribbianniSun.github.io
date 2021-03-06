@@ -147,7 +147,6 @@
   </ul>
 </nav></div>
             </div><div class="content" id="content" style="padding-top: 20px"><p>ACID - SQL 摘抄</p>
-<!-- more -->
 <h2 id="事务的-acid"><strong>事务的 ACID</strong></h2>
 <p>事务具有四个特征：</p>
 <p>原子性（ Atomicity ）- via Undo/Redo log</p>
@@ -202,8 +201,7 @@
 <p> 假如两个事务执行写操作，又怎么保证并发呢？</p>
 <p>假如事务1和事务2都要执行update操作，事务1先update数据行的时候，先回获取行锁，锁定数据，当事务2要进行update操作的时候，也会取获取该数据行的行锁，但是已经被事务1占有，事务2只能wait。若是事务1长时间没有释放锁，事务2就会出现超时异常 。</p>
 <p>那没有索引的条件下呢？没办法快速定位到数据行呢？</p>
-<p>若是没有索引的条件下，就获取所有行，都加上行锁，然后Mysql会再次过滤符合条件的的行并释放锁，只有符合条件的行才会继续持有锁。</p>
-</div><div class="post-info-share">
+<p>若是没有索引的条件下，就获取所有行，都加上行锁，然后Mysql会再次过滤符合条件的的行并释放锁，只有符合条件的行才会继续持有锁。</p></div><div class="post-info-share">
     <span><a class="share-icon share-twitter" href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://tribbiannisun.github.io/acid_sql%E6%97%A5%E5%B8%B8%E6%A6%82%E5%BF%B5/" data-title="ACID_SQL日常概念摘抄" data-hashtags="wi21-week9,interview prep,Database"><i class="fab fa-twitter fa-fw"></i></a><a class="share-icon share-facebook" href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://tribbiannisun.github.io/acid_sql%E6%97%A5%E5%B8%B8%E6%A6%82%E5%BF%B5/" data-hashtag="wi21-week9"><i class="fab fa-facebook-square fa-fw"></i></a><a class="share-icon share-line" href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://tribbiannisun.github.io/acid_sql%E6%97%A5%E5%B8%B8%E6%A6%82%E5%BF%B5/" data-title="ACID_SQL日常概念摘抄"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a class="share-icon share-weibo" href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://tribbiannisun.github.io/acid_sql%E6%97%A5%E5%B8%B8%E6%A6%82%E5%BF%B5/" data-title="ACID_SQL日常概念摘抄"><i class="fab fa-weibo fa-fw"></i></a></span>
 </div><div class="post-footer" id="post-footer"><div class="post-navigation"><div class="post-nav-box nav-box-prev">
             <a class="nav-box" href="/cas%E7%9A%84%E6%80%A7%E8%B4%A8%E5%92%8C%E5%BA%94%E7%94%A8/"><span class="nav-icon"><svg aria-hidden="true" data-prefix="fas" data-icon="chevron-circle-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z"></path></svg></span><div style="text-align: right;padding-left: 10px"><div class="nav-text-h">Next article</div><span class="nav-text">CAS的性质和应用摘抄</span></div></a>

@@ -2,7 +2,7 @@
 
 
 [调度进程的算法摘抄](https://blog.csdn.net/xxpresent/article/details/51673570)
-<!-- more -->
+<!--more-->
 
 ## First come First served
 
