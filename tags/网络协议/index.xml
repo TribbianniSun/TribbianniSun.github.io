@@ -3,7 +3,14 @@
         <title>网络协议 - Tag - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/tags/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/</link>
         <description>网络协议 - Tag - Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 05 Mar 2021 10:55:16 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 09 Mar 2021 14:53:22 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/" rel="self" type="application/rss+xml" /><item>
+    <title>什么是TCP粘包摘抄</title>
+    <link>http://tribbiannisun.github.io/%E4%BB%80%E4%B9%88%E6%98%AFtcp%E7%B2%98%E5%8C%85/</link>
+    <pubDate>Tue, 09 Mar 2021 14:53:22 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/%E4%BB%80%E4%B9%88%E6%98%AFtcp%E7%B2%98%E5%8C%85/</guid>
+    <description><![CDATA[<p><a href="https://www.cnblogs.com/cangqinglang/p/11503057.html" target="_blank" rel="noopener noreffer">什么是TCP粘包摘抄</a></p>]]></description>
+</item><item>
     <title>TCP和UDP区别摘抄</title>
     <link>http://tribbiannisun.github.io/tcp%E5%92%8Cudp%E5%8C%BA%E5%88%AB/</link>
     <pubDate>Fri, 05 Mar 2021 10:55:16 &#43;0800</pubDate>
