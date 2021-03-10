@@ -3,7 +3,14 @@
         <title>All Posts - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/posts/</link>
         <description>All Posts | Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 09 Mar 2021 17:50:21 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 10 Mar 2021 12:06:15 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>LinuxC内存管理摘抄</title>
+    <link>http://tribbiannisun.github.io/linuxc%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/</link>
+    <pubDate>Wed, 10 Mar 2021 12:06:15 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/linuxc%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/</guid>
+    <description><![CDATA[<p><a href="https://blog.csdn.net/zqixiao_09/article/details/50381476" target="_blank" rel="noopener noreffer">LinuxC内存管理摘抄</a></p>]]></description>
+</item><item>
     <title>B Tree和b&#43;tree的区别摘抄</title>
     <link>http://tribbiannisun.github.io/b-tree%E5%92%8Cb-tree%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
     <pubDate>Tue, 09 Mar 2021 17:50:21 &#43;0800</pubDate>
@@ -66,12 +73,5 @@
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B_%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/</guid>
     <description><![CDATA[<p><a href="https://zhuanlan.zhihu.com/p/53374516" target="_blank" rel="noopener noreffer">三次握手_四次挥手摘抄</a></p>]]></description>
-</item><item>
-    <title>调度进程的算法摘抄</title>
-    <link>http://tribbiannisun.github.io/%E8%B0%83%E5%BA%A6%E8%BF%9B%E7%A8%8B%E7%9A%84%E7%AE%97%E6%B3%95/</link>
-    <pubDate>Fri, 05 Mar 2021 09:46:36 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/%E8%B0%83%E5%BA%A6%E8%BF%9B%E7%A8%8B%E7%9A%84%E7%AE%97%E6%B3%95/</guid>
-    <description><![CDATA[<p><a href="https://blog.csdn.net/xxpresent/article/details/51673570" target="_blank" rel="noopener noreffer">调度进程的算法摘抄</a></p>]]></description>
 </item></channel>
 </rss>
