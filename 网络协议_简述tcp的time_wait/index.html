@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>简述TCP的time_wait摘抄 | </title><meta name="Description" content="简述TCP的time_wait摘抄"><meta property="og:title" content="简述TCP的time_wait摘抄" />
+<meta property="og:description" content="简述TCP的time_wait摘抄" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://tribbiannisun.github.io/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE_%E7%AE%80%E8%BF%B0tcp%E7%9A%84time_wait/" />
+<meta property="og:image" content="http://tribbiannisun.github.io/logo.png"/>
+<meta property="article:published_time" content="2021-03-10T22:30:21+08:00" />
+<meta property="article:modified_time" content="2021-03-10T22:30:21+08:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://tribbiannisun.github.io/logo.png"/>
+
+<meta name="twitter:title" content="简述TCP的time_wait摘抄"/>
+<meta name="twitter:description" content="简述TCP的time_wait摘抄"/>
+<meta name="application-name" content="Haihao Sun">
+<meta name="apple-mobile-web-app-title" content="Haihao Sun"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://tribbiannisun.github.io/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE_%E7%AE%80%E8%BF%B0tcp%E7%9A%84time_wait/" /><link rel="prev" href="http://tribbiannisun.github.io/cpp_linuxc%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "简述TCP的time_wait摘抄",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/tribbiannisun.github.io\/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE_%E7%AE%80%E8%BF%B0tcp%E7%9A%84time_wait\/"
+        },"genre": "posts","keywords": "wi21-week10, interview prep, 网络协议","wordCount":  59 ,
+        "url": "http:\/\/tribbiannisun.github.io\/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE_%E7%AE%80%E8%BF%B0tcp%E7%9A%84time_wait\/","datePublished": "2021-03-10T22:30:21+08:00","dateModified": "2021-03-10T22:30:21+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "http:\/\/tribbiannisun.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": "简述TCP的time_wait摘抄"
+    }
+    </script><script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "http:\/\/tribbiannisun.github.io\/"
+        },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "interview cheatsheet",
+            "item": "http://tribbiannisun.github.io/categories/interview-cheatsheet/"
+        },{
+                "@type": "ListItem",
+                "position": 3,
+                "name": "简述TCP的time_wait摘抄"
+            }]
+    }
+</script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Haihao Sun" class="header-logo"><span class="header-title-pre"><i class='fas fa-pencil-alt fa-fw'></i></span>Haihao Sun</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="https://github.com/TribbianniSun" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Haihao Sun" class="header-logo"><span class="header-title-pre"><i class='fas fa-pencil-alt fa-fw'></i></span>Haihao Sun</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="https://github.com/TribbianniSun" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div><main class="main"><div class="container content-article"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single page-toc theme-classic"><div class="post-all-meta  padding-article ">
+                <div class="breadcrumbs">
+    <a href="/">Home </a>/ <a href="/categories/interview-cheatsheet/">interview cheatsheet </a>/ <a href="/"> 简述TCP的time_wait摘抄 </a>
+</div>
+                    <h1 class="single-title animated flipInX">简述TCP的time_wait摘抄</h1><div class="post-meta">
+                        <div class="post-meta-line"><span class="post-category">
+                                <a href="/categories/interview-cheatsheet/"><i class="far fa-folder fa-fw"></i>&nbsp;interview cheatsheet</a>
+                            </span>&nbsp;&nbsp;&nbsp;&nbsp;<i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time class="timeago" datetime="2021-03-10">2021-03-10</time>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;59 words
+                            &nbsp;&nbsp;&nbsp;&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;One minute</div>
+                    </div>
+                </div><div class="post"><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#什么是-time_wait">什么是 TIME_WAIT</a></li>
+    <li><a href="#优化time_wait">优化TIME_WAIT</a></li>
+    <li><a href="#服务端主动关闭">服务端主动关闭</a></li>
+    <li><a href="#客户端主动关闭">客户端主动关闭</a></li>
+    <li><a href="#总结">总结</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content" style="padding-top: 20px"><p><a href="https://yuerblog.cc/2020/03/09/%E5%85%B3%E4%BA%8Etime_wait%E9%97%AE%E9%A2%98%E7%AE%80%E8%BF%B0%E4%B8%8E%E4%BC%98%E5%8C%96/" target="_blank" rel="noopener noreffer">&ldquo;简述TCP的time_wait摘抄&rdquo;</a></p>
+<h2 id="什么是-time_wait">什么是 TIME_WAIT</h2>
+<p>主动关闭连接的一方最终进入TIME_WAIT状态等待一段才真正的释放内核中的连接记录，在释放记录之前这个连接使用的本地端口将一直被占用。</p>
+<p>保持一段时间的TIME_WAIT的理由是：担心”ack N+1″没有送达，导致被动方重传”FIN N”，那么主动方应当再次响应”ack N+1″。</p>
+<p>如果没有TIME_WAIT就直接复用该连接占用的端口，那么万一被动方重传”FIN N”，那么使用相同端口的新连接就会被错误关闭。</p>
+<p>
+
+<div ><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://yuerblog.cc/wp-content/uploads/2020/03/1-1.jpg"
+        data-srcset="https://yuerblog.cc/wp-content/uploads/2020/03/1-1.jpg, https://yuerblog.cc/wp-content/uploads/2020/03/1-1.jpg 1.5x, https://yuerblog.cc/wp-content/uploads/2020/03/1-1.jpg 0.1x"
+        data-sizes="auto"
+        alt="https://yuerblog.cc/wp-content/uploads/2020/03/1-1.jpg"
+        title="1-1.jpg" /></div></p>
+<h2 id="优化time_wait">优化TIME_WAIT</h2>
+<ul>
+<li>谁主动关闭socket，谁TIME_WAIT。</li>
+<li>如果双方响应正常，TIME_WAIT应该只是瞬间状态。</li>
+</ul>
+<p>因此，不明确”客户端主动关闭”/”服务端主动关闭”就讨论TIME_WAIT就是耍流氓。</p>
+<h2 id="服务端主动关闭">服务端主动关闭</h2>
+<p>无论有多少连接，服务端都只有一个端口，那就是监听端口，大量连接之间的差异仅仅是TCP 4元祖的客户端ip和port不同而已。</p>
+<p>因此服务端TIME_WAIT压根不会耗尽端口，因为它就一个端口。</p>
+<p>那么服务端就不需要优化了吗？对，没必要优化，一个TIME_WAIT的4元祖当遇到新的SYN时会复用，不需要特殊配置。</p>
+<p>另外，当TIME_WAIT数量超过内核选项net.ipv4.tcp_max_tw_buckets的限制时，多余的TIME_WAIT连接将被立即关闭，然后在netstat -s中留下如下的溢出统计指标：</p>
+<p>TCPTimeWaitOverflow: 127688100</p>
+<h2 id="客户端主动关闭">客户端主动关闭</h2>
+<p>客户端每个连接都会随机选择一个本地端口，所以最终会导致客户端大量端口处于TIME_WAIT状态，这和服务端主动关闭是最大的不同。</p>
+<p>所以我们通常所说的TIME_WAIT问题都是针对客户端的，只是好像很少有人提及这一点。</p>
+<p>网上有一种优化手段是把net.ipv4.tcp_max_tw_buckets调低，这样TIME_WAIT连接就会被删除，但是这不是一个最佳手段哈。</p>
+<p>目前唯一安全的选项就是同时开启如下2个选项：</p>
+<ul>
+<li>net.ipv4.tcp_timestamps=1（连接发起方和接收方都需要开启）</li>
+<li>net.ipv4.tcp_tw_reuse=1（只影响连接发起方）</li>
+</ul>
+<p>它的作用是向外发起连接的时候，可以复用TIME_WAIT的端口，但是有一个前提：</p>
+<p>该端口最后一次通讯时间距离当前系统时间&gt;1秒</p>
+<p>tcp timestamp选项的作用就是内核会记录端口的最后通讯时间，这样reuse选项才有判断依据。</p>
+<p>那么客户端复用TIME_WAIT连接，对服务端有啥影响呢？</p>
+<p>TIME_WAIT就是为了确保给被动方的FIN回复ACK成功，这样对方才会离开LAST-ACK彻底结束连接。</p>
+<p>图中的叉号就是回复ACK丢失的情况，按道理应该继续TIME_WAIT等待被动关闭方重传FIN，然而我们这时候我们重用端口新建到服务端的连接，发送SYN会被对方忽略，因为对方还处在上一个连接的LAST-ACK状态。</p>
+<p>被动方稍后重传FIN，客户端的端口已经是SYN-SENT新建连接状态，因此回复对方RST让对方退出LAST-ACK状态。此后，客户端重传SYN，被动关闭方正常回复SYN+ACK，连接建立完成。</p>
+<p>看起来，唯一顾虑的就是SYN重传会不会导致连接变慢？可能需要实际测试测试。</p>
+<p>另外还有2个辅助优化手段，就是扩大内核选择端口的范围，比如调大为：</p>
+<p>net.ipv4.ip_local_port_range = 5120 65000</p>
+<p>还有降低TIME_WAIT的保持时间（可以更短，比如10秒）：</p>
+<p>net.ipv4.tcp_fin_timeout=30</p>
+<p>这样客户端可以有更多的端口使用。</p>
+<h2 id="总结">总结</h2>
+<p>在所有机器上，生效如下参数：</p>
+<p>net.ipv4.tcp_timestamps=1
+net.ipv4.tcp_tw_reuse=1
+net.ipv4.ip_local_port_range = 5120 65000
+net.ipv4.tcp_fin_timeout=30
+如果你的内核版本低，那么需要确保禁用掉一个垃圾选项，它已经在4.x内核里彻底删除了：</p>
+<p>net.ipv4.tcp_tw_recycle=0
+这可以应对TIME_WAIT问题，但是不是解决短连接问题的所有参数（可以阅读我的上一篇关于K8S的博客）。</p></div><div class="post-info-share">
+    <span><a class="share-icon share-twitter" href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://tribbiannisun.github.io/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE_%E7%AE%80%E8%BF%B0tcp%E7%9A%84time_wait/" data-title="简述TCP的time_wait摘抄" data-hashtags="wi21-week10,interview prep,网络协议"><i class="fab fa-twitter fa-fw"></i></a><a class="share-icon share-facebook" href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://tribbiannisun.github.io/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE_%E7%AE%80%E8%BF%B0tcp%E7%9A%84time_wait/" data-hashtag="wi21-week10"><i class="fab fa-facebook-square fa-fw"></i></a><a class="share-icon share-line" href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://tribbiannisun.github.io/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE_%E7%AE%80%E8%BF%B0tcp%E7%9A%84time_wait/" data-title="简述TCP的time_wait摘抄"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a class="share-icon share-weibo" href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://tribbiannisun.github.io/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE_%E7%AE%80%E8%BF%B0tcp%E7%9A%84time_wait/" data-title="简述TCP的time_wait摘抄"><i class="fab fa-weibo fa-fw"></i></a></span>
+</div><div class="post-footer" id="post-footer"><div class="post-navigation"><div class="post-nav-box nav-box-prev">
+            <a class="nav-box" href="/cpp_linuxc%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/"><span class="nav-icon"><svg aria-hidden="true" data-prefix="fas" data-icon="chevron-circle-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z"></path></svg></span><div style="text-align: right;padding-left: 10px"><div class="nav-text-h">Next article</div><span class="nav-text">LinuxC内存管理摘抄</span></div></a>
+        </div></div></div>
+</div>
+
+    </article><div class=" post-tags post-tags-toc "><a href="/tags/wi21-week10/" class="tag">wi21-week10</a><a href="/tags/interview-prep/" class="tag">interview prep</a><a href="/tags/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/" class="tag">网络协议</a></div></div></main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span>Haihao 2020 - 2021</span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script src="/lib/autocomplete/autocomplete.min.js"></script><script src="/lib/algoliasearch/algoliasearch-lite.umd.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":100},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.en","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"algolia"}};</script><script src="/js/theme.min.js"></script><script src="/js/jquery-3.5.1.min.js"></script>
+    <script>
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym("70532758", "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/69594475" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    </body>
+</html>

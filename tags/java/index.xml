@@ -5,68 +5,68 @@
         <description>Java - Tag - Haihao Sun</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 06 Mar 2021 11:35:47 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/java/" rel="self" type="application/rss+xml" /><item>
     <title>简述JVM的内存模型摘抄</title>
-    <link>http://tribbiannisun.github.io/%E7%AE%80%E8%BF%B0jvm%E7%9A%84%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B/</link>
+    <link>http://tribbiannisun.github.io/java_%E7%AE%80%E8%BF%B0jvm%E7%9A%84%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B/</link>
     <pubDate>Sat, 06 Mar 2021 11:35:47 &#43;0800</pubDate>
     <author>Author</author>
-    <guid>http://tribbiannisun.github.io/%E7%AE%80%E8%BF%B0jvm%E7%9A%84%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B/</guid>
+    <guid>http://tribbiannisun.github.io/java_%E7%AE%80%E8%BF%B0jvm%E7%9A%84%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B/</guid>
     <description><![CDATA[<p><a href="https://blog.csdn.net/qq_29229567/article/details/103227854" target="_blank" rel="noopener noreffer">JVM：简述对JVM内存数据区域的认识摘抄</a></p>]]></description>
 </item><item>
     <title>CAS的性质和应用摘抄</title>
-    <link>http://tribbiannisun.github.io/cas%E7%9A%84%E6%80%A7%E8%B4%A8%E5%92%8C%E5%BA%94%E7%94%A8/</link>
+    <link>http://tribbiannisun.github.io/java_cas%E7%9A%84%E6%80%A7%E8%B4%A8%E5%92%8C%E5%BA%94%E7%94%A8/</link>
     <pubDate>Thu, 04 Mar 2021 22:47:24 &#43;0800</pubDate>
     <author>Author</author>
-    <guid>http://tribbiannisun.github.io/cas%E7%9A%84%E6%80%A7%E8%B4%A8%E5%92%8C%E5%BA%94%E7%94%A8/</guid>
+    <guid>http://tribbiannisun.github.io/java_cas%E7%9A%84%E6%80%A7%E8%B4%A8%E5%92%8C%E5%BA%94%E7%94%A8/</guid>
     <description><![CDATA[<p>CAS 摘抄</p>]]></description>
 </item><item>
     <title>Java中锁的种类摘抄</title>
-    <link>http://tribbiannisun.github.io/java%E4%B8%AD%E9%94%81%E7%9A%84%E7%A7%8D%E7%B1%BB/</link>
+    <link>http://tribbiannisun.github.io/java_%E9%94%81%E7%9A%84%E7%A7%8D%E7%B1%BB/</link>
     <pubDate>Thu, 04 Mar 2021 22:40:43 &#43;0800</pubDate>
     <author>Author</author>
-    <guid>http://tribbiannisun.github.io/java%E4%B8%AD%E9%94%81%E7%9A%84%E7%A7%8D%E7%B1%BB/</guid>
+    <guid>http://tribbiannisun.github.io/java_%E9%94%81%E7%9A%84%E7%A7%8D%E7%B1%BB/</guid>
     <description><![CDATA[<p><a href="https://blog.csdn.net/u012988901/article/details/100117719" target="_blank" rel="noopener noreffer">Java中锁的种类摘抄</a></p>]]></description>
 </item><item>
     <title>Equals和==的区别</title>
-    <link>http://tribbiannisun.github.io/equals%E5%92%8C%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+    <link>http://tribbiannisun.github.io/java_equals%E5%92%8C%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
     <pubDate>Thu, 04 Mar 2021 21:27:34 &#43;0800</pubDate>
     <author>Author</author>
-    <guid>http://tribbiannisun.github.io/equals%E5%92%8C%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+    <guid>http://tribbiannisun.github.io/java_equals%E5%92%8C%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
     <description><![CDATA[<p><a href="https://www.jianshu.com/p/9cbed9f33a4d" target="_blank" rel="noopener noreffer">Equals和==的区别</a></p>]]></description>
 </item><item>
     <title>Synchronized和lock的使用分析摘抄</title>
-    <link>http://tribbiannisun.github.io/synchronized%E5%92%8Clock%E7%9A%84%E4%BD%BF%E7%94%A8%E5%88%86%E6%9E%90/</link>
+    <link>http://tribbiannisun.github.io/java_synchronized%E5%92%8Clock%E7%9A%84%E4%BD%BF%E7%94%A8%E5%88%86%E6%9E%90/</link>
     <pubDate>Thu, 04 Mar 2021 21:17:39 &#43;0800</pubDate>
     <author>Author</author>
-    <guid>http://tribbiannisun.github.io/synchronized%E5%92%8Clock%E7%9A%84%E4%BD%BF%E7%94%A8%E5%88%86%E6%9E%90/</guid>
+    <guid>http://tribbiannisun.github.io/java_synchronized%E5%92%8Clock%E7%9A%84%E4%BD%BF%E7%94%A8%E5%88%86%E6%9E%90/</guid>
     <description><![CDATA[<!-- https://github.com/Snailclimb/JavaGuide/blob/master/docs/database/%E4%B8%80%E6%9D%A1sql%E8%AF%AD%E5%8F%A5%E5%9C%A8mysql%E4%B8%AD%E5%A6%82%E4%BD%95%E6%89%A7%E8%A1%8C%E7%9A%84.md -->
 <!-- https://www.notion.so/49857a7f13684cedb669584791e18357?v=a711b9d86f964fe398d3ba842284d99d 面试八股文 -->
 <p><a href="https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/multi-thread/2020%E6%9C%80%E6%96%B0Java%E5%B9%B6%E5%8F%91%E8%BF%9B%E9%98%B6%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93.md" target="_blank" rel="noopener noreffer">Synchronized和lock的使用分析摘抄</a></p>]]></description>
 </item><item>
     <title>String能否被继承</title>
-    <link>http://tribbiannisun.github.io/string%E8%83%BD%E5%90%A6%E8%A2%AB%E7%BB%A7%E6%89%BF/</link>
+    <link>http://tribbiannisun.github.io/java_string%E8%83%BD%E5%90%A6%E8%A2%AB%E7%BB%A7%E6%89%BF/</link>
     <pubDate>Thu, 04 Mar 2021 21:11:43 &#43;0800</pubDate>
     <author>Author</author>
-    <guid>http://tribbiannisun.github.io/string%E8%83%BD%E5%90%A6%E8%A2%AB%E7%BB%A7%E6%89%BF/</guid>
+    <guid>http://tribbiannisun.github.io/java_string%E8%83%BD%E5%90%A6%E8%A2%AB%E7%BB%A7%E6%89%BF/</guid>
     <description><![CDATA[<p><a href="https://www.cnblogs.com/shenxiaoquan/p/5941033.html#:~:text=%E4%B8%BA%E4%BB%80%E4%B9%88%EF%BC%9F,%E5%AE%9E%E7%8E%B0%E7%BB%86%E8%8A%82%E4%B8%8D%E5%85%81%E8%AE%B8%E6%94%B9%E5%8F%98%E3%80%82" target="_blank" rel="noopener noreffer">String能否被继承</a></p>]]></description>
 </item><item>
     <title>Java的垃圾回收机制和回收算法摘抄</title>
-    <link>http://tribbiannisun.github.io/java%E7%9A%84%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6%E5%92%8C%E5%9B%9E%E6%94%B6%E7%AE%97%E6%B3%95/</link>
+    <link>http://tribbiannisun.github.io/java_%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6%E5%92%8C%E5%9B%9E%E6%94%B6%E7%AE%97%E6%B3%95/</link>
     <pubDate>Thu, 04 Mar 2021 20:51:25 &#43;0800</pubDate>
     <author>Author</author>
-    <guid>http://tribbiannisun.github.io/java%E7%9A%84%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6%E5%92%8C%E5%9B%9E%E6%94%B6%E7%AE%97%E6%B3%95/</guid>
+    <guid>http://tribbiannisun.github.io/java_%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6%E5%92%8C%E5%9B%9E%E6%94%B6%E7%AE%97%E6%B3%95/</guid>
     <description><![CDATA[<p><a href="https://blog.csdn.net/u012988901/article/details/100117719" target="_blank" rel="noopener noreffer">Java的垃圾回收机制和回收算法</a></p>]]></description>
 </item><item>
     <title>Volatile的使用及其原理</title>
-    <link>http://tribbiannisun.github.io/volatile%E7%9A%84%E4%BD%BF%E7%94%A8%E5%8F%8A%E5%85%B6%E5%8E%9F%E7%90%86/</link>
+    <link>http://tribbiannisun.github.io/java_volatile%E7%9A%84%E4%BD%BF%E7%94%A8%E5%8F%8A%E5%85%B6%E5%8E%9F%E7%90%86/</link>
     <pubDate>Thu, 04 Mar 2021 10:42:53 &#43;0800</pubDate>
     <author>Author</author>
-    <guid>http://tribbiannisun.github.io/volatile%E7%9A%84%E4%BD%BF%E7%94%A8%E5%8F%8A%E5%85%B6%E5%8E%9F%E7%90%86/</guid>
+    <guid>http://tribbiannisun.github.io/java_volatile%E7%9A%84%E4%BD%BF%E7%94%A8%E5%8F%8A%E5%85%B6%E5%8E%9F%E7%90%86/</guid>
     <description><![CDATA[<p><a href="https://www.cnblogs.com/paddix/p/5428507.html" target="_blank" rel="noopener noreffer">Volatile的使用及其原理</a></p>]]></description>
 </item><item>
     <title>ConcurrentHashMap是如何保证线程安全的</title>
-    <link>http://tribbiannisun.github.io/concurrenthashmap%E5%92%8Chashmap/</link>
+    <link>http://tribbiannisun.github.io/java_concurrenthashmap%E5%92%8Chashmap/</link>
     <pubDate>Thu, 04 Mar 2021 09:34:08 &#43;0800</pubDate>
     <author>Author</author>
-    <guid>http://tribbiannisun.github.io/concurrenthashmap%E5%92%8Chashmap/</guid>
+    <guid>http://tribbiannisun.github.io/java_concurrenthashmap%E5%92%8Chashmap/</guid>
     <description><![CDATA[<p><a href="https://www.cnblogs.com/jing99/p/11330341.html" target="_blank" rel="noopener noreffer">ConcurrentHashMap是如何保证线程安全的</a></p>]]></description>
 </item></channel>
 </rss>

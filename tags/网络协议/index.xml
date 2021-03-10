@@ -3,40 +3,47 @@
         <title>网络协议 - Tag - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/tags/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/</link>
         <description>网络协议 - Tag - Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 09 Mar 2021 14:53:22 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 10 Mar 2021 22:30:21 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/" rel="self" type="application/rss+xml" /><item>
+    <title>简述TCP的time_wait摘抄</title>
+    <link>http://tribbiannisun.github.io/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE_%E7%AE%80%E8%BF%B0tcp%E7%9A%84time_wait/</link>
+    <pubDate>Wed, 10 Mar 2021 22:30:21 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE_%E7%AE%80%E8%BF%B0tcp%E7%9A%84time_wait/</guid>
+    <description><![CDATA[<p><a href="https://yuerblog.cc/2020/03/09/%E5%85%B3%E4%BA%8Etime_wait%E9%97%AE%E9%A2%98%E7%AE%80%E8%BF%B0%E4%B8%8E%E4%BC%98%E5%8C%96/" target="_blank" rel="noopener noreffer">&ldquo;简述TCP的time_wait摘抄&rdquo;</a></p>]]></description>
+</item><item>
     <title>什么是TCP粘包摘抄</title>
-    <link>http://tribbiannisun.github.io/%E4%BB%80%E4%B9%88%E6%98%AFtcp%E7%B2%98%E5%8C%85/</link>
+    <link>http://tribbiannisun.github.io/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE_%E4%BB%80%E4%B9%88%E6%98%AFtcp%E7%B2%98%E5%8C%85/</link>
     <pubDate>Tue, 09 Mar 2021 14:53:22 &#43;0800</pubDate>
     <author>Author</author>
-    <guid>http://tribbiannisun.github.io/%E4%BB%80%E4%B9%88%E6%98%AFtcp%E7%B2%98%E5%8C%85/</guid>
+    <guid>http://tribbiannisun.github.io/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE_%E4%BB%80%E4%B9%88%E6%98%AFtcp%E7%B2%98%E5%8C%85/</guid>
     <description><![CDATA[<p><a href="https://www.cnblogs.com/cangqinglang/p/11503057.html" target="_blank" rel="noopener noreffer">什么是TCP粘包摘抄</a></p>]]></description>
 </item><item>
     <title>TCP和UDP区别摘抄</title>
-    <link>http://tribbiannisun.github.io/tcp%E5%92%8Cudp%E5%8C%BA%E5%88%AB/</link>
+    <link>http://tribbiannisun.github.io/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE_tcp%E5%92%8Cudp%E5%8C%BA%E5%88%AB/</link>
     <pubDate>Fri, 05 Mar 2021 10:55:16 &#43;0800</pubDate>
     <author>Author</author>
-    <guid>http://tribbiannisun.github.io/tcp%E5%92%8Cudp%E5%8C%BA%E5%88%AB/</guid>
+    <guid>http://tribbiannisun.github.io/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE_tcp%E5%92%8Cudp%E5%8C%BA%E5%88%AB/</guid>
     <description><![CDATA[<p><a href="https://zhuanlan.zhihu.com/p/24860273" target="_blank" rel="noopener noreffer">TCP和UDP区别摘抄</a></p>]]></description>
 </item><item>
     <title>HTTP和HTTPS区别摘抄</title>
-    <link>http://tribbiannisun.github.io/http%E5%92%8Chttps%E5%8C%BA%E5%88%AB/</link>
+    <link>http://tribbiannisun.github.io/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE_http%E5%92%8Chttps%E5%8C%BA%E5%88%AB/</link>
     <pubDate>Fri, 05 Mar 2021 10:54:02 &#43;0800</pubDate>
     <author>Author</author>
-    <guid>http://tribbiannisun.github.io/http%E5%92%8Chttps%E5%8C%BA%E5%88%AB/</guid>
+    <guid>http://tribbiannisun.github.io/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE_http%E5%92%8Chttps%E5%8C%BA%E5%88%AB/</guid>
     <description><![CDATA[<p>HTTP和HTTPS区别摘抄</p>]]></description>
 </item><item>
     <title>PRC和REST摘抄</title>
-    <link>http://tribbiannisun.github.io/prc%E5%92%8Crest/</link>
+    <link>http://tribbiannisun.github.io/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE_prc%E5%92%8Crest/</link>
     <pubDate>Fri, 05 Mar 2021 10:39:23 &#43;0800</pubDate>
     <author>Author</author>
-    <guid>http://tribbiannisun.github.io/prc%E5%92%8Crest/</guid>
+    <guid>http://tribbiannisun.github.io/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE_prc%E5%92%8Crest/</guid>
     <description><![CDATA[<p><a href="https://www.jianshu.com/p/e3c4b2837961" target="_blank" rel="noopener noreffer">RPC 和 REST 的优缺点、区别、如何选择</a></p>]]></description>
 </item><item>
     <title>三次握手_四次挥手摘抄</title>
-    <link>http://tribbiannisun.github.io/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B_%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/</link>
+    <link>http://tribbiannisun.github.io/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE_%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B_%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/</link>
     <pubDate>Fri, 05 Mar 2021 09:51:54 &#43;0800</pubDate>
     <author>Author</author>
-    <guid>http://tribbiannisun.github.io/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B_%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/</guid>
+    <guid>http://tribbiannisun.github.io/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE_%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B_%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/</guid>
     <description><![CDATA[<p><a href="https://zhuanlan.zhihu.com/p/53374516" target="_blank" rel="noopener noreffer">三次握手_四次挥手摘抄</a></p>]]></description>
 </item></channel>
 </rss>

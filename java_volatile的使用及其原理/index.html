@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Volatile的使用及其原理 | </title><meta name="Description" content="volatile有何作用？volatile有何使用场景？volatile的实现原理是什么？"><meta property="og:title" content="Volatile的使用及其原理" />
+<meta property="og:description" content="volatile有何作用？volatile有何使用场景？volatile的实现原理是什么？" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://tribbiannisun.github.io/java_volatile%E7%9A%84%E4%BD%BF%E7%94%A8%E5%8F%8A%E5%85%B6%E5%8E%9F%E7%90%86/" />
+<meta property="og:image" content="http://tribbiannisun.github.io/logo.png"/>
+<meta property="article:published_time" content="2021-03-04T10:42:53+08:00" />
+<meta property="article:modified_time" content="2021-03-04T10:42:53+08:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://tribbiannisun.github.io/logo.png"/>
+
+<meta name="twitter:title" content="Volatile的使用及其原理"/>
+<meta name="twitter:description" content="volatile有何作用？volatile有何使用场景？volatile的实现原理是什么？"/>
+<meta name="application-name" content="Haihao Sun">
+<meta name="apple-mobile-web-app-title" content="Haihao Sun"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://tribbiannisun.github.io/java_volatile%E7%9A%84%E4%BD%BF%E7%94%A8%E5%8F%8A%E5%85%B6%E5%8E%9F%E7%90%86/" /><link rel="prev" href="http://tribbiannisun.github.io/java_concurrenthashmap%E5%92%8Chashmap/" /><link rel="next" href="http://tribbiannisun.github.io/%E7%AE%97%E6%B3%95_%E7%BA%A2%E9%BB%91%E6%A0%91%E5%92%8Cavl%E6%A0%91/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Volatile的使用及其原理",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/tribbiannisun.github.io\/java_volatile%E7%9A%84%E4%BD%BF%E7%94%A8%E5%8F%8A%E5%85%B6%E5%8E%9F%E7%90%86\/"
+        },"genre": "posts","keywords": "wi21-week9, interview prep, Java","wordCount":  65 ,
+        "url": "http:\/\/tribbiannisun.github.io\/java_volatile%E7%9A%84%E4%BD%BF%E7%94%A8%E5%8F%8A%E5%85%B6%E5%8E%9F%E7%90%86\/","datePublished": "2021-03-04T10:42:53+08:00","dateModified": "2021-03-04T10:42:53+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "http:\/\/tribbiannisun.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": "volatile有何作用？volatile有何使用场景？volatile的实现原理是什么？"
+    }
+    </script><script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "http:\/\/tribbiannisun.github.io\/"
+        },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "interview cheatsheet",
+            "item": "http://tribbiannisun.github.io/categories/interview-cheatsheet/"
+        },{
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Volatile的使用及其原理"
+            }]
+    }
+</script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Haihao Sun" class="header-logo"><span class="header-title-pre"><i class='fas fa-pencil-alt fa-fw'></i></span>Haihao Sun</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="https://github.com/TribbianniSun" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Haihao Sun" class="header-logo"><span class="header-title-pre"><i class='fas fa-pencil-alt fa-fw'></i></span>Haihao Sun</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="https://github.com/TribbianniSun" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div><main class="main"><div class="container content-article"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single page-toc theme-classic"><div class="post-all-meta  padding-article ">
+                <div class="breadcrumbs">
+    <a href="/">Home </a>/ <a href="/categories/interview-cheatsheet/">interview cheatsheet </a>/ <a href="/"> Volatile的使用及其原理 </a>
+</div>
+                    <h1 class="single-title animated flipInX">Volatile的使用及其原理</h1><div class="post-meta">
+                        <div class="post-meta-line"><span class="post-category">
+                                <a href="/categories/interview-cheatsheet/"><i class="far fa-folder fa-fw"></i>&nbsp;interview cheatsheet</a>
+                            </span>&nbsp;&nbsp;&nbsp;&nbsp;<i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time class="timeago" datetime="2021-03-04">2021-03-04</time>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;65 words
+                            &nbsp;&nbsp;&nbsp;&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;One minute</div>
+                    </div>
+                </div><div class="post"><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#摘抄-volatile的使用及其原理httpswwwcnblogscompaddixp5428507html">摘抄 <a href="https://www.cnblogs.com/paddix/p/5428507.html">Volatile的使用及其原理</a></a>
+      <ul>
+        <li><a href="#volatile的作用">Volatile的作用</a></li>
+        <li><a href="#volatile的使用">Volatile的使用</a>
+          <ul>
+            <li><a href="#防止重排序">防止重排序</a></li>
+            <li><a href="#实例化一个对象其实可以分为三个步骤">实例化一个对象其实可以分为三个步骤：</a></li>
+            <li><a href="#但是由于操作系统可以对指令进行重排序所以上面的过程也可能会变成如下过程">但是由于操作系统可以对指令进行重排序，所以上面的过程也可能会变成如下过程：</a></li>
+            <li><a href="#实现可见性">实现可见性</a></li>
+          </ul>
+        </li>
+        <li><a href="#volatile的实现原理">Volatile的实现原理</a>
+          <ul>
+            <li><a href="#有序性实现">有序性实现</a></li>
+            <li><a href="#可见性的实现">可见性的实现</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content" style="padding-top: 20px"><p><a href="https://www.cnblogs.com/paddix/p/5428507.html" target="_blank" rel="noopener noreffer">Volatile的使用及其原理</a></p>
+<h2 id="摘抄-volatile的使用及其原理httpswwwcnblogscompaddixp5428507html">摘抄 <a href="https://www.cnblogs.com/paddix/p/5428507.html" target="_blank" rel="noopener noreffer">Volatile的使用及其原理</a></h2>
+<h3 id="volatile的作用">Volatile的作用</h3>
+<p>我们已经提到过可见性、有序性及原子性问题，通常情况下我们可以通过Synchronized关键字来解决这些个问题，不过如果对Synchronized原理有了解的话，应该知道Synchronized是一个比较重量级的操作，对系统的性能有比较大的影响，所以，如果有其他解决方案，我们通常都避免使用Synchronized来解决问题。而volatile关键字就是Java中提供的另一种解决可见性和有序性问题的方案。对于原子性，需要强调一点，也是大家容易误解的一点：<strong>对volatile变量的单次读/写操作可以保证原子性的，如long和double类型变量，但是并不能保证i++这种操作的原子性，因为本质上i++是读、写两次操作。</strong></p>
+<h3 id="volatile的使用">Volatile的使用</h3>
+<h4 id="防止重排序">防止重排序</h4>
+<ul>
+<li>为什么要在变量singleton之间加上volatile关键字。</li>
+</ul>
+<h4 id="实例化一个对象其实可以分为三个步骤">实例化一个对象其实可以分为三个步骤：</h4>
+<p>1）分配内存空间。
+2) 初始化对象。
+3) 将内存空间的地址赋值给对应的引用。</p>
+<h4 id="但是由于操作系统可以对指令进行重排序所以上面的过程也可能会变成如下过程">但是由于操作系统可以对指令进行重排序，所以上面的过程也可能会变成如下过程：</h4>
+<p>1）分配内存空间。
+2）将内存空间的地址赋值给对应的引用。
+3）初始化对象</p>
+<h4 id="实现可见性">实现可见性</h4>
+<ul>
+<li>
+<p>可见性是指当多个线程访问同一个变量时，一个线程修改了这个变量的值，其他线程能够立即看得到修改的值。</p>
+</li>
+<li>
+<p>对于可见性，Java提供了volatile关键字来保证可见性。当一个共享变量被volatile修饰时，它会保证修改的值会立即被更新到主存，当有其他线程需要读取时，它会去内存中读取新值。而普通的共享变量不能保证可见性，因为普通共享变量被修改之后，什么时候被写入主存是不确定的，当其他线程去读取时，此时内存中可能还是原来的旧值，因此无法保证可见性。</p>
+</li>
+</ul>
+<ol start="3">
+<li>保证原子性</li>
+</ol>
+<ul>
+<li>在单线程环境下我们可以认为整个步骤都是原子性操作，但是在多线程环境下则不同。</li>
+<li>Java只保证了基本数据类型的变量和赋值操作才是原子性的（注：在32位的JDK环境下，对64位数据的读取不是原子性操作，如long、double）。</li>
+<li>要想在多线程环境下保证原子性，则可以通过锁、synchronized来确保。volatile是无法保证<strong>复合操作</strong>的原子性。</li>
+<li>volatile是无法保证这复合操作是具有原子性的，我们可以通过AtomicInteger或者Synchronized来保证+1操作的原子性。</li>
+</ul>
+<h3 id="volatile的实现原理">Volatile的实现原理</h3>
+<h4 id="有序性实现">有序性实现</h4>
+<p>通俗一点说就是如果a happen-before b，则a所做的任何操作对b是可见的。（这一点大家务必记住，因为happen-before这个词容易被误解为是时间的前后）。我们再来看看JSR 133中定义了哪些happen-before规则：</p>
+<ul>
+<li>同一个线程中的，前面的操作 happen-before 后续的操作。（即单线程内按代码顺序执行。但是，在不影响在单线程环境执行结果的前提下，编译器和处理器可以进行重排序，这是合法的。换句话说，这一是规则无法保证编译重排和指令重排）。</li>
+<li>监视器上的解锁操作 happen-before 其后续的加锁操作。（Synchronized 规则）</li>
+<li>对volatile变量的写操作 happen-before 后续的读操作。（volatile 规则）</li>
+<li>线程的start() 方法 happen-before 该线程所有的后续操作。（线程启动规则）</li>
+<li>线程所有的操作 happen-before 其他线程在该线程上调用 join 返回成功后的操作。</li>
+<li>如果 a happen-before b，b happen-before c，则a happen-before c（传递性）。
+　
+这里我们主要看下第三条：volatile变量的保证有序性的规则。《Java并发编程：核心理论》一文中提到过重排序分为编译器重排序和处理器重排序。为了实现volatile内存语义，JMM会对volatile变量限制这两种类型的重排序。下面是JMM针对volatile变量所规定的重排序规则表：</li>
+</ul>
+<h4 id="可见性的实现">可见性的实现</h4>
+<p>在前文中已经提及过，线程本身并不直接与主内存进行数据的交互，而是通过线程的工作内存来完成相应的操作。这也是导致线程间数据不可见的本质原因。因此要实现volatile变量的可见性，直接从这方面入手即可。对volatile变量的写操作与普通变量的主要区别有两点：</p>
+<p>1）修改volatile变量时会强制将修改后的值刷新的主内存中。
+2）修改volatile变量后会导致其他线程工作内存中对应的变量值失效。因此，再读取该变量值的时候就需要重新从读取主内存中的值。通过这两个操作，就可以解决volatile变量的可见性问题。</p></div><div class="post-info-share">
+    <span><a class="share-icon share-twitter" href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://tribbiannisun.github.io/java_volatile%E7%9A%84%E4%BD%BF%E7%94%A8%E5%8F%8A%E5%85%B6%E5%8E%9F%E7%90%86/" data-title="Volatile的使用及其原理" data-hashtags="wi21-week9,interview prep,Java"><i class="fab fa-twitter fa-fw"></i></a><a class="share-icon share-facebook" href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://tribbiannisun.github.io/java_volatile%E7%9A%84%E4%BD%BF%E7%94%A8%E5%8F%8A%E5%85%B6%E5%8E%9F%E7%90%86/" data-hashtag="wi21-week9"><i class="fab fa-facebook-square fa-fw"></i></a><a class="share-icon share-line" href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://tribbiannisun.github.io/java_volatile%E7%9A%84%E4%BD%BF%E7%94%A8%E5%8F%8A%E5%85%B6%E5%8E%9F%E7%90%86/" data-title="Volatile的使用及其原理"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a class="share-icon share-weibo" href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://tribbiannisun.github.io/java_volatile%E7%9A%84%E4%BD%BF%E7%94%A8%E5%8F%8A%E5%85%B6%E5%8E%9F%E7%90%86/" data-title="Volatile的使用及其原理"><i class="fab fa-weibo fa-fw"></i></a></span>
+</div><div class="post-footer" id="post-footer"><div class="post-navigation"><div class="post-nav-box nav-box-prev">
+            <a class="nav-box" href="/java_concurrenthashmap%E5%92%8Chashmap/"><span class="nav-icon"><svg aria-hidden="true" data-prefix="fas" data-icon="chevron-circle-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z"></path></svg></span><div style="text-align: right;padding-left: 10px"><div class="nav-text-h">Next article</div><span class="nav-text">ConcurrentHashMap是如何保证线程安全的</span></div></a>
+        </div>
+        <div class="post-nav-box nav-box-next">
+            <a class="nav-box" href="/%E7%AE%97%E6%B3%95_%E7%BA%A2%E9%BB%91%E6%A0%91%E5%92%8Cavl%E6%A0%91/"><div style="padding-right: 10px"><div class="nav-text-h">Next article</div><span class="nav-text">红黑树和AVL树</span></div><span class="nav-icon"><svg aria-hidden="true" data-prefix="fas" data-icon="chevron-circle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"></path></svg></span></a>
+        </div></div></div>
+</div>
+
+    </article><div class=" post-tags post-tags-toc "><a href="/tags/wi21-week9/" class="tag">wi21-week9</a><a href="/tags/interview-prep/" class="tag">interview prep</a><a href="/tags/java/" class="tag">Java</a></div></div></main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span>Haihao 2020 - 2021</span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script src="/lib/autocomplete/autocomplete.min.js"></script><script src="/lib/algoliasearch/algoliasearch-lite.umd.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":100},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.en","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"algolia"}};</script><script src="/js/theme.min.js"></script><script src="/js/jquery-3.5.1.min.js"></script>
+    <script>
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym("70532758", "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/69594475" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    </body>
+</html>
