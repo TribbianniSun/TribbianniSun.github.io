@@ -3,7 +3,14 @@
         <title>Leetcode Problem - Category - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/categories/leetcode-problem/</link>
         <description>Leetcode Problem - Category - Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 22 Feb 2021 22:40:18 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/categories/leetcode-problem/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 07 May 2021 21:08:27 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/categories/leetcode-problem/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode_1049 Last Stone Weight II</title>
+    <link>http://tribbiannisun.github.io/leetcode_1049/</link>
+    <pubDate>Fri, 07 May 2021 21:08:27 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1049/</guid>
+    <description><![CDATA[<p>Use <strong>Dynamic Programming</strong> to solve Leetcode 1049 - Last Stone Weight II.</p>]]></description>
+</item><item>
     <title>Leetcode 786 - K-th Smallest Prime Fraction</title>
     <link>http://tribbiannisun.github.io/leetcode_786/</link>
     <pubDate>Mon, 22 Feb 2021 22:40:18 &#43;0800</pubDate>
@@ -66,12 +73,5 @@
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_1722/</guid>
     <description><![CDATA[<p>Use <strong>Union Find</strong> to solve Leetcode 1722 - Minimize Hamming Distance After Swap Operations.</p>]]></description>
-</item><item>
-    <title>Leetcode_547 Number of Provinces</title>
-    <link>http://tribbiannisun.github.io/leetcode_547/</link>
-    <pubDate>Wed, 13 Jan 2021 13:58:27 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_547/</guid>
-    <description><![CDATA[<p>Use <strong>Union Find</strong> to solve Leetcode 547 - Number of Provinces.</p>]]></description>
 </item></channel>
 </rss>
