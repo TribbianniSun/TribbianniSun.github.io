@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "style.min.css",
-	"sourceRoot": "/Users/tribbiannisun/myblog",
+	"sourceRoot": "/Users/haihaosun/myblog",
 	"sources": [
 		"themes/uBlogger/assets/css/style.scss",
 		"themes/uBlogger/assets/css/_variables.scss",
