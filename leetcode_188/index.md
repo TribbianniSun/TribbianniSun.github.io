@@ -4,7 +4,7 @@
 Use **Dynamic Programming - State Machine** to solve Leetcode_188 Best Time to Buy and Sell Stock IV
 <!--more-->
 
-## Problem Description [Leetcode 188]https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/
+## Problem Description [Leetcode 188](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)
 
 
 <p>
@@ -17,7 +17,7 @@ Note: You may not engage in multiple transactions simultaneously (i.e., you must
 
 </p>
 
-## Examples Test Cases [Leetcode 188]https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/
+## Examples Test Cases [Leetcode 188](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)
 
 ```
 Input: k = 2, prices = [2,4,1]

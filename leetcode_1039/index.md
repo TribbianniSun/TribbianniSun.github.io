@@ -6,7 +6,7 @@
 Use **DP over intervals** to solve Leetcode_1039 Minimum Score Triangulation of Polygon.
 <!--more-->
 
-## Problem Description [Leetcode 1039]https://leetcode.com/problems/minimum-score-triangulation-of-polygon/
+## Problem Description [Leetcode 1039](https://leetcode.com/problems/minimum-score-triangulation-of-polygon/)
 
 <p>
 
@@ -20,7 +20,7 @@ Return the smallest possible total score that you can achieve with some triangul
 
 
 
-## Examples Test Cases [Leetcode 1039]https://leetcode.com/problems/minimum-score-triangulation-of-polygon/
+## Examples Test Cases [Leetcode 1039](https://leetcode.com/problems/minimum-score-triangulation-of-polygon/)
 
 ```
 
@@ -30,7 +30,7 @@ Explanation: There are two triangulations, with possible scores: 3*7*5 + 4*5*7 =
 The minimum score is 144.
 ```
 
-## Problem Solution [Leetcode 1039]https://leetcode.com/problems/minimum-score-triangulation-of-polygon/
+## Problem Solution [Leetcode 1039](https://leetcode.com/problems/minimum-score-triangulation-of-polygon/)
 
 ```cpp
 class Solution {
