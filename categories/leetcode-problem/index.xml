@@ -3,20 +3,48 @@
         <title>Leetcode Problem - Category - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/categories/leetcode-problem/</link>
         <description>Leetcode Problem - Category - Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 12 May 2021 22:56:06 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/categories/leetcode-problem/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 15 May 2021 22:14:08 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/categories/leetcode-problem/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode_968 Binary Tree Cameras</title>
+    <link>http://tribbiannisun.github.io/leetcode_968/</link>
+    <pubDate>Sat, 15 May 2021 22:14:08 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_968/</guid>
+    <description><![CDATA[<p>Use <strong>DP-On-Tree</strong> to solve Leetcode_968 Binary Tree Cameras</p>]]></description>
+</item><item>
+    <title>Leetcode_354 Russian Doll Envelopes</title>
+    <link>http://tribbiannisun.github.io/leetcode_354/</link>
+    <pubDate>Fri, 14 May 2021 14:32:02 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_354/</guid>
+    <description><![CDATA[<p>Use <strong>DP-LIS</strong> to solve Leetcode_354 Russian Doll Envelopes</p>]]></description>
+</item><item>
+    <title>Leetcode_673. Number of Longest Increasing Subsequence</title>
+    <link>http://tribbiannisun.github.io/leetcode_673/</link>
+    <pubDate>Fri, 14 May 2021 14:31:46 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_673/</guid>
+    <description><![CDATA[<p>Use <strong>DP LIS</strong> to solve Leetcode_673. Number of Longest Increasing Subsequence</p>]]></description>
+</item><item>
+    <title>Leetcode_300 Longest Increasing Subsequence</title>
+    <link>http://tribbiannisun.github.io/leetcode_300/</link>
+    <pubDate>Fri, 14 May 2021 14:11:52 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_300/</guid>
+    <description><![CDATA[<p>Use <strong>DP LIS</strong> to solve Leetcode_300 Longest Increasing Subsequence.</p>]]></description>
+</item><item>
     <title>Leetcode_1039 Minimum Score Triangulation of Polygon</title>
     <link>http://tribbiannisun.github.io/leetcode_1039/</link>
     <pubDate>Wed, 12 May 2021 22:56:06 &#43;0800</pubDate>
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_1039/</guid>
-    <description><![CDATA[<p>Use <strong>DP over intervals</strong> to solve Leetcode_1039 Minimum Score Triangulation of Polygon.</p>]]></description>
+    <description><![CDATA[<p>Use <strong>DP-On-Intervals</strong> to solve Leetcode_1039 Minimum Score Triangulation of Polygon.</p>]]></description>
 </item><item>
     <title>Leetcode_486 Predict the Winner</title>
     <link>http://tribbiannisun.github.io/leetcode_486/</link>
     <pubDate>Wed, 12 May 2021 22:55:58 &#43;0800</pubDate>
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_486/</guid>
-    <description><![CDATA[<p>Use <strong>DP over intervals</strong> to solve Leetcode_486 Predict the Winner.</p>]]></description>
+    <description><![CDATA[<p>Use <strong>DP-On-Intervals</strong> to solve Leetcode_486 Predict the Winner.</p>]]></description>
 </item><item>
     <title>Leetcode_188 Best Time to Buy and Sell Stock IV</title>
     <link>http://tribbiannisun.github.io/leetcode_188/</link>
@@ -45,33 +73,5 @@
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_714/</guid>
     <description><![CDATA[<p>Use <strong>Dynamic Programming - State Machine</strong> to solve Leetcode_714 Best Time to Buy and Sell Stock with Transaction Fee.</p>]]></description>
-</item><item>
-    <title>Leetcode_1049 Last Stone Weight II</title>
-    <link>http://tribbiannisun.github.io/leetcode_1049/</link>
-    <pubDate>Fri, 07 May 2021 21:08:27 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_1049/</guid>
-    <description><![CDATA[<p>Use <strong>Dynamic Programming</strong> to solve Leetcode 1049 - Last Stone Weight II.</p>]]></description>
-</item><item>
-    <title>Leetcode 786 - K-th Smallest Prime Fraction</title>
-    <link>http://tribbiannisun.github.io/leetcode_786/</link>
-    <pubDate>Mon, 22 Feb 2021 22:40:18 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_786/</guid>
-    <description><![CDATA[<p>New <strong>BFS</strong> to solve Leetcode 786 - K-th Smallest Prime Fraction</p>]]></description>
-</item><item>
-    <title>Leetcode 1091 - Shortest Path in Binary Matrix</title>
-    <link>http://tribbiannisun.github.io/leetcode_1091/</link>
-    <pubDate>Wed, 10 Feb 2021 23:44:36 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_1091/</guid>
-    <description><![CDATA[<p>New <strong>BFS</strong> to solve Leetcode 1091 - Shortest Path in Binary Matrix.</p>]]></description>
-</item><item>
-    <title>Leetcode 284 - Peeking Iterator</title>
-    <link>http://tribbiannisun.github.io/leetcode_284/</link>
-    <pubDate>Mon, 08 Feb 2021 22:51:33 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_284/</guid>
-    <description><![CDATA[<p>New <strong>Idea</strong> to solve Leetcode 284 - Peeking Iterator.</p>]]></description>
 </item></channel>
 </rss>

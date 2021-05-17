@@ -1,0 +1,28 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>DP-LIS - Tag - Haihao Sun</title>
+        <link>http://tribbiannisun.github.io/tags/dp-lis/</link>
+        <description>DP-LIS - Tag - Haihao Sun</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 14 May 2021 14:32:02 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/dp-lis/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode_354 Russian Doll Envelopes</title>
+    <link>http://tribbiannisun.github.io/leetcode_354/</link>
+    <pubDate>Fri, 14 May 2021 14:32:02 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_354/</guid>
+    <description><![CDATA[<p>Use <strong>DP-LIS</strong> to solve Leetcode_354 Russian Doll Envelopes</p>]]></description>
+</item><item>
+    <title>Leetcode_673. Number of Longest Increasing Subsequence</title>
+    <link>http://tribbiannisun.github.io/leetcode_673/</link>
+    <pubDate>Fri, 14 May 2021 14:31:46 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_673/</guid>
+    <description><![CDATA[<p>Use <strong>DP LIS</strong> to solve Leetcode_673. Number of Longest Increasing Subsequence</p>]]></description>
+</item><item>
+    <title>Leetcode_300 Longest Increasing Subsequence</title>
+    <link>http://tribbiannisun.github.io/leetcode_300/</link>
+    <pubDate>Fri, 14 May 2021 14:11:52 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_300/</guid>
+    <description><![CDATA[<p>Use <strong>DP LIS</strong> to solve Leetcode_300 Longest Increasing Subsequence.</p>]]></description>
+</item></channel>
+</rss>

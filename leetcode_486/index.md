@@ -1,7 +1,7 @@
 # Leetcode_486 Predict the Winner
 
 
-Use **DP over intervals** to solve Leetcode_486 Predict the Winner.
+Use **DP-On-Intervals** to solve Leetcode_486 Predict the Winner.
 <!--more-->
 
 

@@ -2,7 +2,7 @@
 
 
 
-Use **Dynamic Programming** to solve Leetcode 1049 - Last Stone Weight II. 
+Use **DP-Knapsack-Problem** to solve Leetcode 1049 - Last Stone Weight II. 
 <!--more-->
 
 

@@ -3,7 +3,7 @@
 
 
 
-Use **DP over intervals** to solve Leetcode_1039 Minimum Score Triangulation of Polygon.
+Use **DP-On-Intervals** to solve Leetcode_1039 Minimum Score Triangulation of Polygon.
 <!--more-->
 
 ## Problem Description [Leetcode 1039](https://leetcode.com/problems/minimum-score-triangulation-of-polygon/)

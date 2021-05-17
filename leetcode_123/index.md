@@ -66,7 +66,7 @@ public:
 };
 ```
 ## Problem Remark 
-- DP -> State Machine
+- DP -> 
 - initialie all the starting state f[i][0][0] to be 0 (meaning that no transaction before at day i, gaining zero profit)
 
 
