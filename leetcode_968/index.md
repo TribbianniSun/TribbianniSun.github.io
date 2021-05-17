@@ -72,8 +72,8 @@ class Solution:
 
 
 ## Problem Remark [Leetcode 968](https://leetcode.com/problems/binary-tree-cameras/)
-- dp[i][0] -> for the set of all the nodes(within subtree whose root is i), we cover them by its children
-- dp[i][1] -> for the set of all the nodes(within subtree whose root is i), we cover them by itself
-- dp[i][2] -> for the set of all the nodes(within subtree whose root is i), we cover them by its parent
+- dp[i][0] -> for the set of all the nodes(within subtree whose root is i), we cover its root i by its children
+- dp[i][1] -> for the set of all the nodes(within subtree whose root is i), we cover its root i by itself
+- dp[i][2] -> for the set of all the nodes(within subtree whose root is i), we cover its root i by its parent
 - DP On Tree + DP-State-Machine 
 
