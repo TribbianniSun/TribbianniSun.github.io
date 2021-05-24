@@ -3,7 +3,14 @@
         <title>All Posts - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/posts/</link>
         <description>All Posts | Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 16 May 2021 22:35:22 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 23 May 2021 22:27:20 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>算法总结_BFS总结</title>
+    <link>http://tribbiannisun.github.io/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93_bfs%E6%80%BB%E7%BB%93/</link>
+    <pubDate>Sun, 23 May 2021 22:27:20 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93_bfs%E6%80%BB%E7%BB%93/</guid>
+    <description><![CDATA[<p>This article reviews the BFS problems and break them into smaller topics and models.</p>]]></description>
+</item><item>
     <title>Leetcode_124 Binary Tree Maximum Path Sum</title>
     <link>http://tribbiannisun.github.io/leetcode_124/</link>
     <pubDate>Sun, 16 May 2021 22:35:22 &#43;0800</pubDate>
@@ -66,12 +73,5 @@
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_188/</guid>
     <description><![CDATA[<p>Use <strong>Dynamic Programming - State Machine</strong> to solve Leetcode_188 Best Time to Buy and Sell Stock IV</p>]]></description>
-</item><item>
-    <title>Leetcode_123 Best Time to Buy and Sell Stock III</title>
-    <link>http://tribbiannisun.github.io/leetcode_123/</link>
-    <pubDate>Tue, 11 May 2021 22:28:53 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_123/</guid>
-    <description><![CDATA[<p>Use <strong>Dynamic Programming - State Machine</strong> to solve Leetcode_123 Best Time to Buy and Sell Stock III</p>]]></description>
 </item></channel>
 </rss>
