@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>BFS 最小步数模型 - Tag - Haihao Sun</title>
+        <link>http://tribbiannisun.github.io/tags/bfs-%E6%9C%80%E5%B0%8F%E6%AD%A5%E6%95%B0%E6%A8%A1%E5%9E%8B/</link>
+        <description>BFS 最小步数模型 - Tag - Haihao Sun</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 25 May 2021 23:28:57 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/bfs-%E6%9C%80%E5%B0%8F%E6%AD%A5%E6%95%B0%E6%A8%A1%E5%9E%8B/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode_752 Open the Lock</title>
+    <link>http://tribbiannisun.github.io/leetcode_752/</link>
+    <pubDate>Tue, 25 May 2021 23:28:57 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_752/</guid>
+    <description><![CDATA[Problem Description Leetcode 752  You have a lock in front of you with 4 circular wheels. Each wheel has 10 slots: '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'. The wheels can rotate freely and wrap around: for example we can turn '9' to be '0', or '0' to be '9'. Each move consists of turning one wheel one slot. The lock initially starts at &lsquo;0000&rsquo;, a string representing the state of the 4 wheels.]]></description>
+</item></channel>
+</rss>

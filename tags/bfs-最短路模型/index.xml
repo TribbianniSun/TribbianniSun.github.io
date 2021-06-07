@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>BFS 最短路模型 - Tag - Haihao Sun</title>
+        <link>http://tribbiannisun.github.io/tags/bfs-%E6%9C%80%E7%9F%AD%E8%B7%AF%E6%A8%A1%E5%9E%8B/</link>
+        <description>BFS 最短路模型 - Tag - Haihao Sun</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 24 May 2021 23:16:32 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/bfs-%E6%9C%80%E7%9F%AD%E8%B7%AF%E6%A8%A1%E5%9E%8B/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode_934 - Shortest Bridge</title>
+    <link>http://tribbiannisun.github.io/leetcode_934/</link>
+    <pubDate>Mon, 24 May 2021 23:16:32 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_934/</guid>
+    <description><![CDATA[<p>Use <strong>BFS 最短路模型</strong> to solve Leetcode 934 - Shortest Bridge</p>]]></description>
+</item></channel>
+</rss>
