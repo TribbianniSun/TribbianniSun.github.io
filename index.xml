@@ -3,25 +3,43 @@
         <title>Haihao Sun</title>
         <link>http://tribbiannisun.github.io/</link>
         <description>Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 29 May 2021 12:04:08 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 16 Jun 2021 23:38:23 &#43;0800</lastBuildDate>
             <atom:link href="http://tribbiannisun.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Leetcode_721 Account Merge</title>
+    <link>http://tribbiannisun.github.io/leetcode_721/</link>
+    <pubDate>Wed, 16 Jun 2021 23:38:23 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_721/</guid>
+    <description><![CDATA[<p>Use <strong>Union Find 并查集+数据结构</strong> to solve Leetcode 721 - Account Merge</p>]]></description>
+</item><item>
+    <title>Leetcode_1319 Number of Operations to Make Network Connected</title>
+    <link>http://tribbiannisun.github.io/leetcode_1319/</link>
+    <pubDate>Tue, 15 Jun 2021 23:45:28 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1319/</guid>
+    <description><![CDATA[<p>Use <strong>Union Find 维护集合数的并查集</strong> to solve Leetcode 1319 - Number of Operations to Make Network Connected</p>]]></description>
+</item><item>
+    <title>Leetcode_990 Satisfiability of Equality Equations</title>
+    <link>http://tribbiannisun.github.io/leetcode_990/</link>
+    <pubDate>Tue, 15 Jun 2021 23:27:02 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_990/</guid>
+    <description><![CDATA[<p>Use <strong>Union Find 裸并查集</strong> to solve Leetcode 990 - Satisfiability of Equality Equations</p>]]></description>
+</item><item>
     <title>Leetcode_542 01 Matrix</title>
     <link>http://tribbiannisun.github.io/leetcode_542/</link>
     <pubDate>Sat, 29 May 2021 12:04:08 &#43;0800</pubDate>
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_542/</guid>
-    <description><![CDATA[Problem Description Leetcode 542  Given an m x n binary matrix mat, return the distance of the nearest 0 for each cell.
-The distance between two adjacent cells is 1.
-Example Test Cases Leetcode 542  
-1 2  Input: mat = [[0,0,0],[0,1,0],[0,0,0]] Output: [[0,0,0],[0,1,0],[0,0,0]]   Problem Solution Leetcode 542 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39  typedef pair&lt;int,int&gt; PII; class Solution { public: int n, m; int dx[4] = {0, 0, -1, 1}; int dy[4] = {1, -1, 0, 0}; vector&lt;vector&lt;int&gt;&gt; updateMatrix(vector&lt;vector&lt;int&gt;&gt;&amp; mat) { n = mat.]]></description>
+    <description><![CDATA[This article solves Leetcode 542 01 Matrix]]></description>
 </item><item>
     <title>Leetcode_752 Open the Lock</title>
     <link>http://tribbiannisun.github.io/leetcode_752/</link>
     <pubDate>Tue, 25 May 2021 23:28:57 &#43;0800</pubDate>
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_752/</guid>
-    <description><![CDATA[Problem Description Leetcode 752  You have a lock in front of you with 4 circular wheels. Each wheel has 10 slots: '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'. The wheels can rotate freely and wrap around: for example we can turn '9' to be '0', or '0' to be '9'. Each move consists of turning one wheel one slot. The lock initially starts at &lsquo;0000&rsquo;, a string representing the state of the 4 wheels.]]></description>
+    <description><![CDATA[This article solves Leetcode 752 Open the Lock]]></description>
 </item><item>
     <title>Leetcode_934 - Shortest Bridge</title>
     <link>http://tribbiannisun.github.io/leetcode_934/</link>
@@ -57,26 +75,5 @@ Example Test Cases Leetcode 542
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_968/</guid>
     <description><![CDATA[<p>Use <strong>DP-On-Tree</strong> to solve Leetcode_968 Binary Tree Cameras</p>]]></description>
-</item><item>
-    <title>Leetcode_354 Russian Doll Envelopes</title>
-    <link>http://tribbiannisun.github.io/leetcode_354/</link>
-    <pubDate>Fri, 14 May 2021 14:32:02 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_354/</guid>
-    <description><![CDATA[<p>Use <strong>DP-LIS</strong> to solve Leetcode_354 Russian Doll Envelopes</p>]]></description>
-</item><item>
-    <title>Leetcode_673. Number of Longest Increasing Subsequence</title>
-    <link>http://tribbiannisun.github.io/leetcode_673/</link>
-    <pubDate>Fri, 14 May 2021 14:31:46 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_673/</guid>
-    <description><![CDATA[<p>Use <strong>DP LIS</strong> to solve Leetcode_673. Number of Longest Increasing Subsequence</p>]]></description>
-</item><item>
-    <title>Leetcode_300 Longest Increasing Subsequence</title>
-    <link>http://tribbiannisun.github.io/leetcode_300/</link>
-    <pubDate>Fri, 14 May 2021 14:11:52 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_300/</guid>
-    <description><![CDATA[<p>Use <strong>DP LIS</strong> to solve Leetcode_300 Longest Increasing Subsequence.</p>]]></description>
 </item></channel>
 </rss>

@@ -9,6 +9,6 @@
     <pubDate>Tue, 25 May 2021 23:28:57 &#43;0800</pubDate>
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_752/</guid>
-    <description><![CDATA[Problem Description Leetcode 752  You have a lock in front of you with 4 circular wheels. Each wheel has 10 slots: '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'. The wheels can rotate freely and wrap around: for example we can turn '9' to be '0', or '0' to be '9'. Each move consists of turning one wheel one slot. The lock initially starts at &lsquo;0000&rsquo;, a string representing the state of the 4 wheels.]]></description>
+    <description><![CDATA[This article solves Leetcode 752 Open the Lock]]></description>
 </item></channel>
 </rss>

@@ -1,6 +1,10 @@
 # Leetcode_752 Open the Lock
 
 
+
+<!--more-->
+
+
 ## Problem Description [Leetcode 752](https://leetcode.com/problems/open-the-lock/)
 
 <p>
