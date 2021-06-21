@@ -3,7 +3,15 @@
         <title>All Posts - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/posts/</link>
         <description>All Posts | Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 21 Jun 2021 21:37:24 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 21 Jun 2021 23:32:43 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode_1223 Dice Roll Simulation</title>
+    <link>http://tribbiannisun.github.io/leetcode_1223/</link>
+    <pubDate>Mon, 21 Jun 2021 23:32:43 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1223/</guid>
+    <description><![CDATA[<h2 id="problem-solution-1223-dice-roll-simulationhttpsleetcodecomproblemsdice-roll-simulation">Problem Solution <a href="https://leetcode.com/problems/dice-roll-simulation/" target="_blank" rel="noopener noreffer">1223. Dice Roll Simulation</a></h2>
+<p>Use <strong>Dynamic Programming</strong> to solve Leetcode_1223 - Dice Roll Simulation</p>]]></description>
+</item><item>
     <title>Leetcode_307 Range Sum Query - Mutable</title>
     <link>http://tribbiannisun.github.io/leetcode_307/</link>
     <pubDate>Mon, 21 Jun 2021 21:37:24 &#43;0800</pubDate>
@@ -66,12 +74,5 @@
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93_bfs%E6%80%BB%E7%BB%93/</guid>
     <description><![CDATA[<p>This article reviews the BFS problems and break them into smaller topics and models.</p>]]></description>
-</item><item>
-    <title>Leetcode_124 Binary Tree Maximum Path Sum</title>
-    <link>http://tribbiannisun.github.io/leetcode_124/</link>
-    <pubDate>Sun, 16 May 2021 22:35:22 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_124/</guid>
-    <description><![CDATA[<p>Use <strong>DP On Tree</strong> to solve Leetcode_124 Binary Tree Maximum Path Sum</p>]]></description>
 </item></channel>
 </rss>

@@ -3,7 +3,15 @@
         <title>DP - Tag - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/tags/dp/</link>
         <description>DP - Tag - Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 20 Jun 2021 08:44:46 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/dp/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 21 Jun 2021 23:32:43 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/dp/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode_1223 Dice Roll Simulation</title>
+    <link>http://tribbiannisun.github.io/leetcode_1223/</link>
+    <pubDate>Mon, 21 Jun 2021 23:32:43 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1223/</guid>
+    <description><![CDATA[<h2 id="problem-solution-1223-dice-roll-simulationhttpsleetcodecomproblemsdice-roll-simulation">Problem Solution <a href="https://leetcode.com/problems/dice-roll-simulation/" target="_blank" rel="noopener noreffer">1223. Dice Roll Simulation</a></h2>
+<p>Use <strong>Dynamic Programming</strong> to solve Leetcode_1223 - Dice Roll Simulation</p>]]></description>
+</item><item>
     <title>Leetcode_629 K Inverse Pairs Array</title>
     <link>http://tribbiannisun.github.io/leetcode_629/</link>
     <pubDate>Sun, 20 Jun 2021 08:44:46 &#43;0800</pubDate>
