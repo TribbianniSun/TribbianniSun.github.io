@@ -1,12 +1,13 @@
 # Leetcode_1223 Dice Roll Simulation
 
 
-## Problem Solution [1223. Dice Roll Simulation](https://leetcode.com/problems/dice-roll-simulation/)
-
 
 Use **Dynamic Programming** to solve Leetcode_1223 - Dice Roll Simulation
 <!--more-->
 
+
+
+## Problem Solution [1223. Dice Roll Simulation](https://leetcode.com/problems/dice-roll-simulation/)
 
 ```cpp
 class Solution {

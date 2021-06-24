@@ -3,14 +3,41 @@
         <title>Leetcode Problem - Category - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/categories/leetcode-problem/</link>
         <description>Leetcode Problem - Category - Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 21 Jun 2021 23:32:43 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/categories/leetcode-problem/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 24 Jun 2021 23:20:15 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/categories/leetcode-problem/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode_576</title>
+    <link>http://tribbiannisun.github.io/leetcode_576/</link>
+    <pubDate>Thu, 24 Jun 2021 23:20:15 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_576/</guid>
+    <description><![CDATA[<p>Use <strong>Dynamic Programmingn</strong> to solve Leetcode 576 - Out of Boundary Paths.</p>]]></description>
+</item><item>
+    <title>Leetcode_92 Reverse Linked List II</title>
+    <link>http://tribbiannisun.github.io/leetcode_92/</link>
+    <pubDate>Thu, 24 Jun 2021 23:17:56 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_92/</guid>
+    <description><![CDATA[<p>Use <strong>Data Struccture</strong> to solve Leetcode 792 - Reverse Linked List II.</p>]]></description>
+</item><item>
+    <title>Leetcode_792</title>
+    <link>http://tribbiannisun.github.io/leetcode_792/</link>
+    <pubDate>Tue, 22 Jun 2021 23:38:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_792/</guid>
+    <description><![CDATA[<p>Use <strong>Data Structure</strong> to solve Leetcode 792 - Number of Matching Subsequences.</p>]]></description>
+</item><item>
+    <title>Leetcode_730 Count Different Palindromic Subsequences</title>
+    <link>http://tribbiannisun.github.io/leetcode_730/</link>
+    <pubDate>Tue, 22 Jun 2021 22:23:23 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_730/</guid>
+    <description><![CDATA[<p>Use <strong>DP</strong> to solve Leetcode 730 - Count Different Palindromic Subsequences.</p>]]></description>
+</item><item>
     <title>Leetcode_1223 Dice Roll Simulation</title>
     <link>http://tribbiannisun.github.io/leetcode_1223/</link>
     <pubDate>Mon, 21 Jun 2021 23:32:43 &#43;0800</pubDate>
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_1223/</guid>
-    <description><![CDATA[<h2 id="problem-solution-1223-dice-roll-simulationhttpsleetcodecomproblemsdice-roll-simulation">Problem Solution <a href="https://leetcode.com/problems/dice-roll-simulation/" target="_blank" rel="noopener noreffer">1223. Dice Roll Simulation</a></h2>
-<p>Use <strong>Dynamic Programming</strong> to solve Leetcode_1223 - Dice Roll Simulation</p>]]></description>
+    <description><![CDATA[<p>Use <strong>Dynamic Programming</strong> to solve Leetcode_1223 - Dice Roll Simulation</p>]]></description>
 </item><item>
     <title>Leetcode_307 Range Sum Query - Mutable</title>
     <link>http://tribbiannisun.github.io/leetcode_307/</link>
@@ -46,33 +73,5 @@
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_990/</guid>
     <description><![CDATA[<p>Use <strong>Union Find 裸并查集</strong> to solve Leetcode 990 - Satisfiability of Equality Equations</p>]]></description>
-</item><item>
-    <title>Leetcode_542 01 Matrix</title>
-    <link>http://tribbiannisun.github.io/leetcode_542/</link>
-    <pubDate>Sat, 29 May 2021 12:04:08 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_542/</guid>
-    <description><![CDATA[This article solves Leetcode 542 01 Matrix]]></description>
-</item><item>
-    <title>Leetcode_752 Open the Lock</title>
-    <link>http://tribbiannisun.github.io/leetcode_752/</link>
-    <pubDate>Tue, 25 May 2021 23:28:57 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_752/</guid>
-    <description><![CDATA[This article solves Leetcode 752 Open the Lock]]></description>
-</item><item>
-    <title>Leetcode_934 - Shortest Bridge</title>
-    <link>http://tribbiannisun.github.io/leetcode_934/</link>
-    <pubDate>Mon, 24 May 2021 23:16:32 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_934/</guid>
-    <description><![CDATA[<p>Use <strong>BFS 最短路模型</strong> to solve Leetcode 934 - Shortest Bridge</p>]]></description>
-</item><item>
-    <title>Leetcode_124 Binary Tree Maximum Path Sum</title>
-    <link>http://tribbiannisun.github.io/leetcode_124/</link>
-    <pubDate>Sun, 16 May 2021 22:35:22 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_124/</guid>
-    <description><![CDATA[<p>Use <strong>DP On Tree</strong> to solve Leetcode_124 Binary Tree Maximum Path Sum</p>]]></description>
 </item></channel>
 </rss>
