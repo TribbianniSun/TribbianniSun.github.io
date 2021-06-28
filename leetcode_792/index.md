@@ -5,8 +5,7 @@ Use **Data Structure** to solve Leetcode 792 - Number of Matching Subsequences.
 <!--more-->
 
 
-## Problem Solution [Leetcode 792 - Number of Matching Subsequences
-](https://leetcode.com/problems/number-of-matching-subsequences/)
+## Problem Solution [Leetcode 792 - Number of Matching Subsequences](https://leetcode.com/problems/number-of-matching-subsequences/)
 
 ```cpp
 

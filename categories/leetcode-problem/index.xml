@@ -3,7 +3,28 @@
         <title>Leetcode Problem - Category - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/categories/leetcode-problem/</link>
         <description>Leetcode Problem - Category - Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 24 Jun 2021 23:20:15 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/categories/leetcode-problem/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 29 Jun 2021 00:04:50 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/categories/leetcode-problem/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode_1655 Distribute Repeating Integers</title>
+    <link>http://tribbiannisun.github.io/leetcode_1655/</link>
+    <pubDate>Tue, 29 Jun 2021 00:04:50 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1655/</guid>
+    <description><![CDATA[<p>Use <strong>DP-Bitmask</strong> to solve Leetcode 1655 Distribute Repeating Integers.</p>]]></description>
+</item><item>
+    <title>Leetcode_1047 Remove All Adjacent Duplicates In String</title>
+    <link>http://tribbiannisun.github.io/leetcode_1047/</link>
+    <pubDate>Mon, 28 Jun 2021 22:39:48 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1047/</guid>
+    <description><![CDATA[<p>Use <strong>stack</strong> to solve Leetcode 1047 Remove All Adjacent Duplicates In String.</p>]]></description>
+</item><item>
+    <title>Leetcode_135 Candy</title>
+    <link>http://tribbiannisun.github.io/leetcode_135/</link>
+    <pubDate>Mon, 28 Jun 2021 00:57:10 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_135/</guid>
+    <description><![CDATA[<p>Use <strong>Greedy</strong> to solve Leetcode 135 - Candy.</p>]]></description>
+</item><item>
     <title>Leetcode_576</title>
     <link>http://tribbiannisun.github.io/leetcode_576/</link>
     <pubDate>Thu, 24 Jun 2021 23:20:15 &#43;0800</pubDate>
@@ -52,26 +73,5 @@
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_629/</guid>
     <description><![CDATA[<p>Use <strong>Dynamic Programming + Prefix Sum</strong> to solve Leetcode 629 - K Inverse Pairs Array</p>]]></description>
-</item><item>
-    <title>Leetcode_721 Account Merge</title>
-    <link>http://tribbiannisun.github.io/leetcode_721/</link>
-    <pubDate>Wed, 16 Jun 2021 23:38:23 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_721/</guid>
-    <description><![CDATA[<p>Use <strong>Union Find 并查集+数据结构</strong> to solve Leetcode 721 - Account Merge</p>]]></description>
-</item><item>
-    <title>Leetcode_1319 Number of Operations to Make Network Connected</title>
-    <link>http://tribbiannisun.github.io/leetcode_1319/</link>
-    <pubDate>Tue, 15 Jun 2021 23:45:28 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_1319/</guid>
-    <description><![CDATA[<p>Use <strong>Union Find 维护集合数的并查集</strong> to solve Leetcode 1319 - Number of Operations to Make Network Connected</p>]]></description>
-</item><item>
-    <title>Leetcode_990 Satisfiability of Equality Equations</title>
-    <link>http://tribbiannisun.github.io/leetcode_990/</link>
-    <pubDate>Tue, 15 Jun 2021 23:27:02 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_990/</guid>
-    <description><![CDATA[<p>Use <strong>Union Find 裸并查集</strong> to solve Leetcode 990 - Satisfiability of Equality Equations</p>]]></description>
 </item></channel>
 </rss>

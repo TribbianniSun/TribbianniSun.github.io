@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>dp-bitmask - Tag - Haihao Sun</title>
+        <link>http://tribbiannisun.github.io/tags/dp-bitmask/</link>
+        <description>dp-bitmask - Tag - Haihao Sun</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 29 Jun 2021 00:04:50 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/dp-bitmask/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode_1655 Distribute Repeating Integers</title>
+    <link>http://tribbiannisun.github.io/leetcode_1655/</link>
+    <pubDate>Tue, 29 Jun 2021 00:04:50 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1655/</guid>
+    <description><![CDATA[<p>Use <strong>DP-Bitmask</strong> to solve Leetcode 1655 Distribute Repeating Integers.</p>]]></description>
+</item></channel>
+</rss>
