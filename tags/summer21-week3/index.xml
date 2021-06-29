@@ -3,7 +3,14 @@
         <title>summer21-week3 - Tag - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/tags/summer21-week3/</link>
         <description>summer21-week3 - Tag - Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 29 Jun 2021 00:04:50 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/summer21-week3/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 29 Jun 2021 23:02:41 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/summer21-week3/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode_1004 Max Consecutive Ones III</title>
+    <link>http://tribbiannisun.github.io/leetcode_1004/</link>
+    <pubDate>Tue, 29 Jun 2021 23:02:41 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1004/</guid>
+    <description><![CDATA[<p>Use <strong>two-pointer, binary-search</strong> to solve Leetcode_1004 Max Consecutive Ones III.</p>]]></description>
+</item><item>
     <title>Leetcode_1655 Distribute Repeating Integers</title>
     <link>http://tribbiannisun.github.io/leetcode_1655/</link>
     <pubDate>Tue, 29 Jun 2021 00:04:50 &#43;0800</pubDate>
