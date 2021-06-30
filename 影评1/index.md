@@ -1,4 +1,4 @@
-# Movie Review, Zhenhua Niu
+# movie-review, Zhenhua Niu
 
 
 Stand Up, Don't Bend Over 1993

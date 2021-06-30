@@ -1,7 +1,7 @@
 # Leetcode_1722 Minimize Hamming Distance After Swap Operations
 
 
-Use **Union Find** to solve Leetcode 1722 - Minimize Hamming Distance After Swap Operations.
+Use **union-find** to solve Leetcode 1722 - Minimize Hamming Distance After Swap Operations.
 <!--more-->
 
 ## Problem Description [Leetcode 1722](https://leetcode.com/problems/minimize-hamming-distance-after-swap-operations/)
@@ -135,7 +135,7 @@ class Solution:
 ## Problem Remark 
 - To solve this problem, we need to observe that if (0, 1) is exchangeable and (0, 2) is exchangeable,
 then any pair in (0, 1, 2) can be exchangeble.
-- The remaining problem is how to detect connected components in the graph -> use Union Find.
+- The remaining problem is how to detect connected components in the graph -> use union-find.
 - Counter, the subclass of dictionary, supports many great opeartions.
 
 

@@ -1,10 +1,10 @@
-# Union Find Review
+# union-find Review
 
 
-This article reviews Union Find(Disjoint Set).
+This article reviews union-find(Disjoint Set).
 <!--more-->
 
-# Union Find | Disjoint Set
+# union-find | Disjoint Set
 
 ### Semantics
 - This data structure stores the collection of disjoint(non-overlapping) sets(groups). 

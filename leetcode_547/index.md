@@ -2,7 +2,7 @@
 
 
 
-Use **Union Find** to solve Leetcode 547 - Number of Provinces. 
+Use **union-find** to solve Leetcode 547 - Number of Provinces. 
 <!--more-->
 
 ## Problem Description [Leetcode 547](https://leetcode.com/problems/number-of-provinces/)
@@ -108,4 +108,4 @@ class Solution:
 ```
 
 ## Problem Remark 
-- To find the connected component in undirected graph, Union Find(Disjoint Set) is the handy data structure to use.
+- To find the connected component in undirected graph, union-find(Disjoint Set) is the handy data structure to use.

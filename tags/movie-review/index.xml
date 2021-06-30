@@ -1,10 +1,10 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Movie Review - Tag - Haihao Sun</title>
+        <title>movie-review - Tag - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/tags/movie-review/</link>
-        <description>Movie Review - Tag - Haihao Sun</description>
+        <description>movie-review - Tag - Haihao Sun</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 13 Jan 2021 21:35:40 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/movie-review/" rel="self" type="application/rss+xml" /><item>
-    <title>Movie Review, Zhenhua Niu</title>
+    <title>movie-review, Zhenhua Niu</title>
     <link>http://tribbiannisun.github.io/%E5%BD%B1%E8%AF%841/</link>
     <pubDate>Wed, 13 Jan 2021 21:35:40 &#43;0800</pubDate>
     <author>Author</author>

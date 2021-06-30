@@ -3,7 +3,21 @@
         <title>All Posts - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/posts/</link>
         <description>All Posts | Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 29 Jun 2021 23:02:41 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 30 Jun 2021 22:11:44 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode_236 Lowest Common Ancestor of a Binary Tree</title>
+    <link>http://tribbiannisun.github.io/leetcode_236/</link>
+    <pubDate>Wed, 30 Jun 2021 22:11:44 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_236/</guid>
+    <description><![CDATA[<p>New <strong>dfs</strong> to solve Leetcode 236 - Lowest Common Ancestor of a Binary Tree.</p>]]></description>
+</item><item>
+    <title>Leetcode_946 Lowest Common Ancestor of a Binary Tree</title>
+    <link>http://tribbiannisun.github.io/leetcode_946/</link>
+    <pubDate>Wed, 30 Jun 2021 22:10:08 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_946/</guid>
+    <description><![CDATA[<p>New <strong>stack</strong> to solve Leetcode 946 - Lowest Common Ancestor of a Binary Tree</p>]]></description>
+</item><item>
     <title>Leetcode_1004 Max Consecutive Ones III</title>
     <link>http://tribbiannisun.github.io/leetcode_1004/</link>
     <pubDate>Tue, 29 Jun 2021 23:02:41 &#43;0800</pubDate>
@@ -59,19 +73,5 @@
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_730/</guid>
     <description><![CDATA[<p>Use <strong>DP</strong> to solve Leetcode 730 - Count Different Palindromic Subsequences.</p>]]></description>
-</item><item>
-    <title>Leetcode_1223 Dice Roll Simulation</title>
-    <link>http://tribbiannisun.github.io/leetcode_1223/</link>
-    <pubDate>Mon, 21 Jun 2021 23:32:43 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_1223/</guid>
-    <description><![CDATA[<p>Use <strong>Dynamic Programming</strong> to solve Leetcode_1223 - Dice Roll Simulation</p>]]></description>
-</item><item>
-    <title>Leetcode_307 Range Sum Query - Mutable</title>
-    <link>http://tribbiannisun.github.io/leetcode_307/</link>
-    <pubDate>Mon, 21 Jun 2021 21:37:24 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_307/</guid>
-    <description><![CDATA[<p>Use <strong>SegmentTree</strong> to solve Leetcode 307 Range Sum Query - Mutable.</p>]]></description>
 </item></channel>
 </rss>

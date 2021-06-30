@@ -3,7 +3,7 @@
 
 
 
-Use **Union Find 裸并查集** to solve Leetcode 990 - Satisfiability of Equality Equations
+Use **union-find 裸并查集** to solve Leetcode 990 - Satisfiability of Equality Equations
 <!--more-->
 
 

@@ -3,7 +3,7 @@
 
 
 
-Use **Union Find 并查集+数据结构** to solve Leetcode 721 - Account Merge
+Use **union-find 并查集+数据结构** to solve Leetcode 721 - Account Merge
 <!--more-->
 
 

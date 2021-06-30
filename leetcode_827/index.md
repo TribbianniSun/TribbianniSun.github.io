@@ -2,7 +2,7 @@
 
 
 
-Use **Union Find** to solve Leetcode 827 - Making A Large Island. 
+Use **union-find** to solve Leetcode 827 - Making A Large Island. 
 <!--more-->
 
 ## Problem Description [Leetcode 547](https://leetcode.com/problems/number-of-provinces/)
@@ -146,4 +146,4 @@ class Solution:
 
 ## Problem Remark 
 - Naive Approach tries all the zeros, and recompute the connected component
-- Union Find helps us to find the size of the connected component without computing the graph again, O(n*m)
+- union-find helps us to find the size of the connected component without computing the graph again, O(n*m)

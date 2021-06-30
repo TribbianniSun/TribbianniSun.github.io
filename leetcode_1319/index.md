@@ -3,7 +3,7 @@
 
 
 
-Use **Union Find 维护集合数的并查集** to solve Leetcode 1319 - Number of Operations to Make Network Connected
+Use **union-find 维护集合数的并查集** to solve Leetcode 1319 - Number of Operations to Make Network Connected
 <!--more-->
 
 

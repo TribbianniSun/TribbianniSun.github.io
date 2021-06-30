@@ -2,7 +2,7 @@
 
 
 
-Use **Union Find** to solve Leetcode 947 - Most Stones Removed with Same Row or Column. 
+Use **union-find** to solve Leetcode 947 - Most Stones Removed with Same Row or Column. 
 <!--more-->
 
 
