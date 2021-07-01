@@ -1,8 +1,8 @@
-# Leetcode_834
+# Leetcode_834 Sum of Distance in Tree
 
 
 
-New **dp** to solve Leetcode 89 - Gray Code.
+New **dp** to solve Leetcode 834 - Sum of Distance in Tree.
 <!--more-->
 
 

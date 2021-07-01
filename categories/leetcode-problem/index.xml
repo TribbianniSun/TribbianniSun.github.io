@@ -4,12 +4,12 @@
         <link>http://tribbiannisun.github.io/categories/leetcode-problem/</link>
         <description>Leetcode Problem - Category - Haihao Sun</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 01 Jul 2021 22:09:16 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/categories/leetcode-problem/" rel="self" type="application/rss+xml" /><item>
-    <title>Leetcode_834</title>
+    <title>Leetcode_834 Sum of Distance in Tree</title>
     <link>http://tribbiannisun.github.io/leetcode_834/</link>
     <pubDate>Thu, 01 Jul 2021 22:09:16 &#43;0800</pubDate>
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_834/</guid>
-    <description><![CDATA[<p>New <strong>dp</strong> to solve Leetcode 89 - Gray Code.</p>]]></description>
+    <description><![CDATA[<p>New <strong>dp</strong> to solve Leetcode 834 - Sum of Distance in Tree.</p>]]></description>
 </item><item>
     <title>Leetcode_222 Count Complete Tree Nodes</title>
     <link>http://tribbiannisun.github.io/leetcode_222/</link>
