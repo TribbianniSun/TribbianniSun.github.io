@@ -3,7 +3,14 @@
         <title>Leetcode Problem - Category - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/categories/leetcode-problem/</link>
         <description>Leetcode Problem - Category - Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 01 Jul 2021 22:09:16 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/categories/leetcode-problem/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 02 Jul 2021 22:01:05 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/categories/leetcode-problem/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode_658 Find K Closest Elements</title>
+    <link>http://tribbiannisun.github.io/leetcode_658/</link>
+    <pubDate>Fri, 02 Jul 2021 22:01:05 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_658/</guid>
+    <description><![CDATA[<p>New <strong>binary-search</strong> to solve Leetcode 658 - Find K Closest Elements.</p>]]></description>
+</item><item>
     <title>Leetcode_834 Sum of Distance in Tree</title>
     <link>http://tribbiannisun.github.io/leetcode_834/</link>
     <pubDate>Thu, 01 Jul 2021 22:09:16 &#43;0800</pubDate>
@@ -66,12 +73,5 @@
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_135/</guid>
     <description><![CDATA[<p>Use <strong>Greedy</strong> to solve Leetcode 135 - Candy.</p>]]></description>
-</item><item>
-    <title>Leetcode_576</title>
-    <link>http://tribbiannisun.github.io/leetcode_576/</link>
-    <pubDate>Thu, 24 Jun 2021 23:20:15 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_576/</guid>
-    <description><![CDATA[<p>Use <strong>Dynamic Programmingn</strong> to solve Leetcode 576 - Out of Boundary Paths.</p>]]></description>
 </item></channel>
 </rss>
