@@ -3,7 +3,14 @@
         <title>data structure - Tag - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/tags/data-structure/</link>
         <description>data structure - Tag - Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 30 Jun 2021 22:10:08 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/data-structure/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 03 Jul 2021 23:57:42 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/data-structure/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode_363 Max Sum of Rectangle No Larger Than K</title>
+    <link>http://tribbiannisun.github.io/leetcode_363/</link>
+    <pubDate>Sat, 03 Jul 2021 23:57:42 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_363/</guid>
+    <description><![CDATA[<p>New <strong>data-structure</strong> to solve Leetcode 89 - Gray Code.</p>]]></description>
+</item><item>
     <title>Leetcode_946 Lowest Common Ancestor of a Binary Tree</title>
     <link>http://tribbiannisun.github.io/leetcode_946/</link>
     <pubDate>Wed, 30 Jun 2021 22:10:08 &#43;0800</pubDate>
