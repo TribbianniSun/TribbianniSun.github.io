@@ -1,4 +1,4 @@
-# Git_1
+# git_1 git log, git status, git clean
 
 
 git log, git status, git clean
