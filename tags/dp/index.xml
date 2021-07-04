@@ -1,9 +1,16 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>DP - Tag - Haihao Sun</title>
+        <title>dp - Tag - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/tags/dp/</link>
-        <description>DP - Tag - Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 01 Jul 2021 22:09:16 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/dp/" rel="self" type="application/rss+xml" /><item>
+        <description>dp - Tag - Haihao Sun</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 04 Jul 2021 22:05:58 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/dp/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode_1220 Count Vowels Permutation</title>
+    <link>http://tribbiannisun.github.io/leetcode_1220/</link>
+    <pubDate>Sun, 04 Jul 2021 22:05:58 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1220/</guid>
+    <description><![CDATA[<p>Use <strong>dp</strong> to solve Leetcode_1220 Count Vowels Permutation.</p>]]></description>
+</item><item>
     <title>Leetcode_834 Sum of Distance in Tree</title>
     <link>http://tribbiannisun.github.io/leetcode_834/</link>
     <pubDate>Thu, 01 Jul 2021 22:09:16 &#43;0800</pubDate>

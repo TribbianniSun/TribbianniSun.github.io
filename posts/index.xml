@@ -3,7 +3,14 @@
         <title>All Posts - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/posts/</link>
         <description>All Posts | Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 04 Jul 2021 19:27:58 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 04 Jul 2021 22:05:58 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode_1220 Count Vowels Permutation</title>
+    <link>http://tribbiannisun.github.io/leetcode_1220/</link>
+    <pubDate>Sun, 04 Jul 2021 22:05:58 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1220/</guid>
+    <description><![CDATA[<p>Use <strong>dp</strong> to solve Leetcode_1220 Count Vowels Permutation.</p>]]></description>
+</item><item>
     <title>git_1 git log, git status, git clean</title>
     <link>http://tribbiannisun.github.io/git_1/</link>
     <pubDate>Sun, 04 Jul 2021 19:27:58 &#43;0800</pubDate>
@@ -66,12 +73,5 @@
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_1004/</guid>
     <description><![CDATA[<p>Use <strong>two-pointer, binary-search</strong> to solve Leetcode_1004 Max Consecutive Ones III.</p>]]></description>
-</item><item>
-    <title>Leetcode_1655 Distribute Repeating Integers</title>
-    <link>http://tribbiannisun.github.io/leetcode_1655/</link>
-    <pubDate>Tue, 29 Jun 2021 00:04:50 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_1655/</guid>
-    <description><![CDATA[<p>Use <strong>DP-Bitmask</strong> to solve Leetcode 1655 Distribute Repeating Integers.</p>]]></description>
 </item></channel>
 </rss>
