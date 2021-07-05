@@ -2,7 +2,7 @@
 
 
 
-New **dp** to solve Leetcode 834 - Sum of Distance in Tree.
+Use **dp** to solve Leetcode 834 - Sum of Distance in Tree.
 <!--more-->
 
 

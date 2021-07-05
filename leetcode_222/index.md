@@ -2,7 +2,7 @@
 
 
 
-New **binary-search** to solve Leetcode 222 - Count Complete Tree Nodes
+Use **binary-search** to solve Leetcode 222 - Count Complete Tree Nodes
 <!--more-->
 
 

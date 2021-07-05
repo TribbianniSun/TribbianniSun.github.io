@@ -1,7 +1,7 @@
 # Leetcode_658 Find K Closest Elements
 
 
-New **binary-search** to solve Leetcode 658 - Find K Closest Elements.
+Use **binary-search** to solve Leetcode 658 - Find K Closest Elements.
 <!--more-->
 
 

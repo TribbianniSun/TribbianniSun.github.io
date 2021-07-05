@@ -2,7 +2,7 @@
 
 
 
-New **dp** to solve Leetcode 89 - Gray Code.
+Use **dp** to solve Leetcode 89 - Gray Code.
 <!--more-->
 
 ## Problem Description [Leetcode 89](https://leetcode.com/problems/gray-code/)

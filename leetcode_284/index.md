@@ -1,7 +1,7 @@
 # Leetcode 284 - Peeking Iterator
 
 
-New **Idea** to solve Leetcode 284 - Peeking Iterator. 
+Use **Idea** to solve Leetcode 284 - Peeking Iterator. 
 <!--more-->
 
 

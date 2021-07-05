@@ -4,7 +4,7 @@
 
 
 
-New **BFS** to solve Leetcode 786 - K-th Smallest Prime Fraction
+Use **BFS** to solve Leetcode 786 - K-th Smallest Prime Fraction
 <!--more-->
 
 

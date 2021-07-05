@@ -2,7 +2,7 @@
 
 
 
-New **BFS** to solve Leetcode 1091 - Shortest Path in Binary Matrix. 
+Use **BFS** to solve Leetcode 1091 - Shortest Path in Binary Matrix. 
 <!--more-->
 
 

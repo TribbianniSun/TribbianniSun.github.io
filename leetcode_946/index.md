@@ -2,7 +2,7 @@
 
 
 
-New **stack** to solve Leetcode 946 - Lowest Common Ancestor of a Binary Tree
+Use **stack** to solve Leetcode 946 - Lowest Common Ancestor of a Binary Tree
 <!--more-->
 
 

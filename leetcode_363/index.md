@@ -2,7 +2,7 @@
 
 
 
-New **data-structure** to solve Leetcode 89 - Gray Code.
+Use **data-structure** to solve Leetcode 363 - Max Sum of Rectangle No Larger Than K.
 <!--more-->
 
 

@@ -1,7 +1,7 @@
 # Leetcode_236 Lowest Common Ancestor of a Binary Tree
 
 
-New **dfs** to solve Leetcode 236 - Lowest Common Ancestor of a Binary Tree. 
+Use **dfs** to solve Leetcode 236 - Lowest Common Ancestor of a Binary Tree. 
 <!--more-->
 
 ## Problem Description [Leetcode 236](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)
