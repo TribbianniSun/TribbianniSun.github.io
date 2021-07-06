@@ -1,9 +1,16 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>data structure - Tag - Haihao Sun</title>
+        <title>data-structure - Tag - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/tags/data-structure/</link>
-        <description>data structure - Tag - Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 05 Jul 2021 22:37:52 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/data-structure/" rel="self" type="application/rss+xml" /><item>
+        <description>data-structure - Tag - Haihao Sun</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 06 Jul 2021 21:39:28 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/data-structure/" rel="self" type="application/rss+xml" /><item>
+    <title>Leecode_1338 Reduce Array Size to The Half</title>
+    <link>http://tribbiannisun.github.io/leetcode_1338/</link>
+    <pubDate>Tue, 06 Jul 2021 21:39:28 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1338/</guid>
+    <description><![CDATA[<p>Use <strong>data-structure</strong> to solve Leetcode_1338 Reduce Array Size to The Half</p>]]></description>
+</item><item>
     <title>Leetcode_566 Reshape the Matrix</title>
     <link>http://tribbiannisun.github.io/leetcode_566/</link>
     <pubDate>Mon, 05 Jul 2021 22:37:52 &#43;0800</pubDate>

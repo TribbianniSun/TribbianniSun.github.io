@@ -3,7 +3,14 @@
         <title>graph - Tag - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/tags/graph/</link>
         <description>graph - Tag - Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 05 Jul 2021 23:05:58 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/graph/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 06 Jul 2021 22:57:24 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/graph/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode_1489 Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree</title>
+    <link>http://tribbiannisun.github.io/leetcode_1489/</link>
+    <pubDate>Tue, 06 Jul 2021 22:57:24 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1489/</guid>
+    <description><![CDATA[<p>Use <strong>graph, kruskal</strong> to solve Leetcode 1916. Count Ways to Build Rooms in an Ant Colony</p>]]></description>
+</item><item>
     <title>Leetcode_1192 Critical Connections in a Network</title>
     <link>http://tribbiannisun.github.io/leetcode_1192/</link>
     <pubDate>Mon, 05 Jul 2021 23:05:58 &#43;0800</pubDate>

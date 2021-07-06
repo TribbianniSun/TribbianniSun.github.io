@@ -3,7 +3,28 @@
         <title>summer21 - Tag - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/tags/summer21/</link>
         <description>summer21 - Tag - Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 05 Jul 2021 23:05:58 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/summer21/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 06 Jul 2021 22:57:24 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/summer21/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode_1489 Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree</title>
+    <link>http://tribbiannisun.github.io/leetcode_1489/</link>
+    <pubDate>Tue, 06 Jul 2021 22:57:24 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1489/</guid>
+    <description><![CDATA[<p>Use <strong>graph, kruskal</strong> to solve Leetcode 1916. Count Ways to Build Rooms in an Ant Colony</p>]]></description>
+</item><item>
+    <title>Leetcode_1916. Count Ways to Build Rooms in an Ant Colony</title>
+    <link>http://tribbiannisun.github.io/leetcode_1916/</link>
+    <pubDate>Tue, 06 Jul 2021 22:46:03 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1916/</guid>
+    <description><![CDATA[<p>Use <strong>math, dfs</strong> to solve Leetcode 1916. Count Ways to Build Rooms in an Ant Colony</p>]]></description>
+</item><item>
+    <title>Leecode_1338 Reduce Array Size to The Half</title>
+    <link>http://tribbiannisun.github.io/leetcode_1338/</link>
+    <pubDate>Tue, 06 Jul 2021 21:39:28 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1338/</guid>
+    <description><![CDATA[<p>Use <strong>data-structure</strong> to solve Leetcode_1338 Reduce Array Size to The Half</p>]]></description>
+</item><item>
     <title>Leetcode_1192 Critical Connections in a Network</title>
     <link>http://tribbiannisun.github.io/leetcode_1192/</link>
     <pubDate>Mon, 05 Jul 2021 23:05:58 &#43;0800</pubDate>
@@ -52,26 +73,5 @@
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_658/</guid>
     <description><![CDATA[<p>Use <strong>binary-search</strong> to solve Leetcode 658 - Find K Closest Elements.</p>]]></description>
-</item><item>
-    <title>Leetcode_834 Sum of Distance in Tree</title>
-    <link>http://tribbiannisun.github.io/leetcode_834/</link>
-    <pubDate>Thu, 01 Jul 2021 22:09:16 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_834/</guid>
-    <description><![CDATA[<p>Use <strong>dp</strong> to solve Leetcode 834 - Sum of Distance in Tree.</p>]]></description>
-</item><item>
-    <title>Leetcode_222 Count Complete Tree Nodes</title>
-    <link>http://tribbiannisun.github.io/leetcode_222/</link>
-    <pubDate>Thu, 01 Jul 2021 22:05:52 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_222/</guid>
-    <description><![CDATA[<p>Use <strong>binary-search</strong> to solve Leetcode 222 - Count Complete Tree Nodes</p>]]></description>
-</item><item>
-    <title>Leetcode_89 Gray Code</title>
-    <link>http://tribbiannisun.github.io/leetcode_89/</link>
-    <pubDate>Thu, 01 Jul 2021 21:58:24 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_89/</guid>
-    <description><![CDATA[<p>Use <strong>dp</strong> to solve Leetcode 89 - Gray Code.</p>]]></description>
 </item></channel>
 </rss>
