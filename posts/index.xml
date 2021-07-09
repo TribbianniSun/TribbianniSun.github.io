@@ -3,7 +3,49 @@
         <title>All Posts - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/posts/</link>
         <description>All Posts | Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 06 Jul 2021 22:57:24 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 09 Jul 2021 23:38:27 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode_1129 Shortest Path with Alternating Colors</title>
+    <link>http://tribbiannisun.github.io/leetcode_1129/</link>
+    <pubDate>Fri, 09 Jul 2021 23:38:27 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1129/</guid>
+    <description><![CDATA[<p>Use <strong>graph</strong> to solve Leetcode 1129 Shortest Path with Alternating Colors</p>]]></description>
+</item><item>
+    <title>Leetcode_300_II Longest Increasing Subsequence</title>
+    <link>http://tribbiannisun.github.io/leetcode_300_ii/</link>
+    <pubDate>Fri, 09 Jul 2021 20:52:09 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_300_ii/</guid>
+    <description><![CDATA[<p>Use <strong>DP</strong> to solve Leetcode_300 Longest Increasing Subsequence.</p>]]></description>
+</item><item>
+    <title>Leetcode_1713 Minimum Operations to Make a Subsequence</title>
+    <link>http://tribbiannisun.github.io/leetcode_1713/</link>
+    <pubDate>Fri, 09 Jul 2021 20:49:22 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1713/</guid>
+    <description><![CDATA[Problem Description 1713. Minimum Operations to Make a Subsequence  You are given an array target that consists of distinct integers and another integer array arr that can have duplicates. In one operation, you can insert any integer at any position in arr. For example, if arr = [1,4,1,2], you can add 3 in the middle and make it [1,4,3,1,2]. Note that you can insert the integer at the very beginning or end of the array.]]></description>
+</item><item>
+    <title>Leetcode_378 Kth Smallest Element in a Sorted Matrix</title>
+    <link>http://tribbiannisun.github.io/leetcode_378/</link>
+    <pubDate>Wed, 07 Jul 2021 21:50:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_378/</guid>
+    <description><![CDATA[<p>Use <strong>data-structure, binary-search</strong> to solve Leetcode 378 Kth Smallest Element in a Sorted Matrix.</p>]]></description>
+</item><item>
+    <title>Leetcode_1697 Checking Existence of Edge Length Limited Paths</title>
+    <link>http://tribbiannisun.github.io/leetcode_1697/</link>
+    <pubDate>Wed, 07 Jul 2021 21:49:04 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1697/</guid>
+    <description><![CDATA[<p>Use <strong>union-find, offline-algorithm</strong> to solve Leetcode 1697 Checking Existence of Edge Length Limited Paths.</p>]]></description>
+</item><item>
+    <title>Leetcode_1514 Path with Maximum Probability</title>
+    <link>http://tribbiannisun.github.io/leetcode_1514/</link>
+    <pubDate>Wed, 07 Jul 2021 21:46:57 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1514/</guid>
+    <description><![CDATA[<p>Use <strong>graph, dijkstra</strong> to solve Leetcode 1514 Path with Maximum Probability.</p>]]></description>
+</item><item>
     <title>Leetcode_1489 Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree</title>
     <link>http://tribbiannisun.github.io/leetcode_1489/</link>
     <pubDate>Tue, 06 Jul 2021 22:57:24 &#43;0800</pubDate>
@@ -31,47 +73,5 @@
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_1192/</guid>
     <description><![CDATA[<p>Use <strong>graph, Tarjan</strong> to solve Leetcode 1192 Critical Connections in a Network</p>]]></description>
-</item><item>
-    <title>Leetcode_685 Redundant Connection II</title>
-    <link>http://tribbiannisun.github.io/leetcode_685/</link>
-    <pubDate>Mon, 05 Jul 2021 22:42:22 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_685/</guid>
-    <description><![CDATA[<p>Use <strong>union-find</strong> to solve Leetcode 685 Redundant Connection II.</p>]]></description>
-</item><item>
-    <title>Leetcode_566 Reshape the Matrix</title>
-    <link>http://tribbiannisun.github.io/leetcode_566/</link>
-    <pubDate>Mon, 05 Jul 2021 22:37:52 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_566/</guid>
-    <description><![CDATA[<p>Use <strong>data-structure</strong> to solve Leetcode 566 Reshape the Matrix.</p>]]></description>
-</item><item>
-    <title>Leetcode_1220 Count Vowels Permutation</title>
-    <link>http://tribbiannisun.github.io/leetcode_1220/</link>
-    <pubDate>Sun, 04 Jul 2021 22:05:58 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_1220/</guid>
-    <description><![CDATA[<p>Use <strong>dp</strong> to solve Leetcode_1220 Count Vowels Permutation.</p>]]></description>
-</item><item>
-    <title>git_1 git log, git status, git clean</title>
-    <link>http://tribbiannisun.github.io/git_1/</link>
-    <pubDate>Sun, 04 Jul 2021 19:27:58 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/git_1/</guid>
-    <description><![CDATA[<p>git log, git status, git clean</p>]]></description>
-</item><item>
-    <title>Leetcode_363 Max Sum of Rectangle No Larger Than K</title>
-    <link>http://tribbiannisun.github.io/leetcode_363/</link>
-    <pubDate>Sat, 03 Jul 2021 23:57:42 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_363/</guid>
-    <description><![CDATA[<p>Use <strong>data-structure</strong> to solve Leetcode 363 - Max Sum of Rectangle No Larger Than K.</p>]]></description>
-</item><item>
-    <title>Leetcode_658 Find K Closest Elements</title>
-    <link>http://tribbiannisun.github.io/leetcode_658/</link>
-    <pubDate>Fri, 02 Jul 2021 22:01:05 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_658/</guid>
-    <description><![CDATA[<p>Use <strong>binary-search</strong> to solve Leetcode 658 - Find K Closest Elements.</p>]]></description>
 </item></channel>
 </rss>

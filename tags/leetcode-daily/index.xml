@@ -3,7 +3,21 @@
         <title>leetcode-daily - Tag - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/tags/leetcode-daily/</link>
         <description>leetcode-daily - Tag - Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 06 Jul 2021 21:39:28 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/leetcode-daily/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 09 Jul 2021 20:52:09 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/leetcode-daily/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode_300_II Longest Increasing Subsequence</title>
+    <link>http://tribbiannisun.github.io/leetcode_300_ii/</link>
+    <pubDate>Fri, 09 Jul 2021 20:52:09 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_300_ii/</guid>
+    <description><![CDATA[<p>Use <strong>DP</strong> to solve Leetcode_300 Longest Increasing Subsequence.</p>]]></description>
+</item><item>
+    <title>Leetcode_378 Kth Smallest Element in a Sorted Matrix</title>
+    <link>http://tribbiannisun.github.io/leetcode_378/</link>
+    <pubDate>Wed, 07 Jul 2021 21:50:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_378/</guid>
+    <description><![CDATA[<p>Use <strong>data-structure, binary-search</strong> to solve Leetcode 378 Kth Smallest Element in a Sorted Matrix.</p>]]></description>
+</item><item>
     <title>Leecode_1338 Reduce Array Size to The Half</title>
     <link>http://tribbiannisun.github.io/leetcode_1338/</link>
     <pubDate>Tue, 06 Jul 2021 21:39:28 &#43;0800</pubDate>
@@ -59,19 +73,5 @@
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_1004/</guid>
     <description><![CDATA[<p>Use <strong>two-pointer, binary-search</strong> to solve Leetcode_1004 Max Consecutive Ones III.</p>]]></description>
-</item><item>
-    <title>Leetcode_1047 Remove All Adjacent Duplicates In String</title>
-    <link>http://tribbiannisun.github.io/leetcode_1047/</link>
-    <pubDate>Mon, 28 Jun 2021 22:39:48 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_1047/</guid>
-    <description><![CDATA[<p>Use <strong>stack</strong> to solve Leetcode 1047 Remove All Adjacent Duplicates In String.</p>]]></description>
-</item><item>
-    <title>Leetcode_135 Candy</title>
-    <link>http://tribbiannisun.github.io/leetcode_135/</link>
-    <pubDate>Mon, 28 Jun 2021 00:57:10 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_135/</guid>
-    <description><![CDATA[<p>Use <strong>Greedy</strong> to solve Leetcode 135 - Candy.</p>]]></description>
 </item></channel>
 </rss>

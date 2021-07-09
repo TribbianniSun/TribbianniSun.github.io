@@ -3,7 +3,14 @@
         <title>data-structure - Tag - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/tags/data-structure/</link>
         <description>data-structure - Tag - Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 06 Jul 2021 21:39:28 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/data-structure/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 07 Jul 2021 21:50:40 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/data-structure/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode_378 Kth Smallest Element in a Sorted Matrix</title>
+    <link>http://tribbiannisun.github.io/leetcode_378/</link>
+    <pubDate>Wed, 07 Jul 2021 21:50:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_378/</guid>
+    <description><![CDATA[<p>Use <strong>data-structure, binary-search</strong> to solve Leetcode 378 Kth Smallest Element in a Sorted Matrix.</p>]]></description>
+</item><item>
     <title>Leecode_1338 Reduce Array Size to The Half</title>
     <link>http://tribbiannisun.github.io/leetcode_1338/</link>
     <pubDate>Tue, 06 Jul 2021 21:39:28 &#43;0800</pubDate>
