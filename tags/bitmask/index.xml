@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>bitmask - Tag - Haihao Sun</title>
+        <link>http://tribbiannisun.github.io/tags/bitmask/</link>
+        <description>bitmask - Tag - Haihao Sun</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 11 Jul 2021 13:32:34 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/bitmask/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode_1931 Painting a Grid With Three Different Colors</title>
+    <link>http://tribbiannisun.github.io/leetcode_1931/</link>
+    <pubDate>Sun, 11 Jul 2021 13:32:34 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1931/</guid>
+    <description><![CDATA[<p>Use <strong>dp, bitmask, dfs</strong> to solve Leetcode_1931 Painting a Grid With Three Different Colors</p>]]></description>
+</item></channel>
+</rss>

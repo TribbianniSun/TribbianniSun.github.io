@@ -3,7 +3,14 @@
         <title>graph - Tag - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/tags/graph/</link>
         <description>graph - Tag - Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 09 Jul 2021 23:38:27 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/graph/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 11 Jul 2021 13:37:14 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/graph/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode_1928 Minimum Cost to Reach Destination in Time</title>
+    <link>http://tribbiannisun.github.io/leetcode_1928/</link>
+    <pubDate>Sun, 11 Jul 2021 13:37:14 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1928/</guid>
+    <description><![CDATA[<p>Use <strong>graph, dp</strong> to solve 1928. Minimum Cost to Reach Destination in Time</p>]]></description>
+</item><item>
     <title>Leetcode_1129 Shortest Path with Alternating Colors</title>
     <link>http://tribbiannisun.github.io/leetcode_1129/</link>
     <pubDate>Fri, 09 Jul 2021 23:38:27 &#43;0800</pubDate>

@@ -3,7 +3,42 @@
         <title>summer21 - Tag - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/tags/summer21/</link>
         <description>summer21 - Tag - Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 09 Jul 2021 23:38:27 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/summer21/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 11 Jul 2021 13:37:14 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/summer21/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode_1928 Minimum Cost to Reach Destination in Time</title>
+    <link>http://tribbiannisun.github.io/leetcode_1928/</link>
+    <pubDate>Sun, 11 Jul 2021 13:37:14 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1928/</guid>
+    <description><![CDATA[<p>Use <strong>graph, dp</strong> to solve 1928. Minimum Cost to Reach Destination in Time</p>]]></description>
+</item><item>
+    <title>Leetcode_1930 Unique Length-3 Palindromic Subsequences</title>
+    <link>http://tribbiannisun.github.io/leetcode_1930/</link>
+    <pubDate>Sun, 11 Jul 2021 13:35:37 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1930/</guid>
+    <description><![CDATA[<p>Use <strong>array</strong> to solve Leetcode_1930 Unique Length-3 Palindromic Subsequences</p>]]></description>
+</item><item>
+    <title>Leetcode_1931 Painting a Grid With Three Different Colors</title>
+    <link>http://tribbiannisun.github.io/leetcode_1931/</link>
+    <pubDate>Sun, 11 Jul 2021 13:32:34 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1931/</guid>
+    <description><![CDATA[<p>Use <strong>dp, bitmask, dfs</strong> to solve Leetcode_1931 Painting a Grid With Three Different Colors</p>]]></description>
+</item><item>
+    <title>Leetcode_639 Decode Ways II</title>
+    <link>http://tribbiannisun.github.io/leetcode_639/</link>
+    <pubDate>Sun, 11 Jul 2021 13:29:12 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_639/</guid>
+    <description><![CDATA[<p>Use <strong>dp</strong> to solve Leetcode_639 Decode Ways II</p>]]></description>
+</item><item>
+    <title>Leetcode_980 Unique Paths III</title>
+    <link>http://tribbiannisun.github.io/leetcode_980/</link>
+    <pubDate>Sun, 11 Jul 2021 00:20:17 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_980/</guid>
+    <description><![CDATA[<p>Use <strong>dfs</strong> to solve Leetcode_980 Unique Paths III</p>]]></description>
+</item><item>
     <title>Leetcode_1129 Shortest Path with Alternating Colors</title>
     <link>http://tribbiannisun.github.io/leetcode_1129/</link>
     <pubDate>Fri, 09 Jul 2021 23:38:27 &#43;0800</pubDate>
@@ -38,40 +73,5 @@
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_1697/</guid>
     <description><![CDATA[<p>Use <strong>union-find, offline-algorithm</strong> to solve Leetcode 1697 Checking Existence of Edge Length Limited Paths.</p>]]></description>
-</item><item>
-    <title>Leetcode_1514 Path with Maximum Probability</title>
-    <link>http://tribbiannisun.github.io/leetcode_1514/</link>
-    <pubDate>Wed, 07 Jul 2021 21:46:57 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_1514/</guid>
-    <description><![CDATA[<p>Use <strong>graph, dijkstra</strong> to solve Leetcode 1514 Path with Maximum Probability.</p>]]></description>
-</item><item>
-    <title>Leetcode_1489 Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree</title>
-    <link>http://tribbiannisun.github.io/leetcode_1489/</link>
-    <pubDate>Tue, 06 Jul 2021 22:57:24 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_1489/</guid>
-    <description><![CDATA[<p>Use <strong>graph, kruskal</strong> to solve Leetcode 1916. Count Ways to Build Rooms in an Ant Colony</p>]]></description>
-</item><item>
-    <title>Leetcode_1916. Count Ways to Build Rooms in an Ant Colony</title>
-    <link>http://tribbiannisun.github.io/leetcode_1916/</link>
-    <pubDate>Tue, 06 Jul 2021 22:46:03 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_1916/</guid>
-    <description><![CDATA[<p>Use <strong>math, dfs</strong> to solve Leetcode 1916. Count Ways to Build Rooms in an Ant Colony</p>]]></description>
-</item><item>
-    <title>Leecode_1338 Reduce Array Size to The Half</title>
-    <link>http://tribbiannisun.github.io/leetcode_1338/</link>
-    <pubDate>Tue, 06 Jul 2021 21:39:28 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_1338/</guid>
-    <description><![CDATA[<p>Use <strong>data-structure</strong> to solve Leetcode_1338 Reduce Array Size to The Half</p>]]></description>
-</item><item>
-    <title>Leetcode_1192 Critical Connections in a Network</title>
-    <link>http://tribbiannisun.github.io/leetcode_1192/</link>
-    <pubDate>Mon, 05 Jul 2021 23:05:58 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_1192/</guid>
-    <description><![CDATA[<p>Use <strong>graph, Tarjan</strong> to solve Leetcode 1192 Critical Connections in a Network</p>]]></description>
 </item></channel>
 </rss>
