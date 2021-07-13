@@ -3,7 +3,42 @@
         <title>All Posts - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/posts/</link>
         <description>All Posts | Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 11 Jul 2021 13:37:14 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 14 Jul 2021 00:08:21 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>算法总结_图论总结</title>
+    <link>http://tribbiannisun.github.io/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93_%E5%9B%BE%E8%AE%BA%E6%80%BB%E7%BB%93/</link>
+    <pubDate>Wed, 14 Jul 2021 00:08:21 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93_%E5%9B%BE%E8%AE%BA%E6%80%BB%E7%BB%93/</guid>
+    <description><![CDATA[<p>This article subdivided the Graph problems on leetcode.</p>]]></description>
+</item><item>
+    <title>Leetcode_37  Sudoku Solver</title>
+    <link>http://tribbiannisun.github.io/leetcode_37/</link>
+    <pubDate>Tue, 13 Jul 2021 23:45:54 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_37/</guid>
+    <description><![CDATA[<p>Use <strong>DFS</strong> to solve Leetcode 37 - Sudoku Solver.</p>]]></description>
+</item><item>
+    <title>Leetcode_52 - N-Queens II</title>
+    <link>http://tribbiannisun.github.io/leetcode_52/</link>
+    <pubDate>Tue, 13 Jul 2021 23:45:49 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_52/</guid>
+    <description><![CDATA[<p>Use <strong>DFS</strong> to solve Leetcode 52 - N-Queens II.</p>]]></description>
+</item><item>
+    <title>Leetcode_51 N-Queens</title>
+    <link>http://tribbiannisun.github.io/leetcode_51/</link>
+    <pubDate>Tue, 13 Jul 2021 23:45:47 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_51/</guid>
+    <description><![CDATA[<p>Use <strong>DFS</strong> to solve Leetcode 51 - N-Queens.</p>]]></description>
+</item><item>
+    <title>算法总结_DFS总结</title>
+    <link>http://tribbiannisun.github.io/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93_dfs%E6%80%BB%E7%BB%93/</link>
+    <pubDate>Mon, 12 Jul 2021 21:52:13 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93_dfs%E6%80%BB%E7%BB%93/</guid>
+    <description><![CDATA[<p>This article subdivided the DFS problems on leetcode.</p>]]></description>
+</item><item>
     <title>Leetcode_1928 Minimum Cost to Reach Destination in Time</title>
     <link>http://tribbiannisun.github.io/leetcode_1928/</link>
     <pubDate>Sun, 11 Jul 2021 13:37:14 &#43;0800</pubDate>
@@ -38,40 +73,5 @@
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_980/</guid>
     <description><![CDATA[<p>Use <strong>dfs</strong> to solve Leetcode_980 Unique Paths III</p>]]></description>
-</item><item>
-    <title>Leetcode_1129 Shortest Path with Alternating Colors</title>
-    <link>http://tribbiannisun.github.io/leetcode_1129/</link>
-    <pubDate>Fri, 09 Jul 2021 23:38:27 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_1129/</guid>
-    <description><![CDATA[<p>Use <strong>graph</strong> to solve Leetcode 1129 Shortest Path with Alternating Colors</p>]]></description>
-</item><item>
-    <title>Leetcode_300_II Longest Increasing Subsequence</title>
-    <link>http://tribbiannisun.github.io/leetcode_300_ii/</link>
-    <pubDate>Fri, 09 Jul 2021 20:52:09 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_300_ii/</guid>
-    <description><![CDATA[<p>Use <strong>DP</strong> to solve Leetcode_300 Longest Increasing Subsequence.</p>]]></description>
-</item><item>
-    <title>Leetcode_1713 Minimum Operations to Make a Subsequence</title>
-    <link>http://tribbiannisun.github.io/leetcode_1713/</link>
-    <pubDate>Fri, 09 Jul 2021 20:49:22 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_1713/</guid>
-    <description><![CDATA[Problem Description 1713. Minimum Operations to Make a Subsequence  You are given an array target that consists of distinct integers and another integer array arr that can have duplicates. In one operation, you can insert any integer at any position in arr. For example, if arr = [1,4,1,2], you can add 3 in the middle and make it [1,4,3,1,2]. Note that you can insert the integer at the very beginning or end of the array.]]></description>
-</item><item>
-    <title>Leetcode_378 Kth Smallest Element in a Sorted Matrix</title>
-    <link>http://tribbiannisun.github.io/leetcode_378/</link>
-    <pubDate>Wed, 07 Jul 2021 21:50:40 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_378/</guid>
-    <description><![CDATA[<p>Use <strong>data-structure, binary-search</strong> to solve Leetcode 378 Kth Smallest Element in a Sorted Matrix.</p>]]></description>
-</item><item>
-    <title>Leetcode_1697 Checking Existence of Edge Length Limited Paths</title>
-    <link>http://tribbiannisun.github.io/leetcode_1697/</link>
-    <pubDate>Wed, 07 Jul 2021 21:49:04 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_1697/</guid>
-    <description><![CDATA[<p>Use <strong>union-find, offline-algorithm</strong> to solve Leetcode 1697 Checking Existence of Edge Length Limited Paths.</p>]]></description>
 </item></channel>
 </rss>

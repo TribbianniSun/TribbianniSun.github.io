@@ -3,7 +3,28 @@
         <title>dfs - Tag - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/tags/dfs/</link>
         <description>dfs - Tag - Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 11 Jul 2021 13:32:34 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/dfs/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 13 Jul 2021 23:45:54 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/dfs/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode_37  Sudoku Solver</title>
+    <link>http://tribbiannisun.github.io/leetcode_37/</link>
+    <pubDate>Tue, 13 Jul 2021 23:45:54 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_37/</guid>
+    <description><![CDATA[<p>Use <strong>DFS</strong> to solve Leetcode 37 - Sudoku Solver.</p>]]></description>
+</item><item>
+    <title>Leetcode_52 - N-Queens II</title>
+    <link>http://tribbiannisun.github.io/leetcode_52/</link>
+    <pubDate>Tue, 13 Jul 2021 23:45:49 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_52/</guid>
+    <description><![CDATA[<p>Use <strong>DFS</strong> to solve Leetcode 52 - N-Queens II.</p>]]></description>
+</item><item>
+    <title>Leetcode_51 N-Queens</title>
+    <link>http://tribbiannisun.github.io/leetcode_51/</link>
+    <pubDate>Tue, 13 Jul 2021 23:45:47 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_51/</guid>
+    <description><![CDATA[<p>Use <strong>DFS</strong> to solve Leetcode 51 - N-Queens.</p>]]></description>
+</item><item>
     <title>Leetcode_1931 Painting a Grid With Three Different Colors</title>
     <link>http://tribbiannisun.github.io/leetcode_1931/</link>
     <pubDate>Sun, 11 Jul 2021 13:32:34 &#43;0800</pubDate>

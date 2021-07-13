@@ -4,32 +4,32 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>Leetcode_1928 Minimum Cost to Reach Destination in Time | </title><meta name="Description" content="Haihao Sun"><meta property="og:title" content="Leetcode_1928 Minimum Cost to Reach Destination in Time" />
-<meta property="og:description" content="Use graph, dp to solve 1928. Minimum Cost to Reach Destination in Time" />
+        <title>算法总结_DFS总结 | </title><meta name="Description" content="Haihao Sun"><meta property="og:title" content="算法总结_DFS总结" />
+<meta property="og:description" content="This article subdivided the DFS problems on leetcode." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://tribbiannisun.github.io/leetcode_1928/" /><meta property="og:image" content="http://tribbiannisun.github.io/logo.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-07-11T13:37:14&#43;08:00" />
-<meta property="article:modified_time" content="2021-07-11T13:37:14&#43;08:00" />
+<meta property="og:url" content="http://tribbiannisun.github.io/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93_dfs%E6%80%BB%E7%BB%93/" /><meta property="og:image" content="http://tribbiannisun.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-07-12T21:52:13&#43;08:00" />
+<meta property="article:modified_time" content="2021-07-12T21:52:13&#43;08:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="http://tribbiannisun.github.io/logo.png"/>
 
-<meta name="twitter:title" content="Leetcode_1928 Minimum Cost to Reach Destination in Time"/>
-<meta name="twitter:description" content="Use graph, dp to solve 1928. Minimum Cost to Reach Destination in Time"/>
+<meta name="twitter:title" content="算法总结_DFS总结"/>
+<meta name="twitter:description" content="This article subdivided the DFS problems on leetcode."/>
 <meta name="application-name" content="Haihao Sun">
 <meta name="apple-mobile-web-app-title" content="Haihao Sun"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://tribbiannisun.github.io/leetcode_1928/" /><link rel="prev" href="http://tribbiannisun.github.io/leetcode_1930/" /><link rel="next" href="http://tribbiannisun.github.io/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93_dfs%E6%80%BB%E7%BB%93/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://tribbiannisun.github.io/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93_dfs%E6%80%BB%E7%BB%93/" /><link rel="prev" href="http://tribbiannisun.github.io/leetcode_1928/" /><link rel="next" href="http://tribbiannisun.github.io/leetcode_51/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "Leetcode_1928 Minimum Cost to Reach Destination in Time",
+        "headline": "算法总结_DFS总结",
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "http:\/\/tribbiannisun.github.io\/leetcode_1928\/"
-        },"genre": "posts","keywords": "graph, dp, summer21","wordCount":  23 ,
-        "url": "http:\/\/tribbiannisun.github.io\/leetcode_1928\/","datePublished": "2021-07-11T13:37:14+08:00","dateModified": "2021-07-11T13:37:14+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@id": "http:\/\/tribbiannisun.github.io\/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93_dfs%E6%80%BB%E7%BB%93\/"
+        },"genre": "posts","keywords": "BFS, summer21","wordCount":  70 ,
+        "url": "http:\/\/tribbiannisun.github.io\/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93_dfs%E6%80%BB%E7%BB%93\/","datePublished": "2021-07-12T21:52:13+08:00","dateModified": "2021-07-12T21:52:13+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "http:\/\/tribbiannisun.github.io\/images\/avatar.png"},"author": {
                 "@type": "Person",
@@ -48,12 +48,12 @@
         },{
             "@type": "ListItem",
             "position": 2,
-            "name": "Leetcode Problem",
-            "item": "http://tribbiannisun.github.io/categories/leetcode-problem/"
+            "name": "算法总结",
+            "item": "http://tribbiannisun.github.io/categories/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/"
         },{
                 "@type": "ListItem",
                 "position": 3,
-                "name": "Leetcode_1928 Minimum Cost to Reach Destination in Time"
+                "name": "算法总结_DFS总结"
             }]
     }
 </script></head>
@@ -122,12 +122,12 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single page-toc theme-classic"><div class="post-all-meta  padding-article ">
                 <div class="breadcrumbs">
-    <a href="/">Home </a>/ <a href="/categories/leetcode-problem/">Leetcode Problem </a>/ <a href="/"> Leetcode_1928 Minimum Cost to Reach Destination in Time </a>
+    <a href="/">Home </a>/ <a href="/categories/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/">算法总结 </a>/ <a href="/"> 算法总结_DFS总结 </a>
 </div>
-                    <h1 class="single-title animated flipInX">Leetcode_1928 Minimum Cost to Reach Destination in Time</h1><div class="post-meta">
+                    <h1 class="single-title animated flipInX">算法总结_DFS总结</h1><div class="post-meta">
                         <div class="post-meta-line"><span class="post-category">
-                                <a href="/categories/leetcode-problem/"><i class="far fa-folder fa-fw"></i>&nbsp;Leetcode Problem</a>
-                            </span>&nbsp;&nbsp;&nbsp;&nbsp;<i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time class="timeago" datetime="2021-07-11">2021-07-11</time>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;23 words
+                                <a href="/categories/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/"><i class="far fa-folder fa-fw"></i>&nbsp;算法总结</a>
+                            </span>&nbsp;&nbsp;&nbsp;&nbsp;<i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time class="timeago" datetime="2021-07-12">2021-07-12</time>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;70 words
                             &nbsp;&nbsp;&nbsp;&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;One minute</div>
                     </div>
                 </div><div class="post"><div class="details toc" id="toc-static"  data-kept="">
@@ -137,34 +137,49 @@
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#problem-solution-1928-minimum-cost-to-reach-destination-in-timehttpsleetcodecomproblemsminimum-cost-to-reach-destination-in-time">Problem Solution <a href="https://leetcode.com/problems/minimum-cost-to-reach-destination-in-time/">1928. Minimum Cost to Reach Destination in Time</a></a></li>
+    <li><a href="#求连通性-注意dfs只能求bool因为其一条路走到黑不能求最短路">求连通性 (注意，DFS只能求bool，因为其一条路走到黑，不能求最短路)</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content" style="padding-top: 20px"><p>Use <strong>graph, dp</strong> to solve 1928. Minimum Cost to Reach Destination in Time</p>
-<h2 id="problem-solution-1928-minimum-cost-to-reach-destination-in-timehttpsleetcodecomproblemsminimum-cost-to-reach-destination-in-time">Problem Solution <a href="https://leetcode.com/problems/minimum-cost-to-reach-destination-in-time/" target="_blank" rel="noopener noreffer">1928. Minimum Cost to Reach Destination in Time</a></h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-cpp" data-lang="cpp"></code></pre></td></tr></table>
-</div>
-</div><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-cpp" data-lang="cpp"></code></pre></td></tr></table>
-</div>
-</div></div><div class="post-info-share">
-    <span><a class="share-icon share-twitter" href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://tribbiannisun.github.io/leetcode_1928/" data-title="Leetcode_1928 Minimum Cost to Reach Destination in Time" data-hashtags="graph,dp,summer21"><i class="fab fa-twitter fa-fw"></i></a><a class="share-icon share-facebook" href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://tribbiannisun.github.io/leetcode_1928/" data-hashtag="graph"><i class="fab fa-facebook-square fa-fw"></i></a><a class="share-icon share-line" href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://tribbiannisun.github.io/leetcode_1928/" data-title="Leetcode_1928 Minimum Cost to Reach Destination in Time"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a class="share-icon share-weibo" href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://tribbiannisun.github.io/leetcode_1928/" data-title="Leetcode_1928 Minimum Cost to Reach Destination in Time"><i class="fab fa-weibo fa-fw"></i></a></span>
+            </div><div class="content" id="content" style="padding-top: 20px"><p>This article subdivided the DFS problems on leetcode.</p>
+<h1 id="dfs-详细分类">DFS 详细分类</h1>
+<ul>
+<li>
+<h2 id="求连通性-注意dfs只能求bool因为其一条路走到黑不能求最短路">求连通性 (注意，DFS只能求bool，因为其一条路走到黑，不能求最短路)</h2>
+</li>
+<li>回溯生成所有方案 (棋盘格式)
+<ul>
+<li><a href="https://leetcode.com/problems/sudoku-solver/" target="_blank" rel="noopener noreffer">Leetcode 37. Sudoku Solver</a></li>
+<li><a href="https://leetcode.com/problems/n-queens/" target="_blank" rel="noopener noreffer">Leetcode 51. N-Queens</a></li>
+<li><a href="https://leetcode.com/problems/n-queens-ii/" target="_blank" rel="noopener noreffer">Leetcode 52. N-Queens II</a></li>
+<li><a href="https://leetcode.com/problems/unique-paths-iii/" target="_blank" rel="noopener noreffer">Leetcode 980. Unique Paths III</a></li>
+</ul>
+</li>
+<li>回溯生成所有方案 (分组格式)
+<ul>
+<li><a href="https://leetcode.com/problems/matchsticks-to-square/" target="_blank" rel="noopener noreffer">Leetcode 473. Matchsticks to Square</a></li>
+<li><a href="https://leetcode.com/problems/partition-to-k-equal-sum-subsets/" target="_blank" rel="noopener noreffer">Leetcode 698. Partition to K Equal Sum Subsets</a></li>
+</ul>
+</li>
+<li>回溯生成所有方案 (切分格式)
+<ul>
+<li><a href="https://leetcode.com/problems/expression-add-operators/" target="_blank" rel="noopener noreffer">Leetcode 282. Expression Add Operators</a></li>
+<li><a href="https://leetcode.com/problems/24-game/" target="_blank" rel="noopener noreffer">Leetcode 679. 24 Game</a></li>
+<li><a href="https://leetcode.com/problems/split-array-into-fibonacci-sequence/" target="_blank" rel="noopener noreffer">Leetcode 842. Split Array into Fibonacci Sequence</a></li>
+<li><a href="https://leetcode.com/problems/number-of-squareful-arrays/" target="_blank" rel="noopener noreffer">Leetcode 996. Number of Squareful Arrays</a></li>
+</ul>
+</li>
+<li>bitmask</li>
+</ul></div><div class="post-info-share">
+    <span><a class="share-icon share-twitter" href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://tribbiannisun.github.io/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93_dfs%E6%80%BB%E7%BB%93/" data-title="算法总结_DFS总结" data-hashtags="BFS,summer21"><i class="fab fa-twitter fa-fw"></i></a><a class="share-icon share-facebook" href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://tribbiannisun.github.io/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93_dfs%E6%80%BB%E7%BB%93/" data-hashtag="BFS"><i class="fab fa-facebook-square fa-fw"></i></a><a class="share-icon share-line" href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://tribbiannisun.github.io/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93_dfs%E6%80%BB%E7%BB%93/" data-title="算法总结_DFS总结"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a class="share-icon share-weibo" href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://tribbiannisun.github.io/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93_dfs%E6%80%BB%E7%BB%93/" data-title="算法总结_DFS总结"><i class="fab fa-weibo fa-fw"></i></a></span>
 </div><div class="post-footer" id="post-footer"><div class="post-navigation"><div class="post-nav-box nav-box-prev">
-            <a class="nav-box" href="/leetcode_1930/"><span class="nav-icon"><svg aria-hidden="true" data-prefix="fas" data-icon="chevron-circle-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z"></path></svg></span><div style="text-align: right;padding-left: 10px"><div class="nav-text-h">Next article</div><span class="nav-text">Leetcode_1930 Unique Length-3 Palindromic Subsequences</span></div></a>
+            <a class="nav-box" href="/leetcode_1928/"><span class="nav-icon"><svg aria-hidden="true" data-prefix="fas" data-icon="chevron-circle-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z"></path></svg></span><div style="text-align: right;padding-left: 10px"><div class="nav-text-h">Next article</div><span class="nav-text">Leetcode_1928 Minimum Cost to Reach Destination in Time</span></div></a>
         </div>
         <div class="post-nav-box nav-box-next">
-            <a class="nav-box" href="/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93_dfs%E6%80%BB%E7%BB%93/"><div style="padding-right: 10px"><div class="nav-text-h">Next article</div><span class="nav-text">算法总结_DFS总结</span></div><span class="nav-icon"><svg aria-hidden="true" data-prefix="fas" data-icon="chevron-circle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"></path></svg></span></a>
+            <a class="nav-box" href="/leetcode_51/"><div style="padding-right: 10px"><div class="nav-text-h">Next article</div><span class="nav-text">Leetcode_51 N-Queens</span></div><span class="nav-icon"><svg aria-hidden="true" data-prefix="fas" data-icon="chevron-circle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"></path></svg></span></a>
         </div></div></div>
 </div>
 
-    </article><div class=" post-tags post-tags-toc "><a href="/tags/graph/" class="tag">graph</a><a href="/tags/dp/" class="tag">dp</a><a href="/tags/summer21/" class="tag">summer21</a></div></div></main><footer class="footer">
+    </article><div class=" post-tags post-tags-toc "><a href="/tags/bfs/" class="tag">bfs</a><a href="/tags/summer21/" class="tag">summer21</a></div></div></main><footer class="footer">
         <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span>Haihao 2020 - 2021</span></div>
         </div>
     </footer></div>
