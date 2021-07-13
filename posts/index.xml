@@ -32,12 +32,26 @@
     <guid>http://tribbiannisun.github.io/leetcode_51/</guid>
     <description><![CDATA[<p>Use <strong>DFS</strong> to solve Leetcode 51 - N-Queens.</p>]]></description>
 </item><item>
+    <title>Leetcode_162 Find Peak Element</title>
+    <link>http://tribbiannisun.github.io/leetcode_162/</link>
+    <pubDate>Tue, 13 Jul 2021 00:13:08 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_162/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>算法总结_DFS总结</title>
     <link>http://tribbiannisun.github.io/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93_dfs%E6%80%BB%E7%BB%93/</link>
     <pubDate>Mon, 12 Jul 2021 21:52:13 &#43;0800</pubDate>
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93_dfs%E6%80%BB%E7%BB%93/</guid>
     <description><![CDATA[<p>This article subdivided the DFS problems on leetcode.</p>]]></description>
+</item><item>
+    <title>Leetcode_205 Isomorphic Strings</title>
+    <link>http://tribbiannisun.github.io/leetcode_205/</link>
+    <pubDate>Mon, 12 Jul 2021 00:12:44 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_205/</guid>
+    <description><![CDATA[]]></description>
 </item><item>
     <title>Leetcode_1928 Minimum Cost to Reach Destination in Time</title>
     <link>http://tribbiannisun.github.io/leetcode_1928/</link>
@@ -59,19 +73,5 @@
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_1931/</guid>
     <description><![CDATA[<p>Use <strong>dp, bitmask, dfs</strong> to solve Leetcode_1931 Painting a Grid With Three Different Colors</p>]]></description>
-</item><item>
-    <title>Leetcode_639 Decode Ways II</title>
-    <link>http://tribbiannisun.github.io/leetcode_639/</link>
-    <pubDate>Sun, 11 Jul 2021 13:29:12 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_639/</guid>
-    <description><![CDATA[<p>Use <strong>dp</strong> to solve Leetcode_639 Decode Ways II</p>]]></description>
-</item><item>
-    <title>Leetcode_980 Unique Paths III</title>
-    <link>http://tribbiannisun.github.io/leetcode_980/</link>
-    <pubDate>Sun, 11 Jul 2021 00:20:17 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_980/</guid>
-    <description><![CDATA[<p>Use <strong>dfs</strong> to solve Leetcode_980 Unique Paths III</p>]]></description>
 </item></channel>
 </rss>
