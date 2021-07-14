@@ -3,27 +3,34 @@
         <title>leetcode-daily - Tag - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/tags/leetcode-daily/</link>
         <description>leetcode-daily - Tag - Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 13 Jul 2021 00:13:08 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/leetcode-daily/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 14 Jul 2021 19:58:22 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/leetcode-daily/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode_791 Custom Sort String</title>
+    <link>http://tribbiannisun.github.io/leetcode_791/</link>
+    <pubDate>Wed, 14 Jul 2021 19:58:22 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_791/</guid>
+    <description><![CDATA[<p>Use <strong>data-structure</strong> to solve Leetcode 791. Custom Sort String</p>]]></description>
+</item><item>
     <title>Leetcode_162 Find Peak Element</title>
     <link>http://tribbiannisun.github.io/leetcode_162/</link>
     <pubDate>Tue, 13 Jul 2021 00:13:08 &#43;0800</pubDate>
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_162/</guid>
-    <description><![CDATA[]]></description>
+    <description><![CDATA[<p>Use <strong>binary-search</strong> to solve Leetcode_162 Find Peak Element.</p>]]></description>
 </item><item>
     <title>Leetcode_205 Isomorphic Strings</title>
     <link>http://tribbiannisun.github.io/leetcode_205/</link>
     <pubDate>Mon, 12 Jul 2021 00:12:44 &#43;0800</pubDate>
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_205/</guid>
-    <description><![CDATA[]]></description>
+    <description><![CDATA[<p>Use <strong>data-structure</strong> to solve Leetcode_162 Find Peak Element.</p>]]></description>
 </item><item>
     <title>Leetcode_295 Find Median from Data Stream</title>
     <link>http://tribbiannisun.github.io/leetcode_295/</link>
     <pubDate>Sun, 11 Jul 2021 00:12:33 &#43;0800</pubDate>
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_295/</guid>
-    <description><![CDATA[]]></description>
+    <description><![CDATA[<p>Use <strong>data-structure, sorted-list</strong> to solve Leetcode 791. Custom Sort String</p>]]></description>
 </item><item>
     <title>Leetcode_300_II Longest Increasing Subsequence</title>
     <link>http://tribbiannisun.github.io/leetcode_300_ii/</link>
@@ -66,12 +73,5 @@
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_363/</guid>
     <description><![CDATA[<p>Use <strong>data-structure</strong> to solve Leetcode 363 - Max Sum of Rectangle No Larger Than K.</p>]]></description>
-</item><item>
-    <title>Leetcode_658 Find K Closest Elements</title>
-    <link>http://tribbiannisun.github.io/leetcode_658/</link>
-    <pubDate>Fri, 02 Jul 2021 22:01:05 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_658/</guid>
-    <description><![CDATA[<p>Use <strong>binary-search</strong> to solve Leetcode 658 - Find K Closest Elements.</p>]]></description>
 </item></channel>
 </rss>

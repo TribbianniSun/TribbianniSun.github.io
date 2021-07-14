@@ -5,17 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <title>Leetcode_205 Isomorphic Strings | </title><meta name="Description" content="Haihao Sun"><meta property="og:title" content="Leetcode_205 Isomorphic Strings" />
-<meta property="og:description" content="" />
+<meta property="og:description" content="Use data-structure to solve Leetcode_162 Find Peak Element." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://tribbiannisun.github.io/leetcode_205/" /><meta property="og:image" content="http://tribbiannisun.github.io/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-07-12T00:12:44&#43;08:00" />
-<meta property="article:modified_time" content="2021-07-12T00:12:44&#43;08:00" />
+<meta property="article:modified_time" content="2021-07-14T20:07:34&#43;08:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="http://tribbiannisun.github.io/logo.png"/>
 
 <meta name="twitter:title" content="Leetcode_205 Isomorphic Strings"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:description" content="Use data-structure to solve Leetcode_162 Find Peak Element."/>
 <meta name="application-name" content="Haihao Sun">
 <meta name="apple-mobile-web-app-title" content="Haihao Sun"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -28,8 +28,8 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "http:\/\/tribbiannisun.github.io\/leetcode_205\/"
-        },"genre": "posts","keywords": "data-structure, leetcode-daily, summer21","wordCount":  0 ,
-        "url": "http:\/\/tribbiannisun.github.io\/leetcode_205\/","datePublished": "2021-07-12T00:12:44+08:00","dateModified": "2021-07-12T00:12:44+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+        },"genre": "posts","keywords": "data-structure, leetcode-daily, summer21","wordCount":  104 ,
+        "url": "http:\/\/tribbiannisun.github.io\/leetcode_205\/","datePublished": "2021-07-12T00:12:44+08:00","dateModified": "2021-07-14T20:07:34+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "http:\/\/tribbiannisun.github.io\/images\/avatar.png"},"author": {
                 "@type": "Person",
@@ -127,16 +127,80 @@
                     <h1 class="single-title animated flipInX">Leetcode_205 Isomorphic Strings</h1><div class="post-meta">
                         <div class="post-meta-line"><span class="post-category">
                                 <a href="/categories/leetcode-problem/"><i class="far fa-folder fa-fw"></i>&nbsp;Leetcode Problem</a>
-                            </span>&nbsp;&nbsp;&nbsp;&nbsp;<i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time class="timeago" datetime="2021-07-12">2021-07-12</time>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;0 words
-                            &nbsp;&nbsp;&nbsp;&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;0 minutes</div>
+                            </span>&nbsp;&nbsp;&nbsp;&nbsp;<i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time class="timeago" datetime="2021-07-12">2021-07-12</time>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;104 words
+                            &nbsp;&nbsp;&nbsp;&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;One minute</div>
                     </div>
                 </div><div class="post"><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
                     <span><i class="details-icon fas fa-angle-right"></i></span>
                 </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
-            </div><div class="content" id="content" style="padding-top: 20px"></div><div class="post-info-share">
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#problem-solution-leetcode-205-isomorphic-stringshttpsleetcodecomproblemsisomorphic-strings">Problem Solution <a href="https://leetcode.com/problems/isomorphic-strings/">Leetcode 205. Isomorphic Strings</a></a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content" style="padding-top: 20px"><span class="post-update">
+                    <b>Updated on 2021-07-14</b>
+                </span><p>Use <strong>data-structure</strong> to solve Leetcode_162 Find Peak Element.</p>
+<h2 id="problem-solution-leetcode-205-isomorphic-stringshttpsleetcodecomproblemsisomorphic-strings">Problem Solution <a href="https://leetcode.com/problems/isomorphic-strings/" target="_blank" rel="noopener noreffer">Leetcode 205. Isomorphic Strings</a></h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    
+    <span class="kt">int</span> <span class="n">s_t</span><span class="p">[</span><span class="mi">300</span><span class="p">],</span> <span class="n">t_s</span><span class="p">[</span><span class="mi">300</span><span class="p">];</span>
+    
+    <span class="kt">bool</span> <span class="nf">isIsomorphic</span><span class="p">(</span><span class="n">string</span> <span class="n">s</span><span class="p">,</span> <span class="n">string</span> <span class="n">t</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">memset</span><span class="p">(</span><span class="n">s_t</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="k">sizeof</span> <span class="n">s_t</span><span class="p">);</span>
+        <span class="n">memset</span><span class="p">(</span><span class="n">t_s</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="k">sizeof</span> <span class="n">t_s</span><span class="p">);</span>
+        
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">s</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+            <span class="kt">int</span> <span class="n">sidx</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">tidx</span> <span class="o">=</span> <span class="n">t</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">s_t</span><span class="p">[</span><span class="n">sidx</span><span class="p">]</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+                <span class="n">s_t</span><span class="p">[</span><span class="n">sidx</span><span class="p">]</span> <span class="o">=</span> <span class="n">tidx</span><span class="p">;</span>
+            <span class="k">else</span>
+                <span class="k">if</span><span class="p">(</span><span class="n">s_t</span><span class="p">[</span><span class="n">sidx</span><span class="p">]</span> <span class="o">!=</span> <span class="n">tidx</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+            
+            <span class="k">if</span><span class="p">(</span><span class="n">t_s</span><span class="p">[</span><span class="n">tidx</span><span class="p">]</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+                <span class="n">t_s</span><span class="p">[</span><span class="n">tidx</span><span class="p">]</span> <span class="o">=</span> <span class="n">sidx</span><span class="p">;</span>
+            <span class="k">else</span>
+                <span class="k">if</span><span class="p">(</span><span class="n">t_s</span><span class="p">[</span><span class="n">tidx</span><span class="p">]</span> <span class="o">!=</span> <span class="n">sidx</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+        <span class="p">}</span>
+        
+        <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+</code></pre></td></tr></table>
+</div>
+</div></div><div class="post-info-share">
     <span><a class="share-icon share-twitter" href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://tribbiannisun.github.io/leetcode_205/" data-title="Leetcode_205 Isomorphic Strings" data-hashtags="data-structure,leetcode-daily,summer21"><i class="fab fa-twitter fa-fw"></i></a><a class="share-icon share-facebook" href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://tribbiannisun.github.io/leetcode_205/" data-hashtag="data-structure"><i class="fab fa-facebook-square fa-fw"></i></a><a class="share-icon share-line" href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://tribbiannisun.github.io/leetcode_205/" data-title="Leetcode_205 Isomorphic Strings"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a class="share-icon share-weibo" href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://tribbiannisun.github.io/leetcode_205/" data-title="Leetcode_205 Isomorphic Strings"><i class="fab fa-weibo fa-fw"></i></a></span>
 </div><div class="post-footer" id="post-footer"><div class="post-navigation"><div class="post-nav-box nav-box-prev">
             <a class="nav-box" href="/leetcode_1928/"><span class="nav-icon"><svg aria-hidden="true" data-prefix="fas" data-icon="chevron-circle-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z"></path></svg></span><div style="text-align: right;padding-left: 10px"><div class="nav-text-h">Next article</div><span class="nav-text">Leetcode_1928 Minimum Cost to Reach Destination in Time</span></div></a>

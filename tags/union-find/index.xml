@@ -9,7 +9,7 @@
     <pubDate>Wed, 07 Jul 2021 21:49:04 &#43;0800</pubDate>
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_1697/</guid>
-    <description><![CDATA[<p>Use <strong>union-find, offline-algorithm</strong> to solve Leetcode 1697 Checking Existence of Edge Length Limited Paths.</p>]]></description>
+    <description><![CDATA[<p>Use <strong>union-find, offline-algorithm, graph</strong> to solve Leetcode 1697 Checking Existence of Edge Length Limited Paths.</p>]]></description>
 </item><item>
     <title>Leetcode_685 Redundant Connection II</title>
     <link>http://tribbiannisun.github.io/leetcode_685/</link>

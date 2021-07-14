@@ -3,7 +3,28 @@
         <title>算法总结 - Category - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/categories/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/</link>
         <description>算法总结 - Category - Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 14 Jul 2021 00:08:21 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/categories/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 14 Jul 2021 22:19:43 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/categories/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/" rel="self" type="application/rss+xml" /><item>
+    <title>算法总结_Bitmask总结</title>
+    <link>http://tribbiannisun.github.io/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93_bitmask%E6%80%BB%E7%BB%93/</link>
+    <pubDate>Wed, 14 Jul 2021 22:19:43 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93_bitmask%E6%80%BB%E7%BB%93/</guid>
+    <description><![CDATA[<p>This article subdivided the Bitmask problems on leetcode.</p>]]></description>
+</item><item>
+    <title>算法总结_Stack总结</title>
+    <link>http://tribbiannisun.github.io/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93_stack%E6%80%BB%E7%BB%93/</link>
+    <pubDate>Wed, 14 Jul 2021 20:39:01 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93_stack%E6%80%BB%E7%BB%93/</guid>
+    <description><![CDATA[<p>This article subdivided the Stack problems on leetcode.</p>]]></description>
+</item><item>
+    <title>算法总结_扫描线总结</title>
+    <link>http://tribbiannisun.github.io/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93_%E6%89%AB%E6%8F%8F%E7%BA%BF%E6%80%BB%E7%BB%93/</link>
+    <pubDate>Wed, 14 Jul 2021 20:08:14 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93_%E6%89%AB%E6%8F%8F%E7%BA%BF%E6%80%BB%E7%BB%93/</guid>
+    <description><![CDATA[<p>This article reviews the sweep-line problems and break them into smaller topics and models.</p>]]></description>
+</item><item>
     <title>算法总结_图论总结</title>
     <link>http://tribbiannisun.github.io/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93_%E5%9B%BE%E8%AE%BA%E6%80%BB%E7%BB%93/</link>
     <pubDate>Wed, 14 Jul 2021 00:08:21 &#43;0800</pubDate>

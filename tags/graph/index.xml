@@ -25,6 +25,13 @@
     <guid>http://tribbiannisun.github.io/leetcode_1129/</guid>
     <description><![CDATA[<p>Use <strong>graph</strong> to solve Leetcode 1129 Shortest Path with Alternating Colors</p>]]></description>
 </item><item>
+    <title>Leetcode_1697 Checking Existence of Edge Length Limited Paths</title>
+    <link>http://tribbiannisun.github.io/leetcode_1697/</link>
+    <pubDate>Wed, 07 Jul 2021 21:49:04 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1697/</guid>
+    <description><![CDATA[<p>Use <strong>union-find, offline-algorithm, graph</strong> to solve Leetcode 1697 Checking Existence of Edge Length Limited Paths.</p>]]></description>
+</item><item>
     <title>Leetcode_1514 Path with Maximum Probability</title>
     <link>http://tribbiannisun.github.io/leetcode_1514/</link>
     <pubDate>Wed, 07 Jul 2021 21:46:57 &#43;0800</pubDate>

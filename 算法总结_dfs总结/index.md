@@ -7,7 +7,6 @@ This article subdivided the DFS problems on leetcode.
 # DFS 详细分类
 
 - 求连通性 (注意，DFS只能求bool，因为其一条路走到黑，不能求最短路)
-    - 
 - 回溯生成所有方案 (棋盘格式)
     - [Leetcode 37. Sudoku Solver](https://leetcode.com/problems/sudoku-solver/)
     - [Leetcode 51. N-Queens](https://leetcode.com/problems/n-queens/)
@@ -22,3 +21,4 @@ This article subdivided the DFS problems on leetcode.
     - [Leetcode 842. Split Array into Fibonacci Sequence](https://leetcode.com/problems/split-array-into-fibonacci-sequence/)
     - [Leetcode 996. Number of Squareful Arrays](https://leetcode.com/problems/number-of-squareful-arrays/)
 - bitmask
+    - [Leetcode 464. Can I Win](https://leetcode.com/problems/can-i-win/)

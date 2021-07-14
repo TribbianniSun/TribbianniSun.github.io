@@ -2,7 +2,7 @@
 
 
 
-Use **union-find, offline-algorithm** to solve Leetcode 1697 Checking Existence of Edge Length Limited Paths.
+Use **union-find, offline-algorithm, graph** to solve Leetcode 1697 Checking Existence of Edge Length Limited Paths.
 <!--more-->
 
 

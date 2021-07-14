@@ -3,7 +3,49 @@
         <title>Leetcode Problem - Category - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/categories/leetcode-problem/</link>
         <description>Leetcode Problem - Category - Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 13 Jul 2021 23:45:54 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/categories/leetcode-problem/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 14 Jul 2021 22:09:47 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/categories/leetcode-problem/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode_464. Can I Win</title>
+    <link>http://tribbiannisun.github.io/leetcode_464/</link>
+    <pubDate>Wed, 14 Jul 2021 22:09:47 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_464/</guid>
+    <description><![CDATA[<p>Use <strong>DFS, bitmask</strong> to solve Leetcode 464. Can I Win</p>]]></description>
+</item><item>
+    <title>Leetcode 1328. Break a Palindrome</title>
+    <link>http://tribbiannisun.github.io/leetcode_1328/</link>
+    <pubDate>Wed, 14 Jul 2021 20:36:11 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1328/</guid>
+    <description><![CDATA[<p>Use <strong>Greedy</strong> to solve Leetcode 1328 - Break a Palindrome.</p>]]></description>
+</item><item>
+    <title>Leetcode_735. Asteroid Collision</title>
+    <link>http://tribbiannisun.github.io/leetcode_735/</link>
+    <pubDate>Wed, 14 Jul 2021 20:34:44 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_735/</guid>
+    <description><![CDATA[<p>Use <strong>stack</strong> to solve Leetcode 735. Asteroid Collision.</p>]]></description>
+</item><item>
+    <title>Leetcode_133. Clone Graph</title>
+    <link>http://tribbiannisun.github.io/leetcode_133/</link>
+    <pubDate>Wed, 14 Jul 2021 20:31:47 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_133/</guid>
+    <description><![CDATA[<p>Use <strong>dfs</strong> to solve Leetcode 133. Clone Graph.</p>]]></description>
+</item><item>
+    <title>Leetcode_218. The Skyline Problem</title>
+    <link>http://tribbiannisun.github.io/leetcode_218/</link>
+    <pubDate>Wed, 14 Jul 2021 20:22:04 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_218/</guid>
+    <description><![CDATA[<p>Use <strong>sweep-line</strong> to solve Leetcode_218. The Skyline Problem</p>]]></description>
+</item><item>
+    <title>Leetcode_791 Custom Sort String</title>
+    <link>http://tribbiannisun.github.io/leetcode_791/</link>
+    <pubDate>Wed, 14 Jul 2021 19:58:22 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_791/</guid>
+    <description><![CDATA[<p>Use <strong>data-structure</strong> to solve Leetcode 791. Custom Sort String</p>]]></description>
+</item><item>
     <title>Leetcode_37  Sudoku Solver</title>
     <link>http://tribbiannisun.github.io/leetcode_37/</link>
     <pubDate>Tue, 13 Jul 2021 23:45:54 &#43;0800</pubDate>
@@ -30,48 +72,6 @@
     <pubDate>Tue, 13 Jul 2021 00:13:08 &#43;0800</pubDate>
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_162/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Leetcode_205 Isomorphic Strings</title>
-    <link>http://tribbiannisun.github.io/leetcode_205/</link>
-    <pubDate>Mon, 12 Jul 2021 00:12:44 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_205/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Leetcode_1928 Minimum Cost to Reach Destination in Time</title>
-    <link>http://tribbiannisun.github.io/leetcode_1928/</link>
-    <pubDate>Sun, 11 Jul 2021 13:37:14 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_1928/</guid>
-    <description><![CDATA[<p>Use <strong>graph, dp</strong> to solve 1928. Minimum Cost to Reach Destination in Time</p>]]></description>
-</item><item>
-    <title>Leetcode_1930 Unique Length-3 Palindromic Subsequences</title>
-    <link>http://tribbiannisun.github.io/leetcode_1930/</link>
-    <pubDate>Sun, 11 Jul 2021 13:35:37 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_1930/</guid>
-    <description><![CDATA[<p>Use <strong>array</strong> to solve Leetcode_1930 Unique Length-3 Palindromic Subsequences</p>]]></description>
-</item><item>
-    <title>Leetcode_1931 Painting a Grid With Three Different Colors</title>
-    <link>http://tribbiannisun.github.io/leetcode_1931/</link>
-    <pubDate>Sun, 11 Jul 2021 13:32:34 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_1931/</guid>
-    <description><![CDATA[<p>Use <strong>dp, bitmask, dfs</strong> to solve Leetcode_1931 Painting a Grid With Three Different Colors</p>]]></description>
-</item><item>
-    <title>Leetcode_639 Decode Ways II</title>
-    <link>http://tribbiannisun.github.io/leetcode_639/</link>
-    <pubDate>Sun, 11 Jul 2021 13:29:12 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_639/</guid>
-    <description><![CDATA[<p>Use <strong>dp</strong> to solve Leetcode_639 Decode Ways II</p>]]></description>
-</item><item>
-    <title>Leetcode_980 Unique Paths III</title>
-    <link>http://tribbiannisun.github.io/leetcode_980/</link>
-    <pubDate>Sun, 11 Jul 2021 00:20:17 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_980/</guid>
-    <description><![CDATA[<p>Use <strong>dfs</strong> to solve Leetcode_980 Unique Paths III</p>]]></description>
+    <description><![CDATA[<p>Use <strong>binary-search</strong> to solve Leetcode_162 Find Peak Element.</p>]]></description>
 </item></channel>
 </rss>

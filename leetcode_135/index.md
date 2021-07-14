@@ -4,9 +4,6 @@
 Use **Greedy** to solve Leetcode 135 - Candy.
 <!--more-->
 
-
-
-
 ## Problem Solution [Leetcode135 - Candy](https://leetcode.com/problems/candy/)
 ```cpp
 class Solution {

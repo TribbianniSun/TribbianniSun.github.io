@@ -1,7 +1,7 @@
 # Leetcode_1655 Distribute Repeating Integers
 
 
-Use **DP-Bitmask** to solve Leetcode 1655 Distribute Repeating Integers.
+Use **Bitmask** to solve Leetcode 1655 Distribute Repeating Integers.
 <!--more-->
 
 

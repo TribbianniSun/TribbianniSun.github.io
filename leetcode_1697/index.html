@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <title>Leetcode_1697 Checking Existence of Edge Length Limited Paths | </title><meta name="Description" content="Haihao Sun"><meta property="og:title" content="Leetcode_1697 Checking Existence of Edge Length Limited Paths" />
-<meta property="og:description" content="Use union-find, offline-algorithm to solve Leetcode 1697 Checking Existence of Edge Length Limited Paths." />
+<meta property="og:description" content="Use union-find, offline-algorithm, graph to solve Leetcode 1697 Checking Existence of Edge Length Limited Paths." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://tribbiannisun.github.io/leetcode_1697/" /><meta property="og:image" content="http://tribbiannisun.github.io/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-07-07T21:49:04&#43;08:00" />
@@ -15,7 +15,7 @@
 <meta name="twitter:image" content="http://tribbiannisun.github.io/logo.png"/>
 
 <meta name="twitter:title" content="Leetcode_1697 Checking Existence of Edge Length Limited Paths"/>
-<meta name="twitter:description" content="Use union-find, offline-algorithm to solve Leetcode 1697 Checking Existence of Edge Length Limited Paths."/>
+<meta name="twitter:description" content="Use union-find, offline-algorithm, graph to solve Leetcode 1697 Checking Existence of Edge Length Limited Paths."/>
 <meta name="application-name" content="Haihao Sun">
 <meta name="apple-mobile-web-app-title" content="Haihao Sun"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -28,7 +28,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "http:\/\/tribbiannisun.github.io\/leetcode_1697\/"
-        },"genre": "posts","keywords": "union-find, offline-algorithm, summer21","wordCount":  491 ,
+        },"genre": "posts","keywords": "union-find, offline-algorithm, graph, summer21","wordCount":  492 ,
         "url": "http:\/\/tribbiannisun.github.io\/leetcode_1697\/","datePublished": "2021-07-07T21:49:04+08:00","dateModified": "2021-07-09T23:41:47+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "http:\/\/tribbiannisun.github.io\/images\/avatar.png"},"author": {
@@ -127,7 +127,7 @@
                     <h1 class="single-title animated flipInX">Leetcode_1697 Checking Existence of Edge Length Limited Paths</h1><div class="post-meta">
                         <div class="post-meta-line"><span class="post-category">
                                 <a href="/categories/leetcode-problem/"><i class="far fa-folder fa-fw"></i>&nbsp;Leetcode Problem</a>
-                            </span>&nbsp;&nbsp;&nbsp;&nbsp;<i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time class="timeago" datetime="2021-07-07">2021-07-07</time>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;491 words
+                            </span>&nbsp;&nbsp;&nbsp;&nbsp;<i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time class="timeago" datetime="2021-07-07">2021-07-07</time>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;492 words
                             &nbsp;&nbsp;&nbsp;&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;3 minutes</div>
                     </div>
                 </div><div class="post"><div class="details toc" id="toc-static"  data-kept="">
@@ -145,7 +145,7 @@
 </nav></div>
             </div><div class="content" id="content" style="padding-top: 20px"><span class="post-update">
                     <b>Updated on 2021-07-09</b>
-                </span><p>Use <strong>union-find, offline-algorithm</strong> to solve Leetcode 1697 Checking Existence of Edge Length Limited Paths.</p>
+                </span><p>Use <strong>union-find, offline-algorithm, graph</strong> to solve Leetcode 1697 Checking Existence of Edge Length Limited Paths.</p>
 <h2 id="problem-solution-leetcode-1697-checking-existence-of-edge-length-limited-pathshttpsleetcodecomproblemschecking-existence-of-edge-length-limited-paths">Problem Solution <a href="https://leetcode.com/problems/checking-existence-of-edge-length-limited-paths/" target="_blank" rel="noopener noreffer">Leetcode 1697. Checking Existence of Edge Length Limited Paths</a></h2>
 <p>
 An undirected graph of n nodes is defined by edgeList, where edgeList[i] = [ui, vi, disi] denotes an edge between nodes ui and vi with distance disi. Note that there may be multiple edges between two nodes.
@@ -280,7 +280,7 @@ For the second query, there is a path (0 -&gt; 1 -&gt; 2) of two edges with dist
 <li>Once we sort the queries by limit and edges by weight, we can free up edges for each query</li>
 <li>To answer each query, we can do a union-find since the graph is undirected!</li>
 </ul></div><div class="post-info-share">
-    <span><a class="share-icon share-twitter" href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://tribbiannisun.github.io/leetcode_1697/" data-title="Leetcode_1697 Checking Existence of Edge Length Limited Paths" data-hashtags="union-find,offline-algorithm,summer21"><i class="fab fa-twitter fa-fw"></i></a><a class="share-icon share-facebook" href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://tribbiannisun.github.io/leetcode_1697/" data-hashtag="union-find"><i class="fab fa-facebook-square fa-fw"></i></a><a class="share-icon share-line" href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://tribbiannisun.github.io/leetcode_1697/" data-title="Leetcode_1697 Checking Existence of Edge Length Limited Paths"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a class="share-icon share-weibo" href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://tribbiannisun.github.io/leetcode_1697/" data-title="Leetcode_1697 Checking Existence of Edge Length Limited Paths"><i class="fab fa-weibo fa-fw"></i></a></span>
+    <span><a class="share-icon share-twitter" href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://tribbiannisun.github.io/leetcode_1697/" data-title="Leetcode_1697 Checking Existence of Edge Length Limited Paths" data-hashtags="union-find,offline-algorithm,graph,summer21"><i class="fab fa-twitter fa-fw"></i></a><a class="share-icon share-facebook" href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://tribbiannisun.github.io/leetcode_1697/" data-hashtag="union-find"><i class="fab fa-facebook-square fa-fw"></i></a><a class="share-icon share-line" href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://tribbiannisun.github.io/leetcode_1697/" data-title="Leetcode_1697 Checking Existence of Edge Length Limited Paths"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a class="share-icon share-weibo" href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://tribbiannisun.github.io/leetcode_1697/" data-title="Leetcode_1697 Checking Existence of Edge Length Limited Paths"><i class="fab fa-weibo fa-fw"></i></a></span>
 </div><div class="post-footer" id="post-footer"><div class="post-navigation"><div class="post-nav-box nav-box-prev">
             <a class="nav-box" href="/leetcode_1514/"><span class="nav-icon"><svg aria-hidden="true" data-prefix="fas" data-icon="chevron-circle-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z"></path></svg></span><div style="text-align: right;padding-left: 10px"><div class="nav-text-h">Next article</div><span class="nav-text">Leetcode_1514 Path with Maximum Probability</span></div></a>
         </div>
@@ -289,7 +289,7 @@ For the second query, there is a path (0 -&gt; 1 -&gt; 2) of two edges with dist
         </div></div></div>
 </div>
 
-    </article><div class=" post-tags post-tags-toc "><a href="/tags/union-find/" class="tag">union-find</a><a href="/tags/offline-algorithm/" class="tag">offline-algorithm</a><a href="/tags/summer21/" class="tag">summer21</a></div></div></main><footer class="footer">
+    </article><div class=" post-tags post-tags-toc "><a href="/tags/union-find/" class="tag">union-find</a><a href="/tags/offline-algorithm/" class="tag">offline-algorithm</a><a href="/tags/graph/" class="tag">graph</a><a href="/tags/summer21/" class="tag">summer21</a></div></div></main><footer class="footer">
         <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span>Haihao 2020 - 2021</span></div>
         </div>
     </footer></div>
