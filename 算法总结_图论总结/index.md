@@ -13,3 +13,5 @@ This article subdivided the Graph problems on leetcode.
 - 最短路
 - 拓扑排序
     - [Leetcode 1857. Largest Color Value in a Directed Graph](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/)
+- Tarjan
+    - [leetcode 1192. Critical Connections in a Network](https://leetcode.com/problems/critical-connections-in-a-network/)

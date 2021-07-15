@@ -22,3 +22,5 @@ This article subdivided the DFS problems on leetcode.
     - [Leetcode 996. Number of Squareful Arrays](https://leetcode.com/problems/number-of-squareful-arrays/)
 - bitmask
     - [Leetcode 464. Can I Win](https://leetcode.com/problems/can-i-win/)
+- 树上递归
+    - [Leetcode 687. Longest Univalue Path](https://leetcode.com/problems/longest-univalue-path/)

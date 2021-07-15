@@ -3,7 +3,21 @@
         <title>data-structure - Tag - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/tags/data-structure/</link>
         <description>data-structure - Tag - Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 14 Jul 2021 19:58:22 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/data-structure/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 15 Jul 2021 22:48:48 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/data-structure/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode 1010 Pairs of Songs With Total Durations Divisible by 60</title>
+    <link>http://tribbiannisun.github.io/leetcode_1010/</link>
+    <pubDate>Thu, 15 Jul 2021 22:48:48 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1010/</guid>
+    <description><![CDATA[<p>Use <strong>data-structure</strong> to solve Leetcode 1010. Pairs of Songs With Total Durations Divisible by 60</p>]]></description>
+</item><item>
+    <title>Leetcode_611 Valid Triangle Number</title>
+    <link>http://tribbiannisun.github.io/leetcode_611/</link>
+    <pubDate>Thu, 15 Jul 2021 22:48:39 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_611/</guid>
+    <description><![CDATA[<p>Use <strong>binary-index-tree, two-pointer</strong> to solve Leetcode_611 Valid Triangle Number</p>]]></description>
+</item><item>
     <title>Leetcode_791 Custom Sort String</title>
     <link>http://tribbiannisun.github.io/leetcode_791/</link>
     <pubDate>Wed, 14 Jul 2021 19:58:22 &#43;0800</pubDate>
@@ -59,19 +73,5 @@
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_946/</guid>
     <description><![CDATA[<p>Use <strong>stack</strong> to solve Leetcode 946 - Lowest Common Ancestor of a Binary Tree</p>]]></description>
-</item><item>
-    <title>Leetcode_92 Reverse Linked List II</title>
-    <link>http://tribbiannisun.github.io/leetcode_92/</link>
-    <pubDate>Thu, 24 Jun 2021 23:17:56 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_92/</guid>
-    <description><![CDATA[<p>Use <strong>Data Struccture</strong> to solve Leetcode 792 - Reverse Linked List II.</p>]]></description>
-</item><item>
-    <title>Leetcode_792</title>
-    <link>http://tribbiannisun.github.io/leetcode_792/</link>
-    <pubDate>Tue, 22 Jun 2021 23:38:40 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_792/</guid>
-    <description><![CDATA[<p>Use <strong>Data Structure</strong> to solve Leetcode 792 - Number of Matching Subsequences.</p>]]></description>
 </item></channel>
 </rss>

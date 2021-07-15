@@ -3,9 +3,51 @@
         <title>Haihao Sun</title>
         <link>http://tribbiannisun.github.io/</link>
         <description>Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 14 Jul 2021 22:19:43 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 15 Jul 2021 23:05:58 &#43;0800</lastBuildDate>
             <atom:link href="http://tribbiannisun.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Leetcode_1192 Critical Connections in a Network</title>
+    <link>http://tribbiannisun.github.io/leetcode_1192/</link>
+    <pubDate>Thu, 15 Jul 2021 23:05:58 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1192/</guid>
+    <description><![CDATA[<p>Use <strong>graph, Tarjan</strong> to solve Leetcode 1192 Critical Connections in a Network</p>]]></description>
+</item><item>
+    <title>Leetcode_1349 Maximum Students Taking Exam</title>
+    <link>http://tribbiannisun.github.io/leetcode_1349/</link>
+    <pubDate>Thu, 15 Jul 2021 22:49:14 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1349/</guid>
+    <description><![CDATA[<p>Use <strong>bitmask, dp</strong> to solve Leetcode 1349. Maximum Students Taking Exam</p>]]></description>
+</item><item>
+    <title>Leetcode_687 Longest Univalue Path</title>
+    <link>http://tribbiannisun.github.io/leetcode_687/</link>
+    <pubDate>Thu, 15 Jul 2021 22:49:05 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_687/</guid>
+    <description><![CDATA[<p>Use <strong>dfs</strong> to solve Leetcode 687. Longest Univalue Path</p>]]></description>
+</item><item>
+    <title>Leetcode 1010 Pairs of Songs With Total Durations Divisible by 60</title>
+    <link>http://tribbiannisun.github.io/leetcode_1010/</link>
+    <pubDate>Thu, 15 Jul 2021 22:48:48 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1010/</guid>
+    <description><![CDATA[<p>Use <strong>data-structure</strong> to solve Leetcode 1010. Pairs of Songs With Total Durations Divisible by 60</p>]]></description>
+</item><item>
+    <title>Leetcode_611 Valid Triangle Number</title>
+    <link>http://tribbiannisun.github.io/leetcode_611/</link>
+    <pubDate>Thu, 15 Jul 2021 22:48:39 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_611/</guid>
+    <description><![CDATA[<p>Use <strong>binary-index-tree, two-pointer</strong> to solve Leetcode_611 Valid Triangle Number</p>]]></description>
+</item><item>
+    <title>Leetcode_1125 Smallest Sufficient Team</title>
+    <link>http://tribbiannisun.github.io/leetcode_1125/</link>
+    <pubDate>Thu, 15 Jul 2021 22:48:31 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1125/</guid>
+    <description><![CDATA[<p>Use <strong>bitmask, dfs</strong> to solve Leetcode 1125. Smallest Sufficient Team</p>]]></description>
+</item><item>
     <title>算法总结_Bitmask总结</title>
     <link>http://tribbiannisun.github.io/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93_bitmask%E6%80%BB%E7%BB%93/</link>
     <pubDate>Wed, 14 Jul 2021 22:19:43 &#43;0800</pubDate>
@@ -33,47 +75,5 @@
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_1328/</guid>
     <description><![CDATA[<p>Use <strong>Greedy</strong> to solve Leetcode 1328 - Break a Palindrome.</p>]]></description>
-</item><item>
-    <title>Leetcode_735. Asteroid Collision</title>
-    <link>http://tribbiannisun.github.io/leetcode_735/</link>
-    <pubDate>Wed, 14 Jul 2021 20:34:44 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_735/</guid>
-    <description><![CDATA[<p>Use <strong>stack</strong> to solve Leetcode 735. Asteroid Collision.</p>]]></description>
-</item><item>
-    <title>Leetcode_133. Clone Graph</title>
-    <link>http://tribbiannisun.github.io/leetcode_133/</link>
-    <pubDate>Wed, 14 Jul 2021 20:31:47 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_133/</guid>
-    <description><![CDATA[<p>Use <strong>dfs</strong> to solve Leetcode 133. Clone Graph.</p>]]></description>
-</item><item>
-    <title>Leetcode_218. The Skyline Problem</title>
-    <link>http://tribbiannisun.github.io/leetcode_218/</link>
-    <pubDate>Wed, 14 Jul 2021 20:22:04 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_218/</guid>
-    <description><![CDATA[<p>Use <strong>sweep-line</strong> to solve Leetcode_218. The Skyline Problem</p>]]></description>
-</item><item>
-    <title>算法总结_扫描线总结</title>
-    <link>http://tribbiannisun.github.io/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93_%E6%89%AB%E6%8F%8F%E7%BA%BF%E6%80%BB%E7%BB%93/</link>
-    <pubDate>Wed, 14 Jul 2021 20:08:14 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93_%E6%89%AB%E6%8F%8F%E7%BA%BF%E6%80%BB%E7%BB%93/</guid>
-    <description><![CDATA[<p>This article reviews the sweep-line problems and break them into smaller topics and models.</p>]]></description>
-</item><item>
-    <title>Leetcode_791 Custom Sort String</title>
-    <link>http://tribbiannisun.github.io/leetcode_791/</link>
-    <pubDate>Wed, 14 Jul 2021 19:58:22 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_791/</guid>
-    <description><![CDATA[<p>Use <strong>data-structure</strong> to solve Leetcode 791. Custom Sort String</p>]]></description>
-</item><item>
-    <title>算法总结_图论总结</title>
-    <link>http://tribbiannisun.github.io/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93_%E5%9B%BE%E8%AE%BA%E6%80%BB%E7%BB%93/</link>
-    <pubDate>Wed, 14 Jul 2021 00:08:21 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93_%E5%9B%BE%E8%AE%BA%E6%80%BB%E7%BB%93/</guid>
-    <description><![CDATA[<p>This article subdivided the Graph problems on leetcode.</p>]]></description>
 </item></channel>
 </rss>

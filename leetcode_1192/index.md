@@ -2,7 +2,6 @@
 
 
 
-
 Use **graph, Tarjan** to solve Leetcode 1192 Critical Connections in a Network
 <!--more-->
 
@@ -33,6 +32,58 @@ Explanation: [[3,1]] is also accepted.
 
 
 ```cpp
+class Solution {
+public:
+    static const int N = 1e5 + 10;
+    
+    vector<int> graph[N];
+    stack<int> myStack;
+    
+    int dfn[N], low[N], timestamp;
+    int id[N], dcc_cnt;
+    int indegree[N];
+    vector<vector<int>> bridges;
+    
+    void tarjan(int u, int from){
+        
+        dfn[u] = low[u] = timestamp++;
+        myStack.push(u);
+        
+        for(int j : graph[u]){
+            if(!dfn[j]){
+                tarjan(j, u);
+                low[u] = min(low[u], low[j]);
+                
+                if (dfn[u] < low[j])
+                    bridges.push_back({u,j});
+            }
+            else if (j != from)
+                low[u] = min(low[u], dfn[j]);
+        }
+        
+        
+        if(low[u] == dfn[u]){
+            dcc_cnt += 1;
+            int y;
+            do{
+                y = myStack.top(); myStack.pop();
+                id[y] = dcc_cnt;
+            }while (y != u); 
+        }
+    }
+    
+    
+    vector<vector<int>> criticalConnections(int n, vector<vector<int>>& connections) {
+        for(vector<int>& c : connections){
+            int a = c[0], b = c[1];
+            graph[a].push_back(b), graph[b].push_back(a);
+        }
+        
+        tarjan(0, -1);
+        return bridges;
+        
+    }
+};
 ```
 
 

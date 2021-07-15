@@ -3,7 +3,14 @@
         <title>dp - Tag - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/tags/dp/</link>
         <description>dp - Tag - Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 11 Jul 2021 13:37:14 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/dp/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 15 Jul 2021 22:49:14 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/dp/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode_1349 Maximum Students Taking Exam</title>
+    <link>http://tribbiannisun.github.io/leetcode_1349/</link>
+    <pubDate>Thu, 15 Jul 2021 22:49:14 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1349/</guid>
+    <description><![CDATA[<p>Use <strong>bitmask, dp</strong> to solve Leetcode 1349. Maximum Students Taking Exam</p>]]></description>
+</item><item>
     <title>Leetcode_1928 Minimum Cost to Reach Destination in Time</title>
     <link>http://tribbiannisun.github.io/leetcode_1928/</link>
     <pubDate>Sun, 11 Jul 2021 13:37:14 &#43;0800</pubDate>
@@ -66,12 +73,5 @@
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_730/</guid>
     <description><![CDATA[<p>Use <strong>DP</strong> to solve Leetcode 730 - Count Different Palindromic Subsequences.</p>]]></description>
-</item><item>
-    <title>Leetcode_1223 Dice Roll Simulation</title>
-    <link>http://tribbiannisun.github.io/leetcode_1223/</link>
-    <pubDate>Mon, 21 Jun 2021 23:32:43 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_1223/</guid>
-    <description><![CDATA[<p>Use <strong>Dynamic Programming</strong> to solve Leetcode_1223 - Dice Roll Simulation</p>]]></description>
 </item></channel>
 </rss>

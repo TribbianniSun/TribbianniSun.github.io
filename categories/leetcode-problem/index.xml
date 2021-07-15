@@ -3,7 +3,49 @@
         <title>Leetcode Problem - Category - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/categories/leetcode-problem/</link>
         <description>Leetcode Problem - Category - Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 14 Jul 2021 22:09:47 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/categories/leetcode-problem/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 15 Jul 2021 23:05:58 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/categories/leetcode-problem/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode_1192 Critical Connections in a Network</title>
+    <link>http://tribbiannisun.github.io/leetcode_1192/</link>
+    <pubDate>Thu, 15 Jul 2021 23:05:58 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1192/</guid>
+    <description><![CDATA[<p>Use <strong>graph, Tarjan</strong> to solve Leetcode 1192 Critical Connections in a Network</p>]]></description>
+</item><item>
+    <title>Leetcode_1349 Maximum Students Taking Exam</title>
+    <link>http://tribbiannisun.github.io/leetcode_1349/</link>
+    <pubDate>Thu, 15 Jul 2021 22:49:14 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1349/</guid>
+    <description><![CDATA[<p>Use <strong>bitmask, dp</strong> to solve Leetcode 1349. Maximum Students Taking Exam</p>]]></description>
+</item><item>
+    <title>Leetcode_687 Longest Univalue Path</title>
+    <link>http://tribbiannisun.github.io/leetcode_687/</link>
+    <pubDate>Thu, 15 Jul 2021 22:49:05 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_687/</guid>
+    <description><![CDATA[<p>Use <strong>dfs</strong> to solve Leetcode 687. Longest Univalue Path</p>]]></description>
+</item><item>
+    <title>Leetcode 1010 Pairs of Songs With Total Durations Divisible by 60</title>
+    <link>http://tribbiannisun.github.io/leetcode_1010/</link>
+    <pubDate>Thu, 15 Jul 2021 22:48:48 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1010/</guid>
+    <description><![CDATA[<p>Use <strong>data-structure</strong> to solve Leetcode 1010. Pairs of Songs With Total Durations Divisible by 60</p>]]></description>
+</item><item>
+    <title>Leetcode_611 Valid Triangle Number</title>
+    <link>http://tribbiannisun.github.io/leetcode_611/</link>
+    <pubDate>Thu, 15 Jul 2021 22:48:39 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_611/</guid>
+    <description><![CDATA[<p>Use <strong>binary-index-tree, two-pointer</strong> to solve Leetcode_611 Valid Triangle Number</p>]]></description>
+</item><item>
+    <title>Leetcode_1125 Smallest Sufficient Team</title>
+    <link>http://tribbiannisun.github.io/leetcode_1125/</link>
+    <pubDate>Thu, 15 Jul 2021 22:48:31 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1125/</guid>
+    <description><![CDATA[<p>Use <strong>bitmask, dfs</strong> to solve Leetcode 1125. Smallest Sufficient Team</p>]]></description>
+</item><item>
     <title>Leetcode_464. Can I Win</title>
     <link>http://tribbiannisun.github.io/leetcode_464/</link>
     <pubDate>Wed, 14 Jul 2021 22:09:47 &#43;0800</pubDate>
@@ -31,47 +73,5 @@
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_133/</guid>
     <description><![CDATA[<p>Use <strong>dfs</strong> to solve Leetcode 133. Clone Graph.</p>]]></description>
-</item><item>
-    <title>Leetcode_218. The Skyline Problem</title>
-    <link>http://tribbiannisun.github.io/leetcode_218/</link>
-    <pubDate>Wed, 14 Jul 2021 20:22:04 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_218/</guid>
-    <description><![CDATA[<p>Use <strong>sweep-line</strong> to solve Leetcode_218. The Skyline Problem</p>]]></description>
-</item><item>
-    <title>Leetcode_791 Custom Sort String</title>
-    <link>http://tribbiannisun.github.io/leetcode_791/</link>
-    <pubDate>Wed, 14 Jul 2021 19:58:22 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_791/</guid>
-    <description><![CDATA[<p>Use <strong>data-structure</strong> to solve Leetcode 791. Custom Sort String</p>]]></description>
-</item><item>
-    <title>Leetcode_37  Sudoku Solver</title>
-    <link>http://tribbiannisun.github.io/leetcode_37/</link>
-    <pubDate>Tue, 13 Jul 2021 23:45:54 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_37/</guid>
-    <description><![CDATA[<p>Use <strong>DFS</strong> to solve Leetcode 37 - Sudoku Solver.</p>]]></description>
-</item><item>
-    <title>Leetcode_52 - N-Queens II</title>
-    <link>http://tribbiannisun.github.io/leetcode_52/</link>
-    <pubDate>Tue, 13 Jul 2021 23:45:49 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_52/</guid>
-    <description><![CDATA[<p>Use <strong>DFS</strong> to solve Leetcode 52 - N-Queens II.</p>]]></description>
-</item><item>
-    <title>Leetcode_51 N-Queens</title>
-    <link>http://tribbiannisun.github.io/leetcode_51/</link>
-    <pubDate>Tue, 13 Jul 2021 23:45:47 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_51/</guid>
-    <description><![CDATA[<p>Use <strong>DFS</strong> to solve Leetcode 51 - N-Queens.</p>]]></description>
-</item><item>
-    <title>Leetcode_162 Find Peak Element</title>
-    <link>http://tribbiannisun.github.io/leetcode_162/</link>
-    <pubDate>Tue, 13 Jul 2021 00:13:08 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_162/</guid>
-    <description><![CDATA[<p>Use <strong>binary-search</strong> to solve Leetcode_162 Find Peak Element.</p>]]></description>
 </item></channel>
 </rss>
