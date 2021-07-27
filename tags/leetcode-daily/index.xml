@@ -3,7 +3,14 @@
         <title>leetcode-daily - Tag - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/tags/leetcode-daily/</link>
         <description>leetcode-daily - Tag - Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 14 Jul 2021 19:58:22 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/leetcode-daily/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 16 Jul 2021 23:20:54 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/leetcode-daily/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode_18 4sum</title>
+    <link>http://tribbiannisun.github.io/leetcode_18/</link>
+    <pubDate>Fri, 16 Jul 2021 23:20:54 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_18/</guid>
+    <description><![CDATA[<p>Use <strong>data-structure</strong> to solve Leetcode 51 - N-Queens.</p>]]></description>
+</item><item>
     <title>Leetcode_791 Custom Sort String</title>
     <link>http://tribbiannisun.github.io/leetcode_791/</link>
     <pubDate>Wed, 14 Jul 2021 19:58:22 &#43;0800</pubDate>
@@ -66,12 +73,5 @@
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_1220/</guid>
     <description><![CDATA[<p>Use <strong>dp</strong> to solve Leetcode_1220 Count Vowels Permutation.</p>]]></description>
-</item><item>
-    <title>Leetcode_363 Max Sum of Rectangle No Larger Than K</title>
-    <link>http://tribbiannisun.github.io/leetcode_363/</link>
-    <pubDate>Sat, 03 Jul 2021 23:57:42 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_363/</guid>
-    <description><![CDATA[<p>Use <strong>data-structure</strong> to solve Leetcode 363 - Max Sum of Rectangle No Larger Than K.</p>]]></description>
 </item></channel>
 </rss>
