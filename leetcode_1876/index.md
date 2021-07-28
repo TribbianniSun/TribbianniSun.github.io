@@ -1,6 +1,9 @@
 # Leetcode_1876 Substrings of Size Three with Distinct Characters
 
 
+Use **sliding-window** to solve Leetcode_1876 Substrings of Size Three with Distinct Characters
+<!--more-->
+
 ## Problem Solution [Leetcode 1876. Substrings of Size Three with Distinct Characters](https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/)
 
 ```cpp

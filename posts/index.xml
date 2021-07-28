@@ -3,7 +3,14 @@
         <title>All Posts - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/posts/</link>
         <description>All Posts | Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 28 Jul 2021 20:52:52 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 28 Jul 2021 21:17:20 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode_837. New 21 Game</title>
+    <link>http://tribbiannisun.github.io/leetcode_837/</link>
+    <pubDate>Wed, 28 Jul 2021 21:17:20 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_837/</guid>
+    <description><![CDATA[<p>Use <strong>sliding-window</strong> to solve Leetcode_837. New 21 Game</p>]]></description>
+</item><item>
     <title>Leetcode_算法总结_滑动窗口</title>
     <link>http://tribbiannisun.github.io/%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93_%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E6%80%BB%E7%BB%93/</link>
     <pubDate>Wed, 28 Jul 2021 20:52:52 &#43;0800</pubDate>
@@ -16,28 +23,28 @@
     <pubDate>Wed, 28 Jul 2021 00:00:08 &#43;0800</pubDate>
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_1493/</guid>
-    <description><![CDATA[Problem Solution Leetcode 1493 Longest Subarray of 1&rsquo;s After Deleting One Element 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32  class Solution { public: int longestSubarray(vector&lt;int&gt;&amp; nums) { int s = 0, n = nums.size(); for(int num : nums) s += num; if(s == n) return s - 1; int counter = 0; int ret = 0; for(int i = 0, j = 0; i &lt; n; i++){ // added nums[i] to the sliding window  if(nums[i] == 0) counter += 1; // while loop to make sure that the sliding window is valid  while(j &lt;= i and counter &gt; 1){ if(nums[j] == 0){ counter -= 1; } j += 1; } // update the result  ret = max(ret, i - j + 1 - counter); } return ret; } };   ]]></description>
+    <description><![CDATA[<p>Use <strong>sliding-window</strong> to solve Leetcode_1493 Longest Subarray of 1&rsquo;s After Deleting One Element</p>]]></description>
 </item><item>
     <title>Leetcode_219. Contains Duplicate II</title>
     <link>http://tribbiannisun.github.io/leetcode_219/</link>
     <pubDate>Tue, 27 Jul 2021 22:27:46 &#43;0800</pubDate>
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_219/</guid>
-    <description><![CDATA[Problem Solution Leetcode 219. Contains Duplicate II 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  class Solution { public: bool containsNearbyDuplicate(vector&lt;int&gt;&amp; nums, int k) { int n = nums.size(); set&lt;int&gt; s; for(int i = 0; i &lt; min(n, k + 1); i++){ if(s.count(nums[i])) return true; s.insert(nums[i]); } for(int i = k + 1; i &lt; n; i++){ s.erase(nums[i - k - 1]); if(s.]]></description>
+    <description><![CDATA[<p>Use <strong>sliding-window</strong> to solve Leetcode_219. Contains Duplicate II</p>]]></description>
 </item><item>
     <title>Leetcode_643 Maximum Average Subarray I</title>
     <link>http://tribbiannisun.github.io/leetcode_643/</link>
     <pubDate>Tue, 27 Jul 2021 22:13:03 &#43;0800</pubDate>
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_643/</guid>
-    <description><![CDATA[Problem Solution Leetcode 643. Maximum Average Subarray I 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  class Solution { public: double findMaxAverage(vector&lt;int&gt;&amp; nums, int k) { int n = nums.size(); double cur = 0; double max_sum = -2e9; for(int i = 0; i &lt; k; i++){ cur += nums[i]; } for(int i = k; i &lt; n; i++){ max_sum = max(max_sum, cur); cur -= nums[i - k]; cur += nums[i]; } max_sum = max(max_sum, cur); return max_sum / k; } };   ]]></description>
+    <description><![CDATA[<p>Use <strong>sliding-window</strong> to solve Leetcode_643 Maximum Average Subarray I</p>]]></description>
 </item><item>
     <title>Leetcode_1876 Substrings of Size Three with Distinct Characters</title>
     <link>http://tribbiannisun.github.io/leetcode_1876/</link>
     <pubDate>Tue, 27 Jul 2021 22:12:43 &#43;0800</pubDate>
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_1876/</guid>
-    <description><![CDATA[Problem Solution Leetcode 1876. Substrings of Size Three with Distinct Characters 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24  class Solution { public: int countGoodSubstrings(string s) { int n = s.size(); if(n &lt; 3) return 0; int freq[30]; memset(freq, 0, sizeof freq); int counter = 0; int ret = 0; for(int i = 0; i &lt; 3; i+=1){ if(!]]></description>
+    <description><![CDATA[<p>Use <strong>sliding-window</strong> to solve Leetcode_1876 Substrings of Size Three with Distinct Characters</p>]]></description>
 </item><item>
     <title>Leetcode_18 4sum</title>
     <link>http://tribbiannisun.github.io/leetcode_18/</link>
@@ -66,12 +73,5 @@
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_687/</guid>
     <description><![CDATA[<p>Use <strong>dfs</strong> to solve Leetcode 687. Longest Univalue Path</p>]]></description>
-</item><item>
-    <title>Leetcode 1010 Pairs of Songs With Total Durations Divisible by 60</title>
-    <link>http://tribbiannisun.github.io/leetcode_1010/</link>
-    <pubDate>Thu, 15 Jul 2021 22:48:48 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_1010/</guid>
-    <description><![CDATA[<p>Use <strong>data-structure</strong> to solve Leetcode 1010. Pairs of Songs With Total Durations Divisible by 60</p>]]></description>
 </item></channel>
 </rss>

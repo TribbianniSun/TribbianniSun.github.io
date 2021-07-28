@@ -2,6 +2,11 @@
 
 
 
+
+
+Use **sliding-window** to solve Leetcode_219. Contains Duplicate II
+<!--more-->
+
 ## Problem Solution [Leetcode 219. Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)
 
 ```cpp
