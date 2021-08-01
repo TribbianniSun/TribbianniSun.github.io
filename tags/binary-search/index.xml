@@ -3,7 +3,14 @@
         <title>binary search - Tag - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/tags/binary-search/</link>
         <description>binary search - Tag - Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 13 Jul 2021 00:13:08 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/binary-search/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 01 Aug 2021 13:33:16 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/binary-search/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode_1954 Minimum Garden Perimeter to Collect Enough Apples</title>
+    <link>http://tribbiannisun.github.io/leetcode_1954/</link>
+    <pubDate>Sun, 01 Aug 2021 13:33:16 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1954/</guid>
+    <description><![CDATA[<p>Use <strong>binary-search</strong> to solve Leetcode_1954 Minimum Garden Perimeter to Collect Enough Apples</p>]]></description>
+</item><item>
     <title>Leetcode_162 Find Peak Element</title>
     <link>http://tribbiannisun.github.io/leetcode_162/</link>
     <pubDate>Tue, 13 Jul 2021 00:13:08 &#43;0800</pubDate>
