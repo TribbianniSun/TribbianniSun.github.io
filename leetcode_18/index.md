@@ -2,8 +2,7 @@
 
 
 
-
-Use **data-structure** to solve Leetcode 51 - N-Queens.
+Use **data-structure** to solve Leetcode 18 4sum.
 <!--more-->
 
 ## Problem Solution [Leetcode 18. 4Sum](https://leetcode.com/problems/4sum/)

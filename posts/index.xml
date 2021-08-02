@@ -3,7 +3,21 @@
         <title>All Posts - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/posts/</link>
         <description>All Posts | Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 01 Aug 2021 13:33:21 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 02 Aug 2021 22:07:52 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode_1381 Design a Stack With Increment Operation</title>
+    <link>http://tribbiannisun.github.io/leetcode_1381/</link>
+    <pubDate>Mon, 02 Aug 2021 22:07:52 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1381/</guid>
+    <description><![CDATA[<p>Use <strong>data-structure</strong> to solve Leetcode 1381 Design a Stack With Increment Operation.</p>]]></description>
+</item><item>
+    <title>Leetcode_1 Two Sum</title>
+    <link>http://tribbiannisun.github.io/leetcode_1/</link>
+    <pubDate>Mon, 02 Aug 2021 22:02:14 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1/</guid>
+    <description><![CDATA[<p>Use <strong>data-structure</strong> to solve Leetcode 1 Two Sum.</p>]]></description>
+</item><item>
     <title>Leetcode_1952 Three Divisors</title>
     <link>http://tribbiannisun.github.io/leetcode_1952/</link>
     <pubDate>Sun, 01 Aug 2021 13:33:21 &#43;0800</pubDate>
@@ -59,19 +73,5 @@
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_219/</guid>
     <description><![CDATA[<p>Use <strong>sliding-window</strong> to solve Leetcode_219. Contains Duplicate II</p>]]></description>
-</item><item>
-    <title>Leetcode_643 Maximum Average Subarray I</title>
-    <link>http://tribbiannisun.github.io/leetcode_643/</link>
-    <pubDate>Tue, 27 Jul 2021 22:13:03 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_643/</guid>
-    <description><![CDATA[<p>Use <strong>sliding-window</strong> to solve Leetcode_643 Maximum Average Subarray I</p>]]></description>
-</item><item>
-    <title>Leetcode_1876 Substrings of Size Three with Distinct Characters</title>
-    <link>http://tribbiannisun.github.io/leetcode_1876/</link>
-    <pubDate>Tue, 27 Jul 2021 22:12:43 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_1876/</guid>
-    <description><![CDATA[<p>Use <strong>sliding-window</strong> to solve Leetcode_1876 Substrings of Size Three with Distinct Characters</p>]]></description>
 </item></channel>
 </rss>

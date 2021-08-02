@@ -3,13 +3,27 @@
         <title>data-structure - Tag - Haihao Sun</title>
         <link>http://tribbiannisun.github.io/tags/data-structure/</link>
         <description>data-structure - Tag - Haihao Sun</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 16 Jul 2021 23:20:54 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/data-structure/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 02 Aug 2021 22:07:52 &#43;0800</lastBuildDate><atom:link href="http://tribbiannisun.github.io/tags/data-structure/" rel="self" type="application/rss+xml" /><item>
+    <title>Leetcode_1381 Design a Stack With Increment Operation</title>
+    <link>http://tribbiannisun.github.io/leetcode_1381/</link>
+    <pubDate>Mon, 02 Aug 2021 22:07:52 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1381/</guid>
+    <description><![CDATA[<p>Use <strong>data-structure</strong> to solve Leetcode 1381 Design a Stack With Increment Operation.</p>]]></description>
+</item><item>
+    <title>Leetcode_1 Two Sum</title>
+    <link>http://tribbiannisun.github.io/leetcode_1/</link>
+    <pubDate>Mon, 02 Aug 2021 22:02:14 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://tribbiannisun.github.io/leetcode_1/</guid>
+    <description><![CDATA[<p>Use <strong>data-structure</strong> to solve Leetcode 1 Two Sum.</p>]]></description>
+</item><item>
     <title>Leetcode_18 4sum</title>
     <link>http://tribbiannisun.github.io/leetcode_18/</link>
     <pubDate>Fri, 16 Jul 2021 23:20:54 &#43;0800</pubDate>
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_18/</guid>
-    <description><![CDATA[<p>Use <strong>data-structure</strong> to solve Leetcode 51 - N-Queens.</p>]]></description>
+    <description><![CDATA[<p>Use <strong>data-structure</strong> to solve Leetcode 18 4sum.</p>]]></description>
 </item><item>
     <title>Leetcode 1010 Pairs of Songs With Total Durations Divisible by 60</title>
     <link>http://tribbiannisun.github.io/leetcode_1010/</link>
@@ -59,19 +73,5 @@
     <author>Author</author>
     <guid>http://tribbiannisun.github.io/leetcode_1338/</guid>
     <description><![CDATA[<p>Use <strong>data-structure</strong> to solve Leetcode_1338 Reduce Array Size to The Half</p>]]></description>
-</item><item>
-    <title>Leetcode_566 Reshape the Matrix</title>
-    <link>http://tribbiannisun.github.io/leetcode_566/</link>
-    <pubDate>Mon, 05 Jul 2021 22:37:52 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_566/</guid>
-    <description><![CDATA[<p>Use <strong>data-structure</strong> to solve Leetcode 566 Reshape the Matrix.</p>]]></description>
-</item><item>
-    <title>Leetcode_363 Max Sum of Rectangle No Larger Than K</title>
-    <link>http://tribbiannisun.github.io/leetcode_363/</link>
-    <pubDate>Sat, 03 Jul 2021 23:57:42 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://tribbiannisun.github.io/leetcode_363/</guid>
-    <description><![CDATA[<p>Use <strong>data-structure</strong> to solve Leetcode 363 - Max Sum of Rectangle No Larger Than K.</p>]]></description>
 </item></channel>
 </rss>
