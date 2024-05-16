@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: "Serenity, Courage, Wisdom."
 
 profile:
   align: right
@@ -13,13 +13,22 @@ profile:
     # <p>123 your address street</p>
     # <p>Your City, State 12345</p>
 
-news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+news: false # includes a list of news items
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hi there! My name is Haihao, and here is an introduction about myself!
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I was born in Nanjing, China. At 18, I came to San Diego, California, to complete my undergraduate degree in computer science and engineering. Afterwards, I relocated to New Haven to pursue a master's degree in computer science.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Computer Science gave me a solid foundation in both software and machine learning. Beyond my academic pursuits, I am passionate about and interested in various other fields that I hope to explore and delve deeper into, such as:
+
+- Machine Learning/Deep Learning
+- Quantitative Analysis
+
+In my spare time, I enjoy participating in programming competitions. This allows me to write some code and express my ideas through coding.
+
+My non-technical hobbies tend to change over time. Currently, I enjoy playing the board game Dominion and go. In the past, I've enjoyed games like Splendor, Wingspan, and Fortnite!
+
+Fun fact: Steinway Moving and Storage reports that the average American relocates _11.7_ times in their lifetime. Surprisingly, I have already moved _8_ times.
