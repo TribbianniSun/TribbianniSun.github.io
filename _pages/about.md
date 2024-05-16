@@ -27,8 +27,8 @@ Computer Science gave me a solid foundation in both software and machine learnin
 - Machine Learning/Deep Learning
 - Quantitative Analysis
 
-In my spare time, I enjoy participating in programming competitions. This allows me to write some code and express my ideas through coding.
+In my spare time, I enjoy participating in programming competitions. This allows me to write some code and express my ideas through coding. I am proud of being the first engineer in my family.
 
 My non-technical hobbies tend to change over time. Currently, I enjoy playing the board game Dominion and go. In the past, I've enjoyed games like Splendor, Wingspan, and Fortnite!
 
-Fun fact: Steinway Moving and Storage reports that the average American relocates _11.7_ times in their lifetime. Surprisingly, I have already moved _8_ times.
+Fun fact: On average, American people relocate _11.7_ times in their lifetime. Surprisingly, I have already moved _8_ times.
