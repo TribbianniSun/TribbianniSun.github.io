@@ -2,7 +2,7 @@
 layout: post
 title: Leetcode Weekly Contest 398
 date: 2024-05-18 22:16:32
-description: this is what included tabs in a post could look like
+description: sharing my solutions to leetcode weekly contest 398
 tags: leetcode
 categories: code
 tabs: true
