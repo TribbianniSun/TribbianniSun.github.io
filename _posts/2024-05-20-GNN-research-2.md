@@ -288,3 +288,5 @@ Graph Neural Networks (GNNs) are powerful tools in representation learning for g
 
 - [github-1](https://github.com/DSE-MSU/DeepRobust)
 - [github-2](https://github.com/ChandlerBang/Pro-GNN)
+
+some work credit to: https://github.com/EdisonLeeeee/Graph-Adversarial-Learning?tab=readme-ov-file
