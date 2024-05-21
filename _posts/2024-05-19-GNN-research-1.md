@@ -89,15 +89,6 @@ Graph is an important data representation ubiquitously existing in the real worl
 
 - [github](https://github.com/Zhangzhk0819/GNN-Embedding-Leaks)
 
-## [8 - Group Property Inference Attacks Against Graph Neural Networks](https://arxiv.org/abs/2209.01100)
-
-## Abstract
-
-With the fast adoption of machine learning (ML) techniques, sharing of ML models is becoming popular. However, ML models are vulnerable to privacy attacks that leak information about the training data. In this work, we focus on a particular type of privacy attacks named property inference attack (PIA) which infers the sensitive properties of the training data through the access to the target ML model. In particular, we consider Graph Neural Networks (GNNs) as the target model, and distribution of particular groups of nodes and links in the training graph as the target property. While the existing work has investigated PIAs that target at graph-level properties, no prior works have studied the inference of node and link properties at group level yet.
-In this work, we perform the first systematic study of group property inference attacks (GPIA) against GNNs. First, we consider a taxonomy of threat models under both black-box and white-box settings with various types of adversary knowledge, and design six different attacks for these settings. We evaluate the effectiveness of these attacks through extensive experiments on three representative GNN models and three real-world graphs. Our results demonstrate the effectiveness of these attacks whose accuracy outperforms the baseline approaches. Second, we analyze the underlying factors that contribute to GPIA's success, and show that the target model trained on the graphs with or without the target property represents some dissimilarity in model parameters and/or model outputs, which enables the adversary to infer the existence of the property. Further, we design a set of defense mechanisms against the GPIA attacks, and demonstrate that these mechanisms can reduce attack accuracy effectively with small loss on GNN model accuracy.
-
-## Code
-
 ## [9 - Model Inversion Attacks Against Graph Neural Networks](https://arxiv.org/abs/2209.07807)
 
 ## Abstract
@@ -148,7 +139,7 @@ Deep learning models for graphs have achieved strong performance for the task of
 
 - [github](https://github.com/danielzuegner/nettack)
 
-## [14 - Adversarial Attack on Graph Structured Data]
+## [14 - Adversarial Attack on Graph Structured Data](https://arxiv.org/abs/1806.02371)
 
 ## Abstract
 
@@ -158,7 +149,7 @@ Deep learning on graph structures has shown exciting results in various applicat
 
 - [github](https://github.com/Hanjun-Dai/graph_adversarial_attack)
 
-## [15 - Adversarial Examples on Graph Data: Deep Insights into Attack and Defense]
+## [15 - Adversarial Examples on Graph Data: Deep Insights into Attack and Defense](https://arxiv.org/abs/1903.01610)
 
 ## Abstract
 
@@ -188,7 +179,7 @@ The goal of network representation learning is to learn low-dimensional node emb
 
 - [github](https://github.com/abojchevski/node_embedding_attack)
 
-## [18 - Adversarial Attacks on Graph Neural Networks via Meta Learning]
+## [18 - Adversarial Attacks on Graph Neural Networks via Meta Learning](https://arxiv.org/abs/1902.08412)
 
 ## Abstract
 
@@ -208,7 +199,7 @@ Deep learning systems have become ubiquitous in many aspects of our lives. Unfor
 
 - [github](https://github.com/tantara/PeerNets-pytorch)
 
-## [20 - Certifiable Robustness to Graph Perturbations]
+## [20 - Certifiable Robustness to Graph Perturbations](https://arxiv.org/abs/1910.14356)
 
 ## Abstract
 
