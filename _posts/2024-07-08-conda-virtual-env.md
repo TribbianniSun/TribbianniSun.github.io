@@ -9,7 +9,7 @@ tabs: true
 ---
 
 ```bash
-conda create -n venv new python=3.9 # craete the first virtual env
+conda create -n venv python=3.9 # craete the first virtual env
 conda activate venv # actiave the env
 pip list # check that we have a clear pip list
 pip install requests # install request package
