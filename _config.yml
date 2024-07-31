@@ -284,7 +284,7 @@ jekyll-archives:
     tag: "/blog/tag/:name/"
     category: "/blog/category/:name/"
 
-display_tags: ["leetcode", "gnn", "random-thoughts", "python-developing", "stats"] # these tags will be displayed on the front page of your blog
+display_tags: ["leetcode", "gnn", "random-thoughts", "python-developing", "stats", "autobiography"] # these tags will be displayed on the front page of your blog
 display_categories: ["code", "research", "thoughts", "developing", "machine-learning"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
